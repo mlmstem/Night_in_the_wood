@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6820958792621149643}
   - component: {fileID: 5699480805833328686}
   m_Layer: 5
-  m_Name: BerryItemButton
+  m_Name: BerryItemHotbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
