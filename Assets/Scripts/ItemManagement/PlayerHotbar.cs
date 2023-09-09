@@ -34,6 +34,11 @@ public class PlayerHotbar : MonoBehaviour
         {
             DropItem(currentSlot);
         }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            UseItem(currentSlot);
+        }
     }
 
     private void UpdateHotbarUI()
@@ -65,4 +70,30 @@ public class PlayerHotbar : MonoBehaviour
             }
         }
     }
+
+    private void UseItem(int slotIndex)
+    {
+        if (slotIndex >= 0 && slotIndex < slots.Length)
+        {
+            if (slots[slotIndex].transform.childCount > 0)
+            {
+                GameObject itemGameObject = slots[slotIndex].transform.GetChild(0).gameObject;
+                GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+
+                if (playerObject != null)
+                {
+                    // Get the player health component
+                    HealthManager healthManager = playerObject.GetComponent<HealthManager>();
+
+                    if (healthManager != null)
+                    {
+                        // Heal player and destroy item
+                        healthManager.OnHealButtonClick();
+                        Destroy(itemGameObject);
+                    }
+                }
+            }
+        }
+    }
+
 }
