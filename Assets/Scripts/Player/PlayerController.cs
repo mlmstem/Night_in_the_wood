@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Controlls : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     [SerializeField] Transform playerCamera = null;
     [SerializeField] float mouseSensitivity = 0.8f;
     [SerializeField] float walkSpeed = 6.0f;
-    [SerializeField][Range(0.0f,0.5f)] float moveSmoothTime = 0.3f;
-    [SerializeField][Range(0.0f,0.5f)] float mouseSmoothTime = 0.03f;
+    [SerializeField][Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
+    [SerializeField][Range(0.0f, 0.5f)] float mouseSmoothTime = 0.03f;
 
 
     [SerializeField] float jumpForce = 8.0f;
@@ -35,12 +35,13 @@ public class Controlls : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
 
-        if (lockCursor){
+        if (lockCursor)
+        {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
 
         }
-        
+
     }
 
     // Update is called once per frame
@@ -48,49 +49,50 @@ public class Controlls : MonoBehaviour
 
     {
         UpdateMouseLook();
-        UpdateMovement();   
+        UpdateMovement();
     }
 
-    void UpdateMouseLook(){
-    Vector2 targetMouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+    void UpdateMouseLook()
+    {
+        Vector2 targetMouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
 
-    currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMousoeDeltaVelocity, mouseSmoothTime);
+        currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMousoeDeltaVelocity, mouseSmoothTime);
 
 
-    // Reverse the vertical mouse rotation direction
-    float mouseYRotation = -currentMouseDelta.y * mouseSensitivity;  // Invert the sign for vertical rotation
-    cameraPitch = Mathf.Clamp(cameraPitch + mouseYRotation, -90.0f, 90.0f);
+        // Reverse the vertical mouse rotation direction
+        float mouseYRotation = -currentMouseDelta.y * mouseSensitivity;  // Invert the sign for vertical rotation
+        cameraPitch = Mathf.Clamp(cameraPitch + mouseYRotation, -90.0f, 90.0f);
 
-    playerCamera.localEulerAngles = Vector3.right * cameraPitch;
+        playerCamera.localEulerAngles = Vector3.right * cameraPitch;
 
-    transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
+        transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
 
     }
 
     void UpdateMovement()
-{
-    Vector2 targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-    targetDir.Normalize();
-
-    currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
-
-    Vector3 velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * walkSpeed;
-
-    // Jump logic
-    if (isGrounded && Input.GetButtonDown("Jump"))
     {
-        verticalVelocity = jumpForce;
-        isGrounded = false;
+        Vector2 targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        targetDir.Normalize();
+
+        currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
+
+        Vector3 velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * walkSpeed;
+
+        // Jump logic
+        if (isGrounded && Input.GetButtonDown("Jump"))
+        {
+            verticalVelocity = jumpForce;
+            isGrounded = false;
+        }
+
+        verticalVelocity += gravity * Time.deltaTime;
+
+        velocity.y = verticalVelocity;
+
+        CollisionFlags flags = controller.Move(velocity * Time.deltaTime);
+
+        isGrounded = (flags & CollisionFlags.Below) != 0;
     }
-
-    verticalVelocity += gravity * Time.deltaTime;
-
-    velocity.y = verticalVelocity;
-
-    CollisionFlags flags = controller.Move(velocity * Time.deltaTime);
-
-    isGrounded = (flags & CollisionFlags.Below) != 0;
-}
 
 
 }
