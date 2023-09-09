@@ -111,7 +111,7 @@ We've designed the controls to be intuitive, utilising standards across most gam
    <tr>
       <th>Action</th>
       <th>Key(s)</th>
-      <th rowspan="8">
+      <th rowspan="9">
         <img src="Images/apple-wireless-keyboard (2).jpg" width="300" alt="Keyboard Image"/>
       </th>
    </tr>
@@ -134,6 +134,10 @@ We've designed the controls to be intuitive, utilising standards across most gam
    <tr>
       <td>Interact/Use</td>
       <td>E</td>
+   </tr>
+   <tr>
+      <td>Drop Item</td>
+      <td>Q</td>
    </tr>
    <tr>
       <td>Help</td>
