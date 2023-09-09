@@ -22,11 +22,10 @@ public class HealthManager : MonoBehaviour
             SceneManager.LoadScene("EndScreen");
         }
 
-        //if (Input.GetKeyDown(KeyCode.Return))
-        if (script.distance<5 && script.counter%75==0 && script.isAttacking)
+        if (script.distance < 5 && script.counter % 75 == 0 && script.isAttacking)
         {
             Debug.Log("Take Damage");
-            TakeDamage(5);
+            TakeDamage(25);
         }
 
     }
