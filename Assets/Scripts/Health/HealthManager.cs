@@ -12,6 +12,8 @@ public class HealthManager : MonoBehaviour
     public Image healthBar;
     public float health = 100f;
 
+    [SerializeField] int reduceHealthMultiplier = 1;
+
     // Update is called once per frame
     void Update()
     {
@@ -27,6 +29,10 @@ public class HealthManager : MonoBehaviour
             Debug.Log("Take Damage");
             TakeDamage(25);
         }
+
+        // Slowly drain health as time passes
+        health -= Time.deltaTime * reduceHealthMultiplier;
+        healthBar.fillAmount = health / 100f;
 
     }
 
