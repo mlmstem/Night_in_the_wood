@@ -42,7 +42,7 @@ public class HealthManager : MonoBehaviour
         Heal(5);
     }
 
-    private void TakeDamage(float damage)
+    public void TakeDamage(float damage)
     {
         health -= damage;
         healthBar.fillAmount = health / 100f;

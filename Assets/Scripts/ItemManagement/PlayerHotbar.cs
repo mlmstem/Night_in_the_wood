@@ -80,19 +80,31 @@ public class PlayerHotbar : MonoBehaviour
                 GameObject itemGameObject = slots[slotIndex].transform.GetChild(0).gameObject;
                 GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
 
-                if (playerObject != null)
-                {
-                    // Get the player health component
-                    HealthManager healthManager = playerObject.GetComponent<HealthManager>();
+                // Get the player health component
+                HealthManager healthManager = playerObject.GetComponent<HealthManager>();
 
-                    if (healthManager != null)
-                    {
-                        // Heal player and destroy item
-                        healthManager.OnHealButtonClick();
-                        Destroy(itemGameObject);
-                    }
+                // If nightshade berry, start poison like effect
+                if (itemGameObject.name.Contains("Nightshade"))
+                {
+                    StartCoroutine(RepeatDamageOverTime(5, 2.5f, healthManager));
                 }
+                // Heal player and destroy item
+                else
+                {
+                    healthManager.OnHealButtonClick();
+                }
+
+                Destroy(itemGameObject);
             }
+        }
+    }
+
+    private IEnumerator RepeatDamageOverTime(int seconds, float damage, HealthManager healthManager)
+    {
+        for (int i = 0; i < seconds; i++)
+        {
+            healthManager.TakeDamage(damage);
+            yield return new WaitForSeconds(1.0f);
         }
     }
 
