@@ -9,6 +9,8 @@ using UnityEngine.SceneManagement;
 public class HealthManager : MonoBehaviour
 {
     public AIChase script;
+    public Monkey_chase script_monkey;
+    public Deer_chase script_deer;
     public Image healthBar;
     public float health = 100f;
 
@@ -24,7 +26,7 @@ public class HealthManager : MonoBehaviour
             SceneManager.LoadScene("EndScreen");
         }
 
-        if (script.distance < 5 && script.counter % 75 == 0 && script.isAttacking)
+        if ((script.distance < 5 && script.counter % 75 == 0 && script.isAttacking) || (script_monkey.distance < 5 && script_monkey.counter % 75 == 0 && script_monkey.isAttacking) || (script_deer.distance < 5 && script_deer.counter % 75 == 0 && script_deer.isAttacking))
         {
             Debug.Log("Take Damage");
             TakeDamage(25);
