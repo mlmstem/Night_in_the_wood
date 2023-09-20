@@ -20,8 +20,7 @@ public class HealthManager : MonoBehaviour
 
         if (health <= 0)
         {
-            Debug.Log("you died");
-            SceneManager.LoadScene("EndScreen");
+            SceneManager.LoadScene("FailScreen");
         }
 
         if (script.distance < 5 && script.counter % 75 == 0 && script.isAttacking)
