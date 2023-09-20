@@ -88,13 +88,14 @@ public class PlayerHotbar : MonoBehaviour
                 {
                     StartCoroutine(RepeatDamageOverTime(5, 2.5f, healthManager));
                 }
-                // Heal player and destroy item
-                else
+                else if (!(itemGameObject.name.Contains("Rock") || itemGameObject.name.Contains("Stick")))
                 {
+                    // Heal player if not crafting item rock or stick
                     healthManager.OnHealButtonClick();
+                    // Destroy Item
+                    Destroy(itemGameObject);
                 }
 
-                Destroy(itemGameObject);
             }
         }
     }
