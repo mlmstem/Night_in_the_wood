@@ -20,7 +20,13 @@ public class SpawnItem : MonoBehaviour
     {
         Vector3 spawnOffset = player.transform.forward * 3.0f;
         Vector3 spawnPosition = player.transform.position + spawnOffset + Vector3.up * 3.0f;
+        Quaternion rotation = Quaternion.identity; // Default rotation
 
-        Instantiate(item, spawnPosition, Quaternion.identity);
+        if (item.name.Contains("Shelter"))
+        {
+            rotation = Quaternion.Euler(-90f, 0f, 0f); // Rotate by -90 degrees on the x-axis if shelter
+        }
+
+        Instantiate(item, spawnPosition, rotation);
     }
 }
