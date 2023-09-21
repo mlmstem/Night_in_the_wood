@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 // Modified code from unity tutorial: https://www.youtube.com/watch?v=DLAIYSMYy2g
 
@@ -8,6 +10,7 @@ public class PlayerHotbar : MonoBehaviour
 {
     [SerializeField] public bool[] isFull;
     [SerializeField] public GameObject[] slots;
+    [SerializeField] private TextMeshProUGUI popupText;
     private int currentSlot = 0;
     private Vector3 originalScale;
     [SerializeField] public GameObject craftedItem;
@@ -156,7 +159,11 @@ public class PlayerHotbar : MonoBehaviour
         // Let player know they can craft
         if (hasSufficientItems)
         {
-            // ToDo UI pop up to let player know they can craft
+            popupText.gameObject.SetActive(true);
+        }
+        else
+        {
+            popupText.gameObject.SetActive(false);
         }
     }
 
