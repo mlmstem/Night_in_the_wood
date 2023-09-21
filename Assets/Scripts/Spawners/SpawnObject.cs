@@ -7,7 +7,7 @@ public class SpawnObject : MonoBehaviour
     [SerializeField] GameObject objectToSpawn;
     private float gameLength = 300.0f; // Spawn for length of game
     private float MinTime = 1.0f;
-    private float MaxTime = 300.0f;
+    private float MaxTime = 5.0f;
 
     void Start()
     {
