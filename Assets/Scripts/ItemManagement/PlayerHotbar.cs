@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 // Modified code from unity tutorial: https://www.youtube.com/watch?v=DLAIYSMYy2g
 
@@ -8,8 +10,11 @@ public class PlayerHotbar : MonoBehaviour
 {
     [SerializeField] public bool[] isFull;
     [SerializeField] public GameObject[] slots;
+    [SerializeField] private TextMeshProUGUI popupText;
     private int currentSlot = 0;
     private Vector3 originalScale;
+    [SerializeField] public GameObject craftedItem;
+    private bool hasSufficientItems = false;
 
     private void Start()
     {
@@ -38,6 +43,13 @@ public class PlayerHotbar : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             UseItem(currentSlot);
+        }
+
+        CheckCrafting();
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            CraftShelter();
         }
     }
 
@@ -87,14 +99,18 @@ public class PlayerHotbar : MonoBehaviour
                 if (itemGameObject.name.Contains("Nightshade"))
                 {
                     StartCoroutine(RepeatDamageOverTime(5, 2.5f, healthManager));
+                    Destroy(itemGameObject);
                 }
-                // Heal player and destroy item
-                else
+                else if (!(itemGameObject.name.Contains("Rock")
+                || itemGameObject.name.Contains("Stick")
+                || itemGameObject.name.Contains("Shelter")))
                 {
+                    // Heal player if not crafting item rock or stick
                     healthManager.OnHealButtonClick();
+                    // Destroy Item
+                    Destroy(itemGameObject);
                 }
 
-                Destroy(itemGameObject);
             }
         }
     }
@@ -108,4 +124,97 @@ public class PlayerHotbar : MonoBehaviour
         }
     }
 
+    private void CheckCrafting()
+    {
+        int requiredSticks = 2;
+        int requiredRocks = 1;
+        int sticksDestroyed = 0;
+        int rocksDestroyed = 0;
+
+        // Collect references to items to be destroyed
+        List<GameObject> itemsToDestroy = new List<GameObject>();
+
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i].transform.childCount > 0)
+            {
+                GameObject itemGameObject = slots[i].transform.GetChild(0).gameObject;
+
+                if (itemGameObject.name.Contains("Stick") && sticksDestroyed < requiredSticks)
+                {
+                    itemsToDestroy.Add(itemGameObject);
+                    sticksDestroyed++;
+                }
+                else if (itemGameObject.name.Contains("Rock") && rocksDestroyed < requiredRocks)
+                {
+                    itemsToDestroy.Add(itemGameObject);
+                    rocksDestroyed++;
+                }
+            }
+        }
+
+        // Check if enough items are found for crafting and set the flag
+        hasSufficientItems = (sticksDestroyed == requiredSticks && rocksDestroyed == requiredRocks);
+
+        // Let player know they can craft
+        if (hasSufficientItems)
+        {
+            popupText.gameObject.SetActive(true);
+        }
+        else
+        {
+            popupText.gameObject.SetActive(false);
+        }
+    }
+
+    private void CraftShelter()
+    {
+        if (hasSufficientItems)
+        {
+            int requiredSticks = 2;
+            int requiredRocks = 1;
+            int sticksDestroyed = 0;
+            int rocksDestroyed = 0;
+
+            // Collect references to items to be destroyed
+            List<GameObject> itemsToDestroy = new List<GameObject>();
+
+            for (int i = 0; i < slots.Length; i++)
+            {
+                if (slots[i].transform.childCount > 0)
+                {
+                    GameObject itemGameObject = slots[i].transform.GetChild(0).gameObject;
+
+                    if (itemGameObject.name.Contains("Stick") && sticksDestroyed < requiredSticks)
+                    {
+                        itemsToDestroy.Add(itemGameObject);
+                        sticksDestroyed++;
+                    }
+                    else if (itemGameObject.name.Contains("Rock") && rocksDestroyed < requiredRocks)
+                    {
+                        itemsToDestroy.Add(itemGameObject);
+                        rocksDestroyed++;
+                    }
+                }
+            }
+
+            // Check if enough items are found for crafting and reset the flag
+            if (sticksDestroyed == requiredSticks && rocksDestroyed == requiredRocks)
+            {
+                // Destroy the collected items
+                foreach (var itemToDestroy in itemsToDestroy)
+                {
+                    Destroy(itemToDestroy);
+                }
+
+                // Craft the item
+                PlayerHotbar hotbar = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHotbar>();
+                hotbar.isFull[currentSlot] = true;
+                Instantiate(craftedItem, hotbar.slots[currentSlot].transform, false);
+
+                // Reset the flag as crafting is complete
+                hasSufficientItems = false;
+            }
+        }
+    }
 }

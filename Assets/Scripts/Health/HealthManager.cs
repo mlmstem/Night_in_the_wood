@@ -11,8 +11,8 @@ public class HealthManager : MonoBehaviour
     public AIChase script;
     public Image healthBar;
     public float health = 100f;
-
     [SerializeField] int reduceHealthMultiplier = 1;
+    private bool isInTriggerZone = false;
 
     // Update is called once per frame
     void Update()
@@ -20,8 +20,7 @@ public class HealthManager : MonoBehaviour
 
         if (health <= 0)
         {
-            Debug.Log("you died");
-            SceneManager.LoadScene("EndScreen");
+            SceneManager.LoadScene("FailScreen");
         }
 
         if (script.distance < 5 && script.counter % 75 == 0 && script.isAttacking)
@@ -30,9 +29,25 @@ public class HealthManager : MonoBehaviour
             TakeDamage(25);
         }
 
-        // Slowly drain health as time passes
-        health -= Time.deltaTime * reduceHealthMultiplier;
-        healthBar.fillAmount = health / 100f;
+        if (isInTriggerZone && GameObject.Find("Rain(Clone)") != null)
+        {
+            // Health not lost if hiding in shelter during rain
+        }
+        else
+        {
+            // Slowly drain health as time passes
+            if (GameObject.Find("Rain(Clone)") != null)
+            {
+                // Increase health lost in the rain
+                health -= Time.deltaTime * reduceHealthMultiplier * 3;
+            }
+            else
+            {
+                health -= Time.deltaTime * reduceHealthMultiplier;
+            }
+
+            healthBar.fillAmount = health / 100f;
+        }
 
     }
 
@@ -53,5 +68,32 @@ public class HealthManager : MonoBehaviour
         health += healAmount;
         health = Mathf.Clamp(health, 0, 100);
         healthBar.fillAmount = health / 100f;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+        // Check if the player entered the shelter
+        if (other.name == "ShelterTrigger")
+        {
+            // Player entered the shelter, stop reducing health
+            isInTriggerZone = true;
+            Debug.Log("inzone");
+        }
+
+    }
+
+    // OnTriggerExit is called when the player exits the trigger zone
+    private void OnTriggerExit(Collider other)
+    {
+
+        // Check if the player exited the shelter
+        if (other.name == "ShelterTrigger")
+        {
+            // Player exited the shelter, resume reducing health
+            isInTriggerZone = false;
+            Debug.Log("outzone");
+        }
+
     }
 }
