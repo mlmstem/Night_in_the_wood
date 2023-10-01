@@ -111,21 +111,13 @@ We've designed the controls to be intuitive, utilising standards across most gam
    <tr>
       <th>Action</th>
       <th>Key(s)</th>
-      <th rowspan="9">
+      <th rowspan="6">
         <img src="Images/apple-wireless-keyboard (2).jpg" width="300" alt="Keyboard Image"/>
       </th>
    </tr>
    <tr>
       <td>Movement</td>
       <td>WASD</td>
-   </tr>
-   <tr>
-      <td>Crouch</td>
-      <td>CTRL</td>
-   </tr>
-   <tr>
-      <td>Run</td>
-      <td>SHIFT</td>
    </tr>
    <tr>
       <td>Jump</td>
@@ -135,17 +127,13 @@ We've designed the controls to be intuitive, utilising standards across most gam
       <td>Interact/Use</td>
       <td>E</td>
    </tr>
+  <tr>
+      <td>Craft</td>
+      <td>C</td>
+   </tr>
    <tr>
       <td>Drop Item</td>
       <td>Q</td>
-   </tr>
-   <tr>
-      <td>Help</td>
-      <td>H</td>
-   </tr>
-   <tr>
-      <td>Inventory</td>
-      <td>I</td>
    </tr>
 </table>
 
