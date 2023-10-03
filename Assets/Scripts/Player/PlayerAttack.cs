@@ -13,18 +13,12 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        // Check for attack input (e.g., using the 'Q' key).
-        if (Input.GetKeyDown(KeyCode.Q))
+        // Check for attack input (e.g., left mouse button).
+        if (Input.GetMouseButtonDown(0)) // 0 corresponds to the left mouse button.
         {
             // Trigger the attack animation.
             animator.SetTrigger("Attack");
         }
-
-        // Check if the player is moving forward.
-        bool isMovingForward = controller.velocity.magnitude > 0.1f;
-
-        // Set the "isRunning" parameter based on player movement.
-        animator.SetBool("isRunning", isMovingForward);
     }
 }
 
