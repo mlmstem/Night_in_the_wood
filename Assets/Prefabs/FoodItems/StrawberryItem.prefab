@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 0}
+  monkey_eats: 0
 --- !u!1 &7833616417251840471
 GameObject:
   m_ObjectHideFlags: 0
