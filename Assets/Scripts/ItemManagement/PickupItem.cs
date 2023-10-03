@@ -9,7 +9,7 @@ public class PickupItem : MonoBehaviour
 
     private PlayerHotbar hotbar;
     public GameObject itemButton;
-    public bool monkey_eats = false;
+    public bool monkey_eats;
     private float counter = 0;
 
     void Start()
@@ -21,7 +21,7 @@ public class PickupItem : MonoBehaviour
         counter = counter + 1;
         if (counter % 10000 == 0)
         {
-            monkey_eats = false;
+            //monkey_eats = false;
         }
     }
 
@@ -44,9 +44,11 @@ public class PickupItem : MonoBehaviour
         }
         if (other.CompareTag("Monkey"))
         {
-            Destroy(transform.parent.gameObject);
             monkey_eats = true;
+            Debug.Log("monkey_eats");
+            Destroy(transform.parent.gameObject);
             
+
         }
     }
 
