@@ -153,4 +153,27 @@ TODO (due milestone 3) - see specification for details
 
 ## References and External Resources
 
-TODO (to be continuously updated) - see specification for details
+### Unity Assets
+Player: https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/free-low-poly-human-rpg-character-219979
+
+Bear: https://assetstore.unity.com/packages/3d/characters/animals/free-stylized-bear-rpg-forest-animal-228910
+
+Other Animals: https://assetstore.unity.com/packages/3d/characters/animals/quirky-series-free-animals-pack-178235
+
+Environment: https://assetstore.unity.com/packages/3d/environments/landscapes/free-low-poly-nature-forest-205742
+
+Food: https://assetstore.unity.com/packages/3d/props/food/fruit-blocks-128327
+
+
+### Animals
+Animator: https://youtu.be/tveRasxUabo?si=i1JQ-UERIopwjCZP
+
+Follow Player: https://www.youtube.com/watch?v=zssU0MZcIx8
+
+### Shaders
+https://www.youtube.com/watch?v=wcGT_jji5xQ
+https://learn.unity.com/tutorial/creating-a-vertex-displacement-shader#
+
+### Timer
+https://www.youtube.com/watch?v=hxpUk0qiRGs
+
