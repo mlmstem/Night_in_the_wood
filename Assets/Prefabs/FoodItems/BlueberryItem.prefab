@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 7167755688090049515, guid: f98fc7d6cb1dcf244ade8b75e6739ba0, type: 3}
+  monkey_eats: 0
 --- !u!1 &3503188967285466119
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,5 +200,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.8, y: 0.8, z: 0.8}
   m_Center: {x: 0, y: 0.5, z: 0}
