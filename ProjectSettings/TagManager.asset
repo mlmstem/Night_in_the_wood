@@ -9,6 +9,8 @@ TagManager:
   - Monkey
   - strawberry
   - Rain
+  - Bear
+  - Deer
   layers:
   - Default
   - TransparentFX
