@@ -19,7 +19,10 @@ public class Monkey_chase : MonoBehaviour
     //public RaycastHit Shot;
    // public float TargetDistance;
     public bool isAttacking = false;
-    public PickupItem script;
+    public PickupItem script1;
+    public PickupItem script2;
+    public PickupItem script3;
+    public PickupItem script4;
     // new version
     public NavMeshAgent agent;
     public Transform player;
@@ -54,35 +57,25 @@ public class Monkey_chase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (script.monkey_eats)
-        {
-            Debug.Log("Ben");
-        }
+        
         counter=counter+1;
         distance = Vector3.Distance(this.transform.position, player.transform.position);
         playerInSightRange = distance < sightRange;
         //Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = distance < attackRange;
         // Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
-        if ((!playerInSightRange && !playerInAttackRange) || script.monkey_eats) Patroling();
-        if (playerInSightRange && !playerInAttackRange && !script.monkey_eats) ChasePlayer();
-        if (playerInAttackRange && playerInSightRange && !script.monkey_eats) AttackPlayer();
+        if ((!playerInSightRange && !playerInAttackRange) || script1.monkey_eats || script2.monkey_eats || script3.monkey_eats || script4.monkey_eats) Patroling();
+        if (playerInSightRange && !playerInAttackRange && !script1.monkey_eats && !script2.monkey_eats && !script3.monkey_eats && !script4.monkey_eats) ChasePlayer();
+        if (playerInAttackRange && playerInSightRange && !script1.monkey_eats && !script2.monkey_eats && !script3.monkey_eats && !script4.monkey_eats) AttackPlayer();
         if (counter% 75 == 0)
         {
             last_pos = transform.position;
         }
     }
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Item"))
-        {
-            monkey_eat = true;
-            Debug.Log("Bennnn");
-        }
-    }
+   
     private void Patroling()
     {
-        Debug.Log("patrol");
+        //Debug.Log("patrol");
         animator.SetTrigger("monkey_walk");
         isAttacking = false;
         if (!walkPointSet || last_pos== transform.position) SearchWalkPoint();
@@ -108,7 +101,7 @@ public class Monkey_chase : MonoBehaviour
 
     private void ChasePlayer()
     {
-        Debug.Log("chase");
+        //Debug.Log("chase");
         isAttacking = false;
         playerpoint = new Vector3(player.position.x, 0, player.position.z);
         agent.SetDestination(playerpoint);
@@ -117,7 +110,7 @@ public class Monkey_chase : MonoBehaviour
 
     private void AttackPlayer()
     {
-        Debug.Log("attack");
+        //Debug.Log("attack");
         isAttacking = true;
         //Make sure enemy doesn't move
         enemypoint = new Vector3(transform.position.x, 0, transform.position.z);
