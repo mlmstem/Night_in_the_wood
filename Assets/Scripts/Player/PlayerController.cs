@@ -10,12 +10,10 @@ public class Controlls : MonoBehaviour
     [SerializeField][Range(0.0f,0.5f)] float moveSmoothTime = 0.3f;
     [SerializeField][Range(0.0f,0.5f)] float mouseSmoothTime = 0.03f;
 
-
     [SerializeField] float jumpForce = 8.0f;
     [SerializeField] float gravity = -9.81f;
     float verticalVelocity = 0.0f;
     bool isGrounded = true;
-
 
     [SerializeField] bool lockCursor = true;
 
@@ -29,12 +27,16 @@ public class Controlls : MonoBehaviour
     Vector2 currentMousoeDeltaVelocity = Vector2.zero;
     private Animator animator;
 
+    private Vector3 lastPosition;
 
+    private bool isMovingForward = false;
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
         animator = GetComponentInChildren<Animator>();
+
+        lastPosition = transform.position;
 
         // if (lockCursor){
         //     Cursor.lockState = CursorLockMode.Locked;
@@ -43,65 +45,76 @@ public class Controlls : MonoBehaviour
         // }   
     }
 
-    // Update is called once per frame
     void Update()
+    {   
+        // Check if the player has moved to a new position
+        
 
-    {
         UpdateMouseLook();
         UpdateMovement();
+
+        if (transform.position != lastPosition)
+        {
+            isMovingForward = true;
+        }
+        else
+        {
+            isMovingForward = false;
+            animator.SetBool("isRunning",isMovingForward);
+        }
+
+        lastPosition = transform.position;
+
+
     }
 
-    void UpdateMouseLook(){
-    Vector2 targetMouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+    void UpdateMouseLook()
+    {
+        Vector2 targetMouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
 
-    currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMousoeDeltaVelocity, mouseSmoothTime);
+        currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMousoeDeltaVelocity, mouseSmoothTime);
 
+        // Reverse the vertical mouse rotation direction
+        float mouseYRotation = -currentMouseDelta.y * mouseSensitivity;  // Invert the sign for vertical rotation
+        cameraPitch = Mathf.Clamp(cameraPitch + mouseYRotation, -90.0f, 90.0f);
 
-    // Reverse the vertical mouse rotation direction
-    float mouseYRotation = -currentMouseDelta.y * mouseSensitivity;  // Invert the sign for vertical rotation
-    cameraPitch = Mathf.Clamp(cameraPitch + mouseYRotation, -90.0f, 90.0f);
+        playerCamera.localEulerAngles = Vector3.right * cameraPitch;
 
-    playerCamera.localEulerAngles = Vector3.right * cameraPitch;
-
-    transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
-
+        transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
     }
 
     void UpdateMovement()
-{
-    Vector2 targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-    targetDir.Normalize();
-
-    currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
-
-    // Check if the player is moving forward.
-    bool isMovingForward = currentDir.y > 0.0f;
-
-    Vector3 velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * walkSpeed;
-
-    // Jump logic
-    if (isGrounded && Input.GetButtonDown("Jump"))
     {
-        // Trigger the "isJumping" animation when the player jumps.
-        animator.SetTrigger("isJumping");
+        Vector2 targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        targetDir.Normalize();
 
-        verticalVelocity = jumpForce;
-        isGrounded = false;
+        currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
+
+        // Check if the player is moving forward.
+        isMovingForward = currentDir.y > 0.0f;
+
+        Vector3 velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * walkSpeed;
+
+        // Jump logic
+        if (isGrounded && Input.GetButtonDown("Jump"))
+        {
+            // Trigger the "isJumping" animation when the player jumps.
+            animator.SetTrigger("isJumping");
+
+            verticalVelocity = jumpForce;
+            isGrounded = false;
+        }
+
+        verticalVelocity += gravity * Time.deltaTime;
+
+        velocity.y = verticalVelocity;
+
+        CollisionFlags flags = controller.Move(velocity * Time.deltaTime);
+
+        isGrounded = (flags & CollisionFlags.Below) != 0;
+
+        // Trigger the "isRunning" animation when the player moves forward.
+
+        animator.SetBool("isRunning", isMovingForward);
     }
-
-    verticalVelocity += gravity * Time.deltaTime;
-
-    velocity.y = verticalVelocity;
-
-    CollisionFlags flags = controller.Move(velocity * Time.deltaTime);
-
-    isGrounded = (flags & CollisionFlags.Below) != 0;
-
-    // Trigger the "isRunning" animation when the player moves forward.
-
-    animator.SetBool("isRunning", isMovingForward);
-
-
-}
-
 }

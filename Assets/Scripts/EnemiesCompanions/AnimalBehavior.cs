@@ -10,10 +10,11 @@ public class AnimalBehavior : MonoBehaviour
     private Vector3 initialPosition;
     private bool isRetreating = false;
     private Animator animator;
+    private int hitCounter = 0; // Counter to track hits with a stick.
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Enemy").transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform; // Assuming player tag is "Player."
         initialPosition = transform.position;
         animator = GetComponent<Animator>();
     }
@@ -66,4 +67,31 @@ public class AnimalBehavior : MonoBehaviour
         bool isPlayerMoving = player.GetComponent<CharacterController>().velocity.magnitude > 0.1f;
         animator.SetBool("isRunning", isRetreating);
     }
+
+    // Function to handle stick hits.
+    public void HandleStickHit()
+    {
+        hitCounter++;
+
+        Debug.Log("hitting the enemy");
+
+   
+        animator.SetBool("Dead", true);
+        Debug.Log("Dead");
+
+        StartCoroutine(DestroyAfterAnimation());
+            
+            
+        
+    }
+
+    private IEnumerator DestroyAfterAnimation()
+{
+    // Assuming "Dead" is the trigger that plays the death animation.
+    // Wait for the death animation to finish.
+    yield return new WaitForSeconds(2);
+
+    // Destroy the snake GameObject after the animation is done.
+    Destroy(gameObject);
+}
 }

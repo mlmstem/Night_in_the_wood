@@ -94,6 +94,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stick
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0e85c90891a9a5f4aadc197a9942a585, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0e85c90891a9a5f4aadc197a9942a585, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -201,3 +205,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 0}
+  monkey_eats: 0
