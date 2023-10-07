@@ -8,6 +8,9 @@ TagManager:
   - Enemy
   - Monkey
   - strawberry
+  - Rain
+  - Bear
+  - Deer
   layers:
   - Default
   - TransparentFX

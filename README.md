@@ -22,8 +22,6 @@ placeholder for it [here](GDD.md).
 
 ## Evaluation Plan
 
-TODO (due milestone 1) - see specification for details
-
 ### Evaluation Techniques
 
 **1. Questionnaire:**
@@ -33,6 +31,7 @@ TODO (due milestone 1) - see specification for details
      - Allows you to obtain direct feedback on various game features.
      - Enables you to measure user satisfaction and preferences.
    - *Tasks:* Participants will be asked to fill out a questionnaire that assesses their overall experience, satisfaction, and specific feedback on game features.
+     - Questionnaire Link: https://docs.google.com/forms/u/1/d/e/1FAIpQLSe3Yxy0fIxNo-uLitACOqKc1xJjpAFPvUdw9duivfnhWJoQYg/viewform?usp=sharing&fbclid=IwAR0-Jp6ly-RJMXUgxh3wchYhzGywGuVIJf07WxwDISIcQa30kMEKQowUnxA
 
 **2. Cooperative Evaluation:**
    - *Why:* Cooperative evaluation provides a less intrusive way to observe and interact with users while they engage with your game.
@@ -40,6 +39,12 @@ TODO (due milestone 1) - see specification for details
      - Allows you to watch how participants play the game and see if they are using it in the intended way.
      - Enables the evaluator to provide immediate solutions to identified problems.
    - *Tasks:* In this evaluation technique, users will be encouraged to perform tasks such as crafting, eating, and attacking within the game, while the evaluator observes and records their actions and interactions.
+     - Read the instructions and start the game
+     - Survive the full 5 minutes
+        - Defeat the bear
+        - Find and choose between berries
+        - Find Materials and Craft a Shelter (‘Save yourself from the rain’ to be more elusive)
+        - Complete all the questions
 
 By combining the use of questionnaires for quantitative data and cooperative evaluation for more in-depth insights, we can comprehensively assess our game's performance and user satisfaction. Additionally, the specific tasks mentioned above will help gather targeted feedback on essential gameplay elements, ensuring that your game aligns with the intended design and user expectations.
 

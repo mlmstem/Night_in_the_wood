@@ -61,7 +61,7 @@ public class HealthManager : MonoBehaviour
     public void OnHealButtonClick()
     {
         Debug.Log("Heal Button Clicked");
-        Heal(5);
+        Heal(10);
     }
 
     public void TakeDamage(float damage)

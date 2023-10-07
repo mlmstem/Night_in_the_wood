@@ -77,7 +77,7 @@ public class Deer_chase : MonoBehaviour
 
     private void Patroling()
     {
-        Debug.Log("patrol");
+        // Debug.Log("patrol");
         //animator.SetTrigger("monkey_walk");
         isAttacking = false;
         if (!walkPointSet || last_pos == transform.position || counter % 450 == 0) SearchWalkPoint();

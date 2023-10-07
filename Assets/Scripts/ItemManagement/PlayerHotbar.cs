@@ -30,6 +30,17 @@ public class PlayerHotbar : MonoBehaviour
 
         float scrollInput = Input.GetAxis("Mouse ScrollWheel");
 
+        // Select item slots using numbers on keyboard
+        for (int i = 0; i < 5; i++)
+        {
+            if (Input.GetKeyDown((i + 1).ToString()))
+            {
+                currentSlot = i;
+                UpdateHotbarUI();
+            }
+        }
+
+        // Select item slots with mouse scroll
         if (scrollInput != 0f)
         {
             currentSlot += (int)Mathf.Sign(scrollInput);
