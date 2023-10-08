@@ -86,12 +86,13 @@ public class AnimalBehavior : MonoBehaviour
     }
 
     private IEnumerator DestroyAfterAnimation()
-{
-    // Assuming "Dead" is the trigger that plays the death animation.
-    // Wait for the death animation to finish.
-    yield return new WaitForSeconds(2);
+    {
+        // Assuming "Dead" is the trigger that plays the death animation.
+        // Wait for the death animation to finish.
+        yield return new WaitForSeconds(2);
 
-    // Destroy the snake GameObject after the animation is done.
-    Destroy(gameObject);
-}
+        // Disable the snake GameObject after the animation is done.
+        gameObject.SetActive(false);
+        // Destroy(gameObject);
+    }
 }
