@@ -43,7 +43,7 @@ placeholder for it [here](GDD.md).
      - Survive the full 5 minutes
         - Defeat the bear
         - Find and choose between berries
-        - Find Materials and Craft a Shelter (‘Save yourself from the rain’ to be more elusive)
+        - Find Materials and Craft a Shelter
         - Complete all the questions
 
 By combining the use of questionnaires for quantitative data and cooperative evaluation for more in-depth insights, we can comprehensively assess our game's performance and user satisfaction. Additionally, the specific tasks mentioned above will help gather targeted feedback on essential gameplay elements, ensuring that your game aligns with the intended design and user expectations.
@@ -92,19 +92,22 @@ For our evaluation, we will employ the following participant recruitment strateg
    - *Metrics:*
      - **Average Scores:** We will calculate the average scores assigned to various game features to assess overall player enjoyment and satisfaction quantitatively.
      - **Frequencies:** We'll delve into the frequencies of specific responses to uncover trends and recurring patterns in player feedback.
-   - *Description:* The questionnaire data will provide valuable insights into player satisfaction. Calculating average scores will enable us to gauge the overall level of enjoyment that players experienced. Moreover, analyzing frequencies will help us identify common themes and specific player comments within open-ended responses, offering deeper qualitative insights into player preferences and concerns.
+   - *Description:* The questionnaire data will provide valuable insights into player satisfaction. Calculating average scores will enable us to gauge the overall level of enjoyment that players experienced. Moreover, analysing frequencies will help us identify common themes and specific player comments within open-ended responses, offering deeper qualitative insights into player preferences and concerns.
 
 **2. Evaluation Data Analysis:**
    - *Metrics:*
      - **Frequency of Player Deaths:** We will measure the frequency of player deaths throughout the game to assess gameplay performance.
-   - *Description:* During the evaluation phase, our focus will be on quantitative metrics related to gameplay. Specifically, we will scrutinize the frequency of player deaths, as this metric can unveil potential challenges or spikes in difficulty at specific points in the game. Identifying these patterns will be crucial for pinpointing areas that may require adjustments to create a more balanced and enjoyable gaming experience.
+     - **Task Completion Time**: Measure the time taken to complete each task.
+     - **Number of Attempts**: Count the number of attempts made for each task.
+     - **Time to Find Materials/Item**: Measure the time taken to find materials for crafting o items for consumption.
+   - *Description:* During the evaluation phase, our focus will be on quantitative metrics related to gameplay. Specifically, we will scrutinise the frequency of player deaths, as this metric can unveil potential challenges or spikes in difficulty at specific points in the game. Identifying these patterns will be crucial for pinpointing areas that may require adjustments to create a more balanced and enjoyable gaming experience.
 
 ### Timeline
 
 **Conduct Evaluations (Week Following 8 October):** 
 During this phase, we will actively engage with our selected participants. We will conduct both questionnaires and cooperative evaluations to gather real-time feedback on the game's performance and user experience.
 
-**Analyze Changes (3 Days Following Evaluation Week):** 
+**Analyse Changes (3 Days Following Evaluation Week):** 
 Immediately after the evaluation week, we will dedicate three days to analyse the collected data. We will meticulously review questionnaire responses, cooperative evaluation notes, and any video/audio recordings. This comprehensive analysis will form the basis for our decision-making process.
 
 **Make Changes (Following Analysis Phase):** 
@@ -135,9 +138,9 @@ To effectively manage responsibilities within our team and ensure equal contribu
 - 6 x Questionnaire
 - 6 x Cooperative Evaluation
 
-**Data Summarization and Analysis:**
-- The member who conducted each evaluation will be responsible for summarizing the results.
-- Once the individual summaries are complete, we will come together as a group to analyze the data collectively.
+**Data Summarisation and Analysis:**
+- The member who conducted each evaluation will be responsible for summarising the results.
+- Once the individual summaries are complete, we will come together as a group to analyse the data collectively.
 - Our analysis will focus on noting common themes, trends, and patterns across the evaluations.
 
 **Addressing Major Issues or Changes:**
