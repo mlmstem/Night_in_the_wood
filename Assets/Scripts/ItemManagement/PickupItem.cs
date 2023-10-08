@@ -9,20 +9,10 @@ public class PickupItem : MonoBehaviour
 
     private PlayerHotbar hotbar;
     public GameObject itemButton;
-    public bool monkey_eats;
-    private float counter = 0;
 
     void Start()
     {
         hotbar = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHotbar>();
-    }
-    void Update()
-    {
-        counter = counter + 1;
-        if (counter % 10000 == 0)
-        {
-            //monkey_eats = false;
-        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -41,14 +31,6 @@ public class PickupItem : MonoBehaviour
                     break;
                 }
             }
-        }
-        if (other.CompareTag("Monkey"))
-        {
-            monkey_eats = true;
-            Debug.Log("monkey_eats");
-            Destroy(transform.parent.gameObject);
-            
-
         }
     }
 

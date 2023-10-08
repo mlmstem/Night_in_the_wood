@@ -11,6 +11,11 @@ public class HealthManager : MonoBehaviour
     public AIChase script;
     public Monkey_chase script_monkey;
     public Deer_chase script_deer;
+
+    public Lizard_snake_chase script_snake;
+
+    public AIChase script_lizard;
+    
     public Image healthBar;
     public float health = 100f;
     [SerializeField] int reduceHealthMultiplier = 1;
@@ -25,7 +30,7 @@ public class HealthManager : MonoBehaviour
             SceneManager.LoadScene("FailScreen");
         }
 
-        if ((script.distance < 5 && script.counter % 75 == 0 && script.isAttacking) || (script_monkey.distance < 5 && script_monkey.counter % 75 == 0 && script_monkey.isAttacking) || (script_deer.distance < 5 && script_deer.counter % 75 == 0 && script_deer.isAttacking))
+        if ((script.distance < 5 && script.counter % 75 == 0 && script.isAttacking) || (script_monkey.distance < 5 && script_monkey.counter % 75 == 0 && script_monkey.isAttacking) || (script_deer.distance < 5 && script_deer.counter % 75 == 0 && script_deer.isAttacking)|| (script_snake.distance < 5 && script_snake.counter % 75 == 0 && script_snake.isAttacking) || (script_lizard.distance < 5 && script_lizard.counter % 75 == 0 && script_lizard.isAttacking))
         {
             Debug.Log("Take Damage");
             TakeDamage(25);

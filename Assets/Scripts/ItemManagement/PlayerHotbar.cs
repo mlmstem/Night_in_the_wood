@@ -16,6 +16,8 @@ public class PlayerHotbar : MonoBehaviour
     [SerializeField] public GameObject craftedItem;
     private bool hasSufficientItems = false;
 
+    [SerializeField] private GameObject log01a; // Reference to the log_01_a GameObject.
+
     private void Start()
     {
         currentSlot = 0;
@@ -45,6 +47,25 @@ public class PlayerHotbar : MonoBehaviour
             currentSlot = Mathf.Clamp(currentSlot, 0, slots.Length - 1);
             UpdateHotbarUI();
         }
+
+        if (slots[currentSlot].transform.childCount > 0)
+            {
+                GameObject itemGameObject = slots[currentSlot].transform.GetChild(0).gameObject;
+                if (itemGameObject.name.Contains("Stick"))
+                {
+                    log01a.SetActive(true);
+                }
+                else
+                {
+                    log01a.SetActive(false);
+                }
+            }
+            else
+            {
+                log01a.SetActive(false);
+            }
+
+
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -228,4 +249,13 @@ public class PlayerHotbar : MonoBehaviour
             }
         }
     }
+
+
+
+
+
+
+
+
+
 }
