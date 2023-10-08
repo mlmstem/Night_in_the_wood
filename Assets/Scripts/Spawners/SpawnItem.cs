@@ -19,7 +19,7 @@ public class SpawnItem : MonoBehaviour
     public void SpawnDroppedItem()
     {
         Vector3 spawnOffset = player.transform.forward * 3.0f;
-        Vector3 spawnPosition = player.transform.position + spawnOffset + Vector3.up * 3.0f;
+        Vector3 spawnPosition = player.transform.position + spawnOffset + Vector3.up * 2.0f;
         Quaternion rotation = Quaternion.identity; // Default rotation
 
         if (item.name.Contains("Shelter"))
