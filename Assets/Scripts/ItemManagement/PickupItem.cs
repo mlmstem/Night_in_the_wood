@@ -42,14 +42,6 @@ public class PickupItem : MonoBehaviour
                 }
             }
         }
-        if (other.CompareTag("Monkey"))
-        {
-            monkey_eats = true;
-            Debug.Log("monkey_eats");
-            Destroy(transform.parent.gameObject);
-            
-
-        }
     }
 
 }
