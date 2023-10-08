@@ -67,9 +67,8 @@ An adventurous man embarked on a solo hike through South America's Amazon jungle
 * Bear
 * Snake
 * Monkey
-* Wolf
 * Lizard
-* Wasp
+* Deer
 
 ### Character background
 A traveller who is extensively exploring South America but with no previous experience in wilderness survival. Struggling with his lack of survival knowledge, he is confronted with the harsh reality of being lost.
@@ -111,7 +110,7 @@ We've designed the controls to be intuitive, utilising standards across most gam
    <tr>
       <th>Action</th>
       <th>Key(s)</th>
-      <th rowspan="6">
+      <th rowspan="7">
         <img src="Images/apple-wireless-keyboard (2).jpg" width="300" alt="Keyboard Image"/>
       </th>
    </tr>
@@ -124,8 +123,12 @@ We've designed the controls to be intuitive, utilising standards across most gam
       <td>SPACE</td>
    </tr>
    <tr>
-      <td>Interact/Use</td>
+      <td>Interact/Use/Attack </td>
       <td>E</td>
+   </tr>
+   <tr>
+      <td>Attack (other option)</td>
+      <td> Left Mouse Click </td>
    </tr>
   <tr>
       <td>Craft</td>
@@ -134,7 +137,7 @@ We've designed the controls to be intuitive, utilising standards across most gam
    <tr>
       <td>Drop Item</td>
       <td>Q</td>
-   </tr>
+   </tr> 
 </table>
 
 
@@ -149,14 +152,11 @@ The game's progression is a balance between survival and learning with constant 
 </div>
 
 
-### Score/Educational Questions
+### Educational Questions
 
-Furthermore, the game will periodically present players with survival-related questions. These questions range from identifying edible plants to making decisions about creating shelter and treating injuries. Correct answers provide 'knowledge' points that players can redeem for advantages in the game, such as healing boosts. 
+Furthermore, the game will periodically present players with survival-related questions. These questions range from identifying edible plants to making decisions about creating shelter and treating injuries.
 <div align="center">
-  <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/kingdom-hearts-3/8/83/Kh3_mini_game_08.jpg" width="350">
   <img src="Images/question.png" width="250">
-
-  <sup><sub> Left image from https://oyster.ignimgs.com/mediawiki/apis.ign.com/kingdom-hearts-3/8/83/Kh3_mini_game_08.jpg </sub></sup>
 </div>
 
 
