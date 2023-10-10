@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//Modified code from Unity tutorial: https://www.youtube.com/watch?v=m9hj9PdO328
+
 [ExecuteAlways]
 public class LightingManager : MonoBehaviour
 {
