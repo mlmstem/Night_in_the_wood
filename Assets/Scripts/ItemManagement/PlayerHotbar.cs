@@ -10,7 +10,9 @@ public class PlayerHotbar : MonoBehaviour
 {
     [SerializeField] public bool[] isFull;
     [SerializeField] public GameObject[] slots;
-    [SerializeField] private TextMeshProUGUI popupText;
+    [SerializeField] private TextMeshProUGUI popupTextCraft;
+    [SerializeField] private TextMeshProUGUI popupTextStick;
+    [SerializeField] private TextMeshProUGUI popupTextShelter;
     private int currentSlot = 0;
     private Vector3 originalScale;
     [SerializeField] public GameObject craftedItem;
@@ -49,21 +51,34 @@ public class PlayerHotbar : MonoBehaviour
         }
 
         if (slots[currentSlot].transform.childCount > 0)
+        {
+            GameObject itemGameObject = slots[currentSlot].transform.GetChild(0).gameObject;
+            if (itemGameObject.name.Contains("Stick"))
             {
-                GameObject itemGameObject = slots[currentSlot].transform.GetChild(0).gameObject;
-                if (itemGameObject.name.Contains("Stick"))
-                {
-                    log01a.SetActive(true);
-                }
-                else
-                {
-                    log01a.SetActive(false);
-                }
+                log01a.SetActive(true);
+                popupTextStick.gameObject.SetActive(true);
+
             }
             else
             {
                 log01a.SetActive(false);
+                popupTextStick.gameObject.SetActive(false);
             }
+
+            if (itemGameObject.name.Contains("Shelter"))
+            {
+                popupTextShelter.gameObject.SetActive(true);
+
+            }
+            else
+            {
+                popupTextShelter.gameObject.SetActive(false);
+            }
+        }
+        else
+        {
+            log01a.SetActive(false);
+        }
 
 
 
@@ -191,11 +206,12 @@ public class PlayerHotbar : MonoBehaviour
         // Let player know they can craft
         if (hasSufficientItems)
         {
-            popupText.gameObject.SetActive(true);
+            popupTextCraft.gameObject.SetActive(true);
+            popupTextStick.gameObject.SetActive(false);
         }
         else
         {
-            popupText.gameObject.SetActive(false);
+            popupTextCraft.gameObject.SetActive(false);
         }
     }
 

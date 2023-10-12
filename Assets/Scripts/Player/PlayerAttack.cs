@@ -5,22 +5,20 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     private Animator animator;
-    private CharacterController controller; // Assuming the player uses CharacterController.
-    public GameObject stickObject; // Reference to the stick object.
-    private Collider stickCollider; // Reference to the stick's collider.
-    public float colliderEnableDuration = 0.5f; // Adjust the duration as needed.
+    private CharacterController controller;
+    public GameObject stickObject;
+    private Collider stickCollider;
+    public float colliderEnableDuration = 0.5f;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
-        
-        // Assuming you've assigned the stick object in the Unity Inspector.
-        // If not, make sure to assign it there.
+
         if (stickObject != null)
         {
             stickCollider = stickObject.GetComponent<BoxCollider>();
-            
+
             // Disable the collider initially.
             if (stickCollider != null)
             {
@@ -31,8 +29,8 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        // Check for attack input (e.g., left mouse button).
-        if (stickObject != null && stickObject.activeInHierarchy && (Input.GetMouseButtonDown(0) || (Input.GetKeyDown(KeyCode.E)))) // 0 corresponds to the left mouse button.
+        // Check for attack input and stick is selected
+        if (stickObject != null && stickObject.activeInHierarchy && Input.GetKeyDown(KeyCode.E)) // 0 corresponds to the left mouse button.
         {
             // Trigger the attack animation.
             animator.SetTrigger("Attack");
