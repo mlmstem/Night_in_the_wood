@@ -15,10 +15,10 @@ public class HealthManager : MonoBehaviour
     public Lizard_snake_chase script_snake;
 
     public AIChase script_lizard;
-    
+
     public Image healthBar;
     public float health = 100f;
-    [SerializeField] int reduceHealthMultiplier = 1;
+    private float reduceHealthMultiplier = 0.7f;
     private bool isInTriggerZone = false;
 
     // Update is called once per frame
@@ -30,7 +30,7 @@ public class HealthManager : MonoBehaviour
             SceneManager.LoadScene("FailScreen");
         }
 
-        if ((script.distance < 5 && script.counter % 75 == 0 && script.isAttacking) || (script_monkey.distance < 5 && script_monkey.counter % 75 == 0 && script_monkey.isAttacking) || (script_deer.distance < 5 && script_deer.counter % 75 == 0 && script_deer.isAttacking)|| (script_snake.distance < 5 && script_snake.counter % 75 == 0 && script_snake.isAttacking) || (script_lizard.distance < 5 && script_lizard.counter % 75 == 0 && script_lizard.isAttacking))
+        if ((script.distance < 5 && script.counter % 75 == 0 && script.isAttacking) || (script_monkey.distance < 5 && script_monkey.counter % 75 == 0 && script_monkey.isAttacking) || (script_deer.distance < 5 && script_deer.counter % 75 == 0 && script_deer.isAttacking) || (script_snake.distance < 5 && script_snake.counter % 75 == 0 && script_snake.isAttacking) || (script_lizard.distance < 5 && script_lizard.counter % 75 == 0 && script_lizard.isAttacking))
         {
             Debug.Log("Take Damage");
             TakeDamage(25);
@@ -46,7 +46,7 @@ public class HealthManager : MonoBehaviour
             if (GameObject.Find("Rain(Clone)") != null)
             {
                 // Increase health lost in the rain
-                health -= Time.deltaTime * reduceHealthMultiplier * 3;
+                health -= Time.deltaTime * reduceHealthMultiplier * 4;
             }
             else
             {
