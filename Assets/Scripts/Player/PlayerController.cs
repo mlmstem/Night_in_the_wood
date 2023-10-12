@@ -37,12 +37,6 @@ public class PlayerController : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
 
         lastPosition = transform.position;
-
-        // if (lockCursor){
-        //     Cursor.lockState = CursorLockMode.Locked;
-        //     Cursor.visible = false;
-
-        // }   
     }
 
     void Update()
