@@ -6,25 +6,14 @@ using UnityEngine.AI;
 public class Deer_chase : MonoBehaviour
 {
     public float speed;
-    //public float FollowSpeed;
     public float distance;
     public int counter;
-    //private float angle;
-    //private Vector3 walkpoint;
-    // private Vector3 moveDirection;
     private Vector3 last_pos;
     private Vector3 last__player_pos;
     private Animator animator;
-    //public float NoticeDistance = 5;
-    //public float AttackDistance = 1;
-    //public RaycastHit Shot;
-    // public float TargetDistance;
     public bool isAttacking = false;
-    //public PickupItem script;
-    // new version
     public NavMeshAgent agent;
     public Transform player;
-    //public LayerMask whatIsGround, whatIsPlayer;
     //Patroling
     public Vector3 walkPoint;
     public Vector3 playerpoint;
@@ -62,13 +51,11 @@ public class Deer_chase : MonoBehaviour
         counter = counter + 1;
         distance = Vector3.Distance(this.transform.position, player.transform.position);
         playerInSightRange = distance < sightRange;
-        //Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = distance < attackRange;
-        // Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
         if ((!playerInSightRange && !playerInAttackRange) || freeze) Patroling();
         if (playerInSightRange && !playerInAttackRange && !freeze) ChasePlayer();
         if (playerInAttackRange && playerInSightRange && !freeze) AttackPlayer();
-        if (counter % 75 == 0)
+        if (counter % 10 == 0)
         {
             last_pos = transform.position;
             last__player_pos = player.transform.position;
@@ -77,8 +64,6 @@ public class Deer_chase : MonoBehaviour
 
     private void Patroling()
     {
-        // Debug.Log("patrol");
-        //animator.SetTrigger("monkey_walk");
         isAttacking = false;
         if (!walkPointSet || last_pos == transform.position || counter % 450 == 0) SearchWalkPoint();
 
@@ -107,7 +92,7 @@ public class Deer_chase : MonoBehaviour
         isAttacking = false;
         playerpoint = new Vector3(player.position.x, 0, player.position.z);
         agent.SetDestination(playerpoint);
-  
+
     }
 
     private void AttackPlayer()
