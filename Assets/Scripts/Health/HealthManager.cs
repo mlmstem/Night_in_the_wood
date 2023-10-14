@@ -118,7 +118,6 @@ public class HealthManager : MonoBehaviour
         {
             // Player entered the shelter, stop reducing health
             isInTriggerZone = true;
-            Debug.Log("inzone");
         }
 
     }
@@ -132,8 +131,7 @@ public class HealthManager : MonoBehaviour
         {
             // Player exited the shelter, resume reducing health
             isInTriggerZone = false;
-            Debug.Log("outzone");
-        }
+\        }
 
     }
 }
