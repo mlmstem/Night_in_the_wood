@@ -18,7 +18,7 @@ public class HealthManager : MonoBehaviour
 
     public Image healthBar;
     public float health = 100f;
-    private float reduceHealthMultiplier = 0.65f;
+    private float reduceHealthMultiplier = 0.6f;
     private bool isInTriggerZone = false;
 
     public AudioClip damageSound;
