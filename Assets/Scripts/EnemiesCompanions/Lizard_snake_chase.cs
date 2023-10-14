@@ -42,19 +42,14 @@ public class Lizard_snake_chase : MonoBehaviour
 
     void Update()
     {
-        freeze = false;
-        // if (last__player_pos == player.transform.position)
-        // {
-        //     freeze = true;
-        // }
         counter = counter + 1;
         distance = Vector3.Distance(this.transform.position, player.transform.position);
         playerInSightRange = distance < sightRange;
         playerInAttackRange = distance < attackRange;
-        if ((!playerInSightRange && !playerInAttackRange) || freeze) Patroling();
-        if (playerInSightRange && !playerInAttackRange && !freeze) ChasePlayer();
-        if (playerInAttackRange && playerInSightRange && !freeze) AttackPlayer();
-        if (counter % 75 == 0)
+        if ((!playerInSightRange && !playerInAttackRange)) Patroling();
+        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
+        if (playerInAttackRange && playerInSightRange) AttackPlayer();
+        if (counter % 30 == 0)
         {
             last_pos = transform.position;
             last__player_pos = player.transform.position;

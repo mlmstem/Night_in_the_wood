@@ -54,7 +54,7 @@ public class AIChase : MonoBehaviour
         if ((!playerInSightRange && !playerInAttackRange) || freeze) Patroling();
         if (playerInSightRange && !playerInAttackRange && !freeze) ChasePlayer();
         if (playerInAttackRange && playerInSightRange && !freeze) AttackPlayer();
-        if (counter % 75 == 0)
+        if (counter % 10 == 0)
         {
             last_pos = transform.position;
             last__player_pos = player.transform.position;
