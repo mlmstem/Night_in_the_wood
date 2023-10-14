@@ -14,7 +14,7 @@ public class HealthManager : MonoBehaviour
 
     public Lizard_snake_chase script_snake;
 
-    public AIChase script_lizard;
+    public Lizard_snake_chase script_lizard;
 
     public Image healthBar;
     public float health = 100f;
