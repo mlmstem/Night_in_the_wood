@@ -99,7 +99,6 @@ public class HealthManager : MonoBehaviour
         {
             // Player exited the shelter, resume reducing health
             isInTriggerZone = false;
-            Debug.Log("outzone");
         }
 
     }
