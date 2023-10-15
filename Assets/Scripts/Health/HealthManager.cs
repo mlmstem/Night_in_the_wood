@@ -21,8 +21,6 @@ public class HealthManager : MonoBehaviour
     [SerializeField] int reduceHealthMultiplier = 1;
     private bool isInTriggerZone = false;
 
-    [SerializeField] public AudioSource hurting;
-
     // Update is called once per frame
     void Update()
     {
@@ -35,9 +33,6 @@ public class HealthManager : MonoBehaviour
         if ((script.distance < 5 && script.counter % 75 == 0 && script.isAttacking) || (script_monkey.distance < 5 && script_monkey.counter % 75 == 0 && script_monkey.isAttacking) || (script_deer.distance < 5 && script_deer.counter % 75 == 0 && script_deer.isAttacking)|| (script_snake.distance < 5 && script_snake.counter % 75 == 0 && script_snake.isAttacking) || (script_lizard.distance < 5 && script_lizard.counter % 75 == 0 && script_lizard.isAttacking))
         {
             Debug.Log("Take Damage");
-
-            hurting.Play();
-
             TakeDamage(25);
         }
 

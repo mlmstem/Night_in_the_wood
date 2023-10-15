@@ -9,7 +9,6 @@ public class PlayerAttack : MonoBehaviour
     public GameObject stickObject; // Reference to the stick object.
     private Collider stickCollider; // Reference to the stick's collider.
     public float colliderEnableDuration = 0.5f; // Adjust the duration as needed.
-    public AudioSource attack;
 
     private void Start()
     {
@@ -37,7 +36,6 @@ public class PlayerAttack : MonoBehaviour
         {
             // Trigger the attack animation.
             animator.SetTrigger("Attack");
-            attack.Play();
 
             // Enable the collider when attacking and start the coroutine.
             if (stickCollider != null)
