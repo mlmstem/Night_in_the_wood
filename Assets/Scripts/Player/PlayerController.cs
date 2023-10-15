@@ -12,6 +12,10 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] float jumpForce = 8.0f;
     [SerializeField] float gravity = -9.81f;
+
+    [SerializeField] public AudioSource jumpeffect;
+
+
     float verticalVelocity = 0.0f;
     bool isGrounded = true;
 
@@ -47,9 +51,10 @@ public class PlayerController : MonoBehaviour
         UpdateMouseLook();
         UpdateMovement();
 
-        if (transform.position != lastPosition)
+        if (transform.position != lastPosition || Input.GetKey(KeyCode.W))
         {
             isMovingForward = true;
+
         }
         else
         {
@@ -87,12 +92,17 @@ public class PlayerController : MonoBehaviour
         // Check if the player is moving forward.
         isMovingForward = currentDir.y > 0.0f;
 
+        if (isMovingForward)
+        {
+        }
+
         Vector3 velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * walkSpeed;
 
         // Jump logic
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
             // Trigger the "isJumping" animation when the player jumps.
+            jumpeffect.Play();
             animator.SetTrigger("isJumping");
 
             verticalVelocity = jumpForce;

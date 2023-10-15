@@ -21,7 +21,11 @@ public class HealthManager : MonoBehaviour
     private float reduceHealthMultiplier = 0.6f;
     private bool isInTriggerZone = false;
 
+<<<<<<< HEAD
     public AudioClip damageSound;
+=======
+    [SerializeField] public AudioSource hurting;
+>>>>>>> 464ae4a (background music for the game)
 
     // Update is called once per frame
     void Update()
@@ -35,6 +39,13 @@ public class HealthManager : MonoBehaviour
         // Bear damage
         if (script.distance < 6 && script.counter % 30 == 0 && script.isAttacking)
         {
+<<<<<<< HEAD
+=======
+            Debug.Log("Take Damage");
+
+            hurting.Play();
+
+>>>>>>> 464ae4a (background music for the game)
             TakeDamage(25);
             GetComponent<AudioSource>().clip = damageSound;
             GetComponent<AudioSource>().Play();

@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+
 public class SpawnObject : MonoBehaviour
 {
     [SerializeField] GameObject objectToSpawn;
     private float gameLength = 300.0f; // Spawn for length of game
     private float MinTime = 20.0f;
     private float MaxTime = 300.0f;
-
+    public AudioSource rainsound;
     void Start()
     {
         StartCoroutine(SpawnObjects());
@@ -26,7 +29,9 @@ public class SpawnObject : MonoBehaviour
         while (Time.time - startTime < gameLength && spawnCount < 3)
         {
             if (GameObject.FindWithTag("Rain") == null)
+
             {
+   
                 yield return new WaitForSeconds(Random.Range(MinTime, MaxTime));
                  
                 // Manual Spawn location
@@ -35,6 +40,10 @@ public class SpawnObject : MonoBehaviour
 
                 // Spawn rain on top of player - ToDo CHANGE FOR ENEMY SPAWN
                 objectInstance = Instantiate(objectToSpawn, player.transform.position + new Vector3(0, 18, 0), Quaternion.identity, player.transform);
+
+                rainsound.Play();
+                StartCoroutine(StopAudioAfterDelay(rainsound, 20f));
+
 
                 spawnCount++;
                 StartCoroutine(DestroyAfterDelay(objectInstance, 20.0f));
@@ -45,6 +54,12 @@ public class SpawnObject : MonoBehaviour
             }
         }
 
+    }
+
+    IEnumerator StopAudioAfterDelay(AudioSource audioSource, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        audioSource.Stop();
     }
 
     IEnumerator DestroyAfterDelay(GameObject objectInstance, float delay)
