@@ -15,20 +15,26 @@ public class FollowPlayer : MonoBehaviour
     public RaycastHit Shot;
     private Animator animator;
 
-    void Start() {
+    void Start()
+    {
         animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
         transform.LookAt(Player.transform);
-        if (Physics.Raycast(transform.position,transform.TransformDirection(Vector3.forward), out Shot) && animator != null) {
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out Shot) && animator != null)
+        {
             TargetDistance = Shot.distance;
-            if (TargetDistance >= AllowedDistance) {
-                FollowSpeed = 0.02f;
+            if (TargetDistance >= AllowedDistance)
+            {
+                FollowSpeed = 0.2f;
                 animator.SetTrigger("FlyTrigger");
                 transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, FollowSpeed);
-            } else {
+            }
+            else
+            {
                 FollowSpeed = 0;
                 animator.SetTrigger("StationaryTrigger");
             }

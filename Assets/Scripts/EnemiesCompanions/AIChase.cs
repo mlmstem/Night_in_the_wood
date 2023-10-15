@@ -95,10 +95,6 @@ public class AIChase : MonoBehaviour
         playerpoint = new Vector3(player.position.x, 0, player.position.z);
         agent.SetDestination(playerpoint);
 
-<<<<<<< HEAD
-=======
-   
->>>>>>> 464ae4a (background music for the game)
     }
 
     private void AttackPlayer()
