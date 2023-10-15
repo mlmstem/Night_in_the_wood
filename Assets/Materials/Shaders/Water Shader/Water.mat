@@ -85,7 +85,7 @@ Material:
     - _Parallax: 0.02
     - _Period: 11.54
     - _PhaseShift: 0.93
-    - _PlaneAmp: 0.111
+    - _PlaneAmp: 0.1089
     - _Scale: 0.429
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -93,7 +93,7 @@ Material:
     - _SrcBlend: 1
     - _Steepness: 0.035
     - _UVSec: 0
-    - _WaveAmp: 0.062
+    - _WaveAmp: 0.0725
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.10453009, g: 0.42639866, b: 0.8207547, a: 1}
