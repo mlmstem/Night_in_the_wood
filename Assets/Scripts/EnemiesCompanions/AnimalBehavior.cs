@@ -12,6 +12,8 @@ public class AnimalBehavior : MonoBehaviour
     private Animator animator;
     private int hitCounter = 0; // Counter to track hits with a stick.
 
+    public AudioSource soundeffect;
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -28,6 +30,7 @@ public class AnimalBehavior : MonoBehaviour
         if (distanceToPlayer < retreatDistance)
         {
             // Move the animal backward when the player is too close.
+            soundeffect.Play();
             Retreat();
         }
         else
