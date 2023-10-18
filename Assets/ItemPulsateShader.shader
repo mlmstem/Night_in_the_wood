@@ -1,8 +1,11 @@
 Shader "Custom/ItemPulsateShader" {
     Properties {
         _MainTex ("Texture", 2D) = "white" {}
+        // Controls the pulse amount (i.e range of pulse)
+        _PulseAmount ("Pulse Amount", Range(0, 2)) = 0.2
+        // Controls how fast it pulses
+        _PulseSpeed ("Pulse Speed", Range(0, 10)) = 3.5
     }
-    
     SubShader {
         Tags { "RenderType"="Opaque" }
         LOD 200
@@ -23,15 +26,12 @@ Shader "Custom/ItemPulsateShader" {
                 float4 vertex : SV_POSITION;
             };
 
-            // Controls the pulse amount (i.e range of pulse)   
-            float _PulseAmount = 0.2; 
-            // Controls how fast it pulses
-            float _PulseSpeed = 3.5; 
+            float _PulseAmount;
+            float _PulseSpeed;
             sampler2D _MainTex;
-            float _TimeOffset; 
-
+            float _TimeOffset;
             v2f vert(appdata_t v) {
-                // Create shaking effect
+                // Create pulse effect
                 v.vertex.xy += sin((_Time.y + _TimeOffset) * _PulseSpeed) * _PulseAmount;
 
                 // Shift each item up so they don't clip through the ground
@@ -49,6 +49,7 @@ Shader "Custom/ItemPulsateShader" {
 
                 // Smoothly change the item color
                 float fade = smoothstep(0.0, 1.0, abs(currentTime - 1.0));
+
                 fixed4 originalColor = tex2D(_MainTex, i.uv);
                 fixed4 finalColor = lerp(originalColor, originalColor * 1.5, fade);
                 return finalColor;
