@@ -23,13 +23,15 @@ public class HealthManager : MonoBehaviour
 
     public AudioClip damageSound;
 
+
+
     // Update is called once per frame
     void Update()
     {
 
         if (health <= 0)
         {
-            SceneManager.LoadScene("FailScreen");
+           SceneManager.LoadScene("failscreen");
         }
 
         // Bear damage

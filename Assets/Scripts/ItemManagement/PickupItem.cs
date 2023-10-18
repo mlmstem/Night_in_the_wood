@@ -4,12 +4,15 @@ using UnityEngine;
 
 // Modified code from unity tutorial: https://www.youtube.com/watch?v=DLAIYSMYy2g
 
+
+
 public class PickupItem : MonoBehaviour
 {
 
     private PlayerHotbar hotbar;
     public GameObject itemButton;
 
+    public AudioSource pickupSound;
     void Start()
     {
         hotbar = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHotbar>();
@@ -25,6 +28,7 @@ public class PickupItem : MonoBehaviour
                 {
                     Debug.Log("itemAdded");
                     // Item can be added to hotbar
+                    pickupSound.Play();
                     hotbar.isFull[i] = true;
                     Instantiate(itemButton, hotbar.slots[i].transform, false);
                     Destroy(transform.parent.gameObject);
