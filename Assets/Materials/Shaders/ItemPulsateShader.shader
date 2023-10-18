@@ -1,8 +1,10 @@
 Shader "Custom/ItemPulsateShader" {
     Properties {
         _MainTex ("Texture", 2D) = "white" {}
-        _ShakeAmount ("Shake Amount", Range(0, 2)) = 0.2
-        _ShakeSpeed ("Shake Speed", Range(0, 10)) = 3.5
+        // Controls the pulse amount (i.e range of pulse)
+        _PulseAmount ("Pulse Amount", Range(0, 2)) = 0.2
+        // Controls how fast it pulses
+        _PulseSpeed ("Pulse Speed", Range(0, 10)) = 3.5
     }
     SubShader {
         Tags { "RenderType"="Opaque" }
@@ -24,15 +26,15 @@ Shader "Custom/ItemPulsateShader" {
                 float4 vertex : SV_POSITION;
             };
 
-            float _ShakeAmount;
-            float _ShakeSpeed;
+            float _PulseAmount;
+            float _PulseSpeed;
             sampler2D _MainTex;
-            float _TimeOffset; // Time offset for the fading effect
-
+            float _TimeOffset;
             v2f vert(appdata_t v) {
-                v.vertex.xy += sin((_Time.y + _TimeOffset) * _ShakeSpeed) * _ShakeAmount;
+                // Create pulse effect
+                v.vertex.xy += sin((_Time.y + _TimeOffset) * _PulseSpeed) * _PulseAmount;
 
-                // Shift each item up by 0.5 on the y-axis
+                // Shift each item up so they don't clip through the ground
                 v.vertex.y += 0.5;
 
                 v2f o;
@@ -42,13 +44,12 @@ Shader "Custom/ItemPulsateShader" {
             }
 
             fixed4 frag(v2f i) : SV_Target {
-                // Calculate the current time within the 2-second period
+                // 2-second fade
                 float currentTime = (_Time.y + _TimeOffset) % 2.0;
 
-                // Calculate the fade effect based on currentTime, smoothstep both ways
+                // Smoothly change the item color
                 float fade = smoothstep(0.0, 1.0, abs(currentTime - 1.0));
 
-                // Sample the texture and apply the fade effect
                 fixed4 originalColor = tex2D(_MainTex, i.uv);
                 fixed4 finalColor = lerp(originalColor, originalColor * 1.5, fade);
                 return finalColor;

@@ -84,34 +84,16 @@ Material:
     - _OcclusionStrength: 1
     - _Outline: 0.005
     - _Parallax: 0.02
-    - _PulseAmplitude: 0.05
-    - _PulseSpeed: 0.5
+    - _PulseAmount: 0.2
+    - _PulseSpeed: 3.5
     - _RimPower: 1.5
     - _RockAmount: 2
     - _RockSpeed: 1
     - _RotationSpeed: 180
-    - _ShakeAmount: 0.2
-    - _ShakeAmplitude: 0.1
-    - _ShakeFrequency: 3
-    - _ShakeSpeed: 3.5
-    - _ShineIntensity: 0.2
-    - _ShineSpeed: 3.13
-    - _ShineWidth: 1
-    - _Shininess: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SparkleFrequency: 2
-    - _SparkleIntensity: 0.05
-    - _SparkleSpeed: 1
-    - _SpecularHighlights: 1
     - _Speed: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _GlowColor: {r: 1, g: 1, b: 1, a: 1}
-    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
-    - _RollAxis: {r: 0, g: 1, b: 0, a: 0}
-    - _SparkleColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
