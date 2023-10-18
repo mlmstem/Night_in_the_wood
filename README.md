@@ -153,7 +153,22 @@ TODO (due milestone 3) - see specification for details
 
 ## Shaders and Special Effects
 
-TODO (due milestone 3) - see specification for details
+### Water Shader
+This shader is designed for rendering water in the game, more specifically the two lakes on the map. It simulates the appearance of subtle waves and water ripples as well as a water-like reflective texture to add realism while keeping the animated feel of the game. The shader is applied to a flat plane representing a body of water. It relies on material properties such as colour, texture, smoothness and metallic values to control its appearance. There are also custom properties that modify the amplitude of the water plane (noise scale, plane amplitude, speed) and the shape of the wave (wind direction, wave amplitude, period, phase shift). These properties are set with a range that can be customised within Unity to easily edit the look and harshness of the wave. The shader also employs shader mapping with two textures, _MainTex for colour and _NoiseTex for noise which are utilised in the vertex and pixel shader logic. 
+
+The vertex shader transforms the shape of the wave using the predefined custom properties. The amplitude of the plane is firstly adjusted. Here, _NoiseTex which is sampled based on UV coordinates is used to introduce a noise effect. Then, the shape of the wave is adjusted based on the sine wave equation, <i>wave amplitude * sin(period + phase shift)</i>. The continuous vertical motion of the plane and dynamic wave shape combined create a more realistic water composition. The pixel shader sets the colour, metallic and smoothness properties. It also includes a normal map to simulate finer details using _MainTex. The vertex shader modifies the amplitude and shape of the plane dynamically while the pixel shader contributes to the water-like material.
+
+<i>Links</i>
+
+Water Shader: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials/Shaders/Water%20Shader/WaterShader.shader 
+
+_NoiseTex: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials/Shaders/Water%20Shader/noiseTexture.png
+
+_MainTex: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials/Shaders/Water%20Shader/Water_002_NORM.jpg
+
+<div align="center">
+   <img src="Images/Water.gif" width="500" > 
+</div>
 
 ## Summary of Contributions
 
