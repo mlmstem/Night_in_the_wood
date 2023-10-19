@@ -156,8 +156,16 @@ TODO (due milestone 3) - see specification for details
 ### Rain Particle System
 The rain particle system exhibits a range of attributes carefully chosen and adjusted to craft a realistic and dynamic rain effect to act as an adversary for the player. These customisations include colour over the lifetime of the raindrop to replicate their natural appearance. The "3D Start Size" attribute introduces a variation in raindrop sizes, creating diversity in their descent. Moreover, to exacerbate their intensity, the "Emission" rate is increased, resulting in more particles, evoking a sense of a stronger and more hazardous rain storm. The choice of a "Box" shape for emission provides a flat rain spawn to look more natural. Continuing, the "Velocity over Lifetime" feature enhances the speed of falling raindrops and introduces random direction changes, mirroring the influence of wind. Further, by altering the "Collision" settings, raindrops now make contact with the ground, enabling the creation of child particle effects for a splash effect. The "Sub-emitter" plays a vital role in generating ground impact effects, further enhancing realism. Through adjustments to the "Renderer," the apparent speed of raindrops is accentuated, giving them a more forceful appearance. Lastly, within the "Rain Splash" effect, the gradual increase in splash size over time introduces a realistic touch to the splashing rain. These attributes are complemented by the use of randomness, such as random velocity and size variations, to avoid a repetitive and artificial appearance and create a more natural and dynamic rain storm simulation.
 
-Links:
+<div align="center">
+   <img src="Images/Rain.gif" width="500"> 
+   <img src="Images/Splash.gif" width="500"> 
+</div>
+
+
+<i> Links:</i>
+
 https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Prefabs/Rain.prefab
+
 
 
 ### Berry Item Shader
@@ -172,7 +180,12 @@ In the fragment shader, the shader modifies the item's colour over a 2-second pe
 
 In practice, the shader was applied to a premade asset's material which parametrises the shader. The _PulseAmount and _PulseSpeed properties were adjusted through the range sliders to fine-tune the appearance of the pulsation effect in real-time. This enabled dynamic and engaging visual effects within the game.
 
-Links:
+<div align="center">
+   <img src="Images/Item.gif" width="500" > 
+</div>
+
+
+<i> Links: </i>
 
 ItemPulseShader: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials/Shaders/ItemPulsateShader.shader
 
@@ -183,7 +196,12 @@ This shader is designed for rendering water in the game, more specifically the t
 
 The vertex shader transforms the shape of the wave using the predefined custom properties. The amplitude of the plane is firstly adjusted. Here, _NoiseTex which is sampled based on UV coordinates is used to introduce a noise effect. Then, the shape of the wave is adjusted based on the sine wave equation, <i>wave amplitude * sin(period + phase shift)</i>. The continuous vertical motion of the plane and dynamic wave shape combined create a more realistic water composition. The pixel shader sets the colour, metallic and smoothness properties. It also includes a normal map to simulate finer details using _MainTex. The vertex shader modifies the amplitude and shape of the plane dynamically while the pixel shader contributes to the water-like material.
 
-<i>Links</i>
+<div align="center">
+   <img src="Images/Water.gif" width="500" > 
+</div>
+
+
+<i>Links:</i>
 
 Water Shader: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials/Shaders/Water%20Shader/WaterShader.shader 
 
@@ -191,9 +209,7 @@ _NoiseTex: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Material
 
 _MainTex: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials/Shaders/Water%20Shader/Water_002_NORM.jpg
 
-<div align="center">
-   <img src="Images/Water.gif" width="500" > 
-</div>
+
 
 ## Summary of Contributions
 
