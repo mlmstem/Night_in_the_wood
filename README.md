@@ -153,7 +153,63 @@ TODO (due milestone 3) - see specification for details
 
 ## Shaders and Special Effects
 
-TODO (due milestone 3) - see specification for details
+### Rain Particle System
+The rain particle system exhibits a range of attributes carefully chosen and adjusted to craft a realistic and dynamic rain effect to act as an adversary for the player. These customisations include colour over the lifetime of the raindrop to replicate their natural appearance. The "3D Start Size" attribute introduces a variation in raindrop sizes, creating diversity in their descent. Moreover, to exacerbate their intensity, the "Emission" rate is increased, resulting in more particles, evoking a sense of a stronger and more hazardous rain storm. The choice of a "Box" shape for emission provides a flat rain spawn to look more natural. Continuing, the "Velocity over Lifetime" feature enhances the speed of falling raindrops and introduces random direction changes, mirroring the influence of wind. Further, by altering the "Collision" settings, raindrops now make contact with the ground, enabling the creation of child particle effects for a splash effect. The "Sub-emitter" plays a vital role in generating ground impact effects, further enhancing realism. Through adjustments to the "Renderer," the apparent speed of raindrops is accentuated, giving them a more forceful appearance. Lastly, within the "Rain Splash" effect, the gradual increase in splash size over time introduces a realistic touch to the splashing rain. These attributes are complemented by the use of randomness, such as random velocity and size variations, to avoid a repetitive and artificial appearance and create a more natural and dynamic rain storm simulation.
+
+<div align="center">
+   <img src="Images/Rain.gif" width="500"> 
+   <img src="Images/Splash.gif" width="500"> 
+</div>
+
+
+<i> Links:</i>
+
+https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Prefabs/Rain.prefab
+
+
+
+### Berry Item Shader
+
+The ItemPulsateShader serves to emphasise the pickup items within 'Night in the Woods', helping players to more easily identify them and make it clear they are beneficial to the player. This shader's properties, including the texture, pulse amount, and pulse speed, are integral to the rendering process and provide the ability to customize the effect. In Unity's rendering pipeline, shaders are a key component in determining how objects are displayed on the screen. This shader is designed to work with opaque objects, like the berries, and is assigned a Level of Detail (LOD) value of 200 to specify its rendering priority.
+
+Moreover, the shader defines two key parameters: _PulseAmount and _PulseSpeed, which control the range and speed of the pulsation effect. These parameters are set as Range properties, allowing designers to customise them within specified limits. In this instance, _PulseAmount is set to 0.2 and _PulseSpeed to 3.5 as it provides a more natural feel and isn't overly obnoxious.  
+
+The vertex and fragment shaders are implemented using CGPROGRAM, and they are associated with the main texture, _MainTex. The _TimeOffset variable is introduced in the vertex shader to control the phase of the pulsation effect over time. In the vertex shader, the pulsation effect is created by altering the y-coordinates of vertices based on a sine wave which is dependant on the _PulseSpeed and _PulseAmount. Furthermore, each item's y-position is adjusted to prevent it from clipping through the ground and provide a hovering effect.
+
+In the fragment shader, the shader modifies the item's colour over a 2-second period by calculating the current time (_Time.y) and using smoothstep to create a smooth transition between the original colour and the new colour. This creates a pulsating colour effect which is synchronised with the vertex movement. This aims to make the berry items look shiny and desirable to the player.
+
+In practice, the shader was applied to a premade asset's material which parametrises the shader. The _PulseAmount and _PulseSpeed properties were adjusted through the range sliders to fine-tune the appearance of the pulsation effect in real-time. This enabled dynamic and engaging visual effects within the game.
+
+<div align="center">
+   <img src="Images/Item.gif" width="500" > 
+</div>
+
+
+<i> Links: </i>
+
+ItemPulseShader: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials/Shaders/ItemPulsateShader.shader
+
+_MainTex: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Unity%20Store%20Assets/Fruit%20Blocks/materials/fc_lit.mat
+
+### Water Shader
+This shader is designed for rendering water in the game, more specifically the two lakes on the map. It simulates the appearance of subtle waves and water ripples as well as a water-like reflective texture to add realism while keeping the animated feel of the game. The shader is applied to a flat plane representing a body of water. It relies on material properties such as colour, texture, smoothness and metallic values to control its appearance. There are also custom properties that modify the amplitude of the water plane (noise scale, plane amplitude, speed) and the shape of the wave (wind direction, wave amplitude, period, phase shift). These properties are set with a range that can be customised within Unity to easily edit the look and harshness of the wave. The shader also employs shader mapping with two textures, _MainTex for colour and _NoiseTex for noise which are utilised in the vertex and pixel shader logic. 
+
+The vertex shader transforms the shape of the wave using the predefined custom properties. The amplitude of the plane is firstly adjusted. Here, _NoiseTex which is sampled based on UV coordinates is used to introduce a noise effect. Then, the shape of the wave is adjusted based on the sine wave equation, <i>wave amplitude * sin(period + phase shift)</i>. The continuous vertical motion of the plane and dynamic wave shape combined create a more realistic water composition. The pixel shader sets the colour, metallic and smoothness properties. It also includes a normal map to simulate finer details using _MainTex. The vertex shader modifies the amplitude and shape of the plane dynamically while the pixel shader contributes to the water-like material.
+
+<div align="center">
+   <img src="Images/Water.gif" width="500" > 
+</div>
+
+
+<i>Links:</i>
+
+Water Shader: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials/Shaders/Water%20Shader/WaterShader.shader 
+
+_NoiseTex: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials/Shaders/Water%20Shader/noiseTexture.png
+
+_MainTex: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials/Shaders/Water%20Shader/Water_002_NORM.jpg
+
+
 
 ## Summary of Contributions
 
