@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Code modified from https://www.youtube.com/watch?v=tfzwyNS1LUY
+
 public class PauseManager : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;

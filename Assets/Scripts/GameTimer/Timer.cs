@@ -49,6 +49,7 @@ public class Timer : MonoBehaviour
         float sec = Mathf.FloorToInt(currentTime % 60);
 
         if (sec >= 55 && sec <= 60 && min < 4) {
+
             UpdateBG.enabled = true;
 
             if (min == 3) {
