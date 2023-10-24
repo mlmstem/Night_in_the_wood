@@ -15,6 +15,8 @@ public class Timer : MonoBehaviour
     public float timeLeft;
     public Text TimerText;
     public Image UpdateBG;
+    public GameObject helicopter;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -27,16 +29,25 @@ public class Timer : MonoBehaviour
     {
         if (isTimerActive)
         {
-            if (timeLeft > 0)
+            if (timeLeft > 0) //change to 0
             {
                 timeLeft -= Time.deltaTime;
                 updateTimeText(timeLeft);
             }
             else
             {
-                Debug.Log("Congratulations, the rescue team has arrived!");
-                isTimerActive = false;
-                SceneManager.LoadScene("EndScreen");
+                float distance = Vector3.Distance(helicopter.transform.position, player.transform.position);
+                if (distance < 5)
+                {
+                    Debug.Log("Congratulations, the rescue team has arrived!");
+                    isTimerActive = false;
+                    SceneManager.LoadScene("EndScreen");
+                }
+                else
+                {
+                    isTimerActive = false;
+                    SceneManager.LoadScene("FailScreen");
+                }
             }
         }
     }
@@ -51,14 +62,14 @@ public class Timer : MonoBehaviour
         if (sec >= 55 && sec <= 60 && min < 4) {
             UpdateBG.enabled = true;
 
-            if (min == 3) {
+            if (min == 3) { 
                 TimerText.text = string.Format("Someone has noticed you're missing and has sent for help. You have four minutes until they arrive!");
             } else if (min == 2) {
                 TimerText.text = string.Format("The rescue team are on their way. You have three minutes until they arrive!");
             } else if (min == 1) {
                 TimerText.text = string.Format("The rescue team have landed in the forest. You have two minutes until they arrive!");
             } else if (min == 0) {
-                TimerText.text = string.Format("The rescue team have located you. You have one minute until they arrive!");
+                TimerText.text = string.Format("The rescue team have located you. You have one minute until they arrive! Press m to find the meeting point in your map");
             }
 
         } else if (sec >= 25 && sec <= 30 && min < 0) {
