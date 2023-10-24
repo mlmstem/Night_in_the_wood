@@ -280,6 +280,7 @@ Adjusted the rate at which a player's health decreases from 1/sec to 0.6/sec to 
    <img src="Images/health_oldnew.gif" width="500"> 
 </div>
 <br>
+
 **Change How Questions Appear**: <br>
 Revised the appearance of questions so that they pause the game when the player first experiences them, ensuring clarity for players as they will have time to read what is required of them.
 <br>
