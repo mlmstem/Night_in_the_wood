@@ -236,12 +236,14 @@ Suggestions were made to improve the visibility of questions, differentiate berr
 <br>
 The majority of participants, specifically 83%, agreed that the “controls are intuitive”; however, it is worth noting that one participant encountered confusion regarding interactions due to unclear instructions, particularly related to jumping and item collection, where it was erroneously believed that every interaction was managed by pressing the 'E' key. They pointed out that this was due to unclear wording on the instructions
 <br>
+<br>
 <div align="center">
    <img src="Images/health_chart.png" width="500"> 
 </div>
 <br>
 Each participant of the questionnaire, as well as those involved in the cooperative evaluation, expressed a unanimous concern that the health bar “just went down really quickly”. This rendered the game overly challenging and diminishing its overall enjoyability. This placed excessive focus on finding berries for health replenishment, as opposed to promoting exploration, which was cited as a significant issue.
 Furthermore, an overwhelming majority of players, 75% of participants, found the random events, such as rain, and animal encounters to be highly challenging. Additionally, 25% expressed neutrality towards this aspect. Valuable feedback highlighted concerns, including the significant damage inflicted by animals, with suggesting to “reduce the attack of animals”, the absence of clear indicators when being attacked, and the distraction caused by attempting to read the pop-up questions during these events as they “didn't really have time to read the questions because they were too long“ .
+<br>
 <br>
 <div align="center">
    <img src="Images/updates_chart.png" width="500"> 
@@ -273,12 +275,14 @@ The results align with those from the Cooperative Evaluations, reinforcing the i
 
 **Make Health Reduce Slower**: <br>
 Adjusted the rate at which a player's health decreases from 1/sec to 0.6/sec to provide a more manageable gameplay experience and allow the player to explore more and pick up berries less.
+<br>
 <div align="center">
    <img src="Images/health_oldnew.gif" width="500"> 
 </div>
 <br>
 **Change How Questions Appear**: <br>
 Revised the appearance of questions so that they pause the game when the player first experiences them, ensuring clarity for players as they will have time to read what is required of them.
+<br>
 <div align="center">
    <img src="Images/questions_og.png" width="500"> 
    <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" width="450"> 
@@ -287,6 +291,7 @@ Revised the appearance of questions so that they pause the game when the player 
 
 **Make Instructions Clearer**: <br>
 Enhanced the clarity of instructions, detailing each individual action so players were not confused about the game mechanics
+<br>
 <div align="center">
    <img src="Images/instructions_og.png" width="450"> 
    <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" width="450"> 
@@ -295,6 +300,7 @@ Enhanced the clarity of instructions, detailing each individual action so player
 
 **Make It Easier to Pick Up Items (and Clearer)**: <br>
 Improved item interaction by enlarging the trigger area for picking up items.
+<br>
 <div align="center">
    <img src="Images/trigger_og.png" width="250"> 
    <img src="Images/trigger_new.png" width="250">
@@ -303,6 +309,7 @@ Improved item interaction by enlarging the trigger area for picking up items.
 
 **Made Berries More Distinct**: <br>
 Differentiated between nightshade berries and blueberries to help players easily identify them by making nightshade berries significantly darker.
+<br>
 <div align="center">
    <img src="Images/berries_old.png" width="450"> 
    <img src="Images/berries_new.png" width="450">
@@ -314,6 +321,7 @@ Adjusted the damage dealt by animals to make the game more balanced and fair.
 
 **Removed Collision from Shrubbery**: <br>
 Removed collision issues with shrubbery to enhance player navigation.
+<br>
 <div align="center">
    <img src="Images/collide_og.gif" width="450"> 
    <img src="Images/collide_new.gif" width="450">
@@ -322,6 +330,7 @@ Removed collision issues with shrubbery to enhance player navigation.
 
 **Clarified Health Loss Explanation**: <br>
 Provided a clear note in game lore to explain the reasons behind health loss, ensuring players understand why they’re losing health
+<br>
 <div align="center">
    <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" width="450"> 
 </div>
@@ -329,6 +338,7 @@ Provided a clear note in game lore to explain the reasons behind health loss, en
 
 **Make It More Clear that Shelter Is Required for Rain (Before It Occurs)**: <br>
 Enhanced the game's communication regarding the need to craft shelter before rain occurs, ensuring players are prepared.
+<br>
 <div align="center">
    <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" width="450"> 
 </div>
