@@ -149,7 +149,235 @@ To effectively manage responsibilities within our team and ensure equal contribu
 
 ## Evaluation Report
 
-TODO (due milestone 3) - see specification for details
+### Introduction
+
+This evaluation report examines the game "Night in the Woods" using a mix of quantitative and qualitative methods. For this analysis we engaged a demographic of participants who exhibited a moderately high interest in adventure and the wilderness, a strong desire to enhance their survival skills, and an enthusiasm for learning through play. These responses reflect a group with a solid aptitude toward nature and survival-related themes, indicating a well-aligned demographic for the evaluation.
+
+Our approach involved data collection techniques, such as questionnaires for quantitative data and cooperative evaluations for qualitative insights. These techniques aim to provide a comprehensive assessment of the game's strengths and weaknesses as well as help to provide valuable feedback.
+
+Moreover, with a thorough analysis process of the data collected, through means such as Google Forms and audio recordings, we found specific insights into user satisfaction and gameplay performance to give us a basis on which to improve the game. Results were then presented in a way which explained key issues with the game prior to the evaluation and the changes made to then fix those issues and heighten the overall gameplay experience.
+
+### Methodology
+
+Our evaluation plan for "Night in the Woods" employed a dual approach, combining quantitative and qualitative techniques to assess the game's performance and user satisfaction. Refer to the prior [Evaluation Plan](#evaluation-plan) for details on how the report was conducted.
+
+### Results
+
+#### Cooperative Evaluation Results
+
+***Participant 1 (Lucas Clarke)***:
+
+**Alignment with Demographic**:
+* Lucas exhibited a strong desire to enhance survival skills and an appreciation for nature.
+
+**Observations**:
+* Lucas faced challenges with understanding the game's mechanics, including picking up items and managing health, particularly that he was too busy collecting food so that his health didn’t fully deteriorate
+* He suggested improvements in instructions, the visibility of questions, and reducing the difficulty.
+
+**Recommendations**:
+* Improve item interaction, make instructions clearer, and shift the focus away from collecting berries
+
+***Participant 2 (Caitlyn Sison)***:
+
+**Alignment with Demographic**:
+* Caitlyn had a moderate interest in survival and adventure themes.
+
+**Observations**:
+* Caitlyn struggled with health management and did not prioritise answering questions as they appeared. She also mentioned that they were too long to read
+* She found the blue shades of berries confusing as the colours were too similar.
+* Moreover, she found that she could just run away from the animals as there was no incentive to fight them or answer the questions.
+
+**Recommendations**:
+Provide clearer instructions by reducing their length
+Add an incentive to answer the questions
+
+***Participant 3 (Simon Campbell)***:
+
+**Alignment with Demographic**:
+* Simon had a strong appreciation for nature and wilderness but was not too keen on enhancing his survival skills or even had much of an interest in survival
+
+**Observations**:
+* Simon felt immersed in the game but had issues with picking up items and managing the controls, claiming that it was not easy for novices to pick up.
+* He suggested more explicit instructions and feedback mechanisms.
+
+**Recommendations**:
+* Improve item interaction, provide clearer instructions, and offer feedback on player actions.
+
+***Participant 4 (Cassandra Baala)***:
+
+**Alignment with Demographic**:
+* Cassandra showed an interest in enhancing survival skills and moderate enthusiasm for learning through play.
+
+**Observations**:
+* Cassandra faced challenges with understanding game mechanics, particularly related to item interaction and health management as with many other participants.
+* She commented on the text size being too small in the instructions and pop-up questions
+* Further, she found many areas in which she wasn't able to manoeuvre her character through
+
+**Recommendations**:
+* The game should enlarge and clarify the instructions, improve item interaction, and improve player collision 
+
+***Participant 5 (Haotian Zhuang)***:
+
+**Alignment with Demographic**: 
+* Haotian is an experienced survival game fan player with a competent level of skill.
+
+**Observations**: 
+* Haotian had trouble reading from the text popups while playing the game; the popup text was way too small for him to look at. It was also quite hard for him to play while reading the text
+* Haotian was not aware of the crafting system, and was thinking about going into the covered area to escape the rain
+* He also had problems picking items. During the game he won, he didn't encounter many enemies, this is not great as the game is made to encourage players dealing with the enemies.
+
+**Recommendations**:
+* A sprinting feature should be implemented so that when a player's health is low he can run quicker to pick up items to restore his health.
+* Popup text should be clearer and easier to read.
+* Plants are too big in comparison to the size of the player
+
+***General Observations and Recommendations***:
+
+Participants identified common issues with the game, including item interaction, the clarity of instructions, health management, and game difficulty.
+Recommendations include enhancing item interaction, making instructions clearer, balancing health management, and addressing challenges in player progression.
+Suggestions were made to improve the visibility of questions, differentiate berries, and offer feedback on player actions.
+
+
+#### Questionnaire Results
+
+<div align="center">
+   <img src="Images/intructions_chart.png" width="500"> 
+</div>
+<br>
+The majority of participants, specifically 83%, agreed that the “controls are intuitive”; however, it is worth noting that one participant encountered confusion regarding interactions due to unclear instructions, particularly related to jumping and item collection, where it was erroneously believed that every interaction was managed by pressing the 'E' key. They pointed out that this was due to unclear wording on the instructions
+<br>
+<br>
+<div align="center">
+   <img src="Images/health_chart.png" width="500"> 
+</div>
+<br>
+Each participant of the questionnaire, as well as those involved in the cooperative evaluation, expressed a unanimous concern that the health bar “just went down really quickly”. This rendered the game overly challenging and diminishing its overall enjoyability. This placed excessive focus on finding berries for health replenishment, as opposed to promoting exploration, which was cited as a significant issue.
+Furthermore, an overwhelming majority of players, 75% of participants, found the random events, such as rain, and animal encounters to be highly challenging. Additionally, 25% expressed neutrality towards this aspect. Valuable feedback highlighted concerns, including the significant damage inflicted by animals, with suggesting to “reduce the attack of animals”, the absence of clear indicators when being attacked, and the distraction caused by attempting to read the pop-up questions during these events as they “didn't really have time to read the questions because they were too long“ .
+<br>
+<br>
+<div align="center">
+   <img src="Images/updates_chart.png" width="500"> 
+</div>
+<br>
+The player feedback regarding updates from the rescue team was also notably positive, with an overwhelming majority expressing appreciation with only one participant disagreeing. This was due to a preference for a timer to precisely gauge the remaining time, as opposed to the minute-by-minute updates provided.
+<br>
+<br>
+<div align="center">
+   <img src="Images/companion_chart.png" width="500"> 
+   <img src="Images/gamelearn_chart.png" width="500"> 
+</div>
+<br>
+The graph on the left reveals that the companion questions yielded mixed results among participants. This variability can be attributed to challenges regarding information overload and the time required to read the questions. These issues were noted to cause distractions while participants were engaged in combat with the animals.
+
+However, the graph on the right demonstrates that participants expressed interest in the concept of companion questions. With the suggested changes as recommended by participants in both the questionnaire and cooperative evaluations, there is potential for enhancing the learning and gaming experience. This suggests a move away from players feeling indifferent towards this aspect of the game.
+<br>
+<br>
+<div align="center">
+   <img src="Images/overall_chart.png" width="500"> 
+</div>
+<br>
+The overall gameplay experience was predominantly positive, albeit somewhat hindered by a few minor issues. These issues included challenging encounters, rapid health depletion, and a sense of information overload resulting from the companion questions.
+
+The results align with those from the Cooperative Evaluations, reinforcing the identified issues. Importantly, no participant rated the experience below a 6, indicating a baseline level of satisfaction. The most frequently assigned rating was 8, demonstrating the overall favourable perception of the game.
+
+### Recommendations and Action Plan
+#### Addressing Major Issues or Changes Based on Cooperative Evaluation and Questionnaire Findings
+
+**Make Health Reduce Slower**: <br>
+Adjusted the rate at which a player's health decreases from 1/sec to 0.6/sec to provide a more manageable gameplay experience and allow the player to explore more and pick up berries less.
+<br>
+<div align="center">
+   <img src="Images/health_oldnew.gif" width="500"> 
+</div>
+<br>
+
+**Change How Questions Appear**: <br>
+Revised the appearance of questions so that they pause the game when the player first experiences them, ensuring clarity for players as they will have time to read what is required of them.
+<br>
+<div align="center">
+   <img src="Images/questions_og.png" width="500"> 
+   <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" width="450"> 
+</div>
+<br>
+
+**Make Instructions Clearer**: <br>
+Enhanced the clarity of instructions, detailing each individual action so players were not confused about the game mechanics
+<br>
+<div align="center">
+   <img src="Images/instructions_og.png" width="450"> 
+   <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" width="450"> 
+</div>
+<br>
+
+**Make It Easier to Pick Up Items (and Clearer)**: <br>
+Improved item interaction by enlarging the trigger area for picking up items.
+<br>
+<div align="center">
+   <img src="Images/trigger_og.png" width="250"> 
+   <img src="Images/trigger_new.png" width="250">
+</div>
+<br>
+
+**Made Berries More Distinct**: <br>
+Differentiated between nightshade berries and blueberries to help players easily identify them by making nightshade berries significantly darker.
+<br>
+<div align="center">
+   <img src="Images/berries_old.png" width="450"> 
+   <img src="Images/berries_new.png" width="450">
+</div>
+<br>
+
+**Reduced Attack Damage from Animals**: <br>
+Adjusted the damage dealt by animals to make the game more balanced and fair.
+
+**Removed Collision from Shrubbery**: <br>
+Removed collision issues with shrubbery to enhance player navigation.
+<br>
+<div align="center">
+   <img src="Images/collide_og.gif" width="450"> 
+   <img src="Images/collide_new.gif" width="450">
+</div>
+<br>
+
+**Clarified Health Loss Explanation**: <br>
+Provided a clear note in game lore to explain the reasons behind health loss, ensuring players understand why they’re losing health
+<br>
+<div align="center">
+   <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" width="450"> 
+</div>
+<br>
+
+**Make It More Clear that Shelter Is Required for Rain (Before It Occurs)**: <br>
+Enhanced the game's communication regarding the need to craft shelter before rain occurs, ensuring players are prepared.
+<br>
+<div align="center">
+   <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" width="450"> 
+</div>
+<br>
+
+**Sound/Audio Cues**: 
+Implemented audio cues and feedback mechanisms to help players identify and respond to in-game events more effectively, such as attacks from animals. While this was already planned, it was not in the build that the participants played.
+
+### Discussion
+
+In retrospect, there were several aspects of the evaluation process that could have been improved. Timing and coordinating tasks were often challenging, especially when multiple tasks needed to be completed simultaneously. This could potentially lead to some evaluation bias, as the participants' experiences may have been influenced by the timing of specific tasks. For instance, when fighting the snake, participants encountered the lizard and thus knew how to defend against it before reaching the lizard task.
+
+Moreover, the fact that the evaluation was not entirely anonymous may have affected the participants' responses as they may have held back some feedback to maintain relationships with the evaluator. In the future, ensuring complete anonymity in the evaluation process may result in more unbiased responses. 
+
+Another area of improvement could have been the preparation of the game build. A more refined and tested version of the game would have provided a more accurate representation of the player experience, and the feedback received would have been more actionable for an end game project. Furthermore, sound and audio cues were crucial in guiding players' actions and decisions in the game. In hindsight, starting work on sound earlier in the development process could have resolved many issues and enhanced the overall gameplay experience.
+
+A further issue during the evaluations was the assistance provided to participants with questions they found challenging. While this was done with the intention of saving time, it could have influenced the participants' experiences and subsequent feedback. In future evaluations, ideally evaluators would avoid offering assistance and let participants navigate tasks independently.
+
+In the interest of achieving a more balanced evaluation process, incremental testing on a smaller scale throughout the game's development could have mitigated the need for significant changes towards the end of the process. Early and ongoing testing would have identified issues as they arose, resulting in a more polished final product.
+
+### Conclusion
+
+The evaluation of "Night in the Woods" provided valuable insights into the game's strengths and areas for improvement. Participants' feedback and observations provided key insights into significant issues, including item interaction, instruction clarity, health management, and game difficulty. These insights were translated into recommendations, along with corresponding action items, to enhance the overall gameplay experience.
+
+The comprehensive assessment, combining quantitative data from questionnaires and qualitative feedback from cooperative evaluations, has guided informed decisions to improve the game. Changes have been made to address major issues, such as adjusting health loss rates, improving item interaction, clarifying mechanics, and providing clearer instructions.
+
+Looking forward, the game will continue to be evaluated at different stages to ensure changes are made gradually creating an incremental process that ensures “Night in the Woods" offers a more enjoyable and engaging experience to players who share an enthusiasm for adventure, survival, and learning through play. The feedback received during this evaluation has played a crucial role in shaping the game's future, and the ongoing efforts are focused on creating a more captivating and immersive gameplay/learning experience.
+
 
 ## Shaders and Special Effects
 
@@ -160,7 +388,7 @@ The rain particle system exhibits a range of attributes carefully chosen and adj
    <img src="Images/Rain.gif" width="500"> 
    <img src="Images/Splash.gif" width="500"> 
 </div>
-
+<br>
 
 <i> Links:</i>
 

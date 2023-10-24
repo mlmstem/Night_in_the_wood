@@ -43,7 +43,7 @@ The game uniquely combines survival mechanics with educational elements, teachin
 
 # Story & Narrative
 ## Story
-An adventurous man embarked on a solo hike through South America's Amazon jungle. After days of exploring, his phone stopped working, leaving him stranded and lost in the wilderness. Tasked with surviving the night, he must await rescue until he is noticed missing and a specialised team mobilises to secure his safety.
+An adventurous man embarked on a solo hike through South America's Amazon jungle. After days of exploring, a monkey steals his map, leaving him stranded and lost in the wilderness. Tasked with surviving the night, he must await rescue until he is noticed missing and a specialised team mobilises to secure his safety.
 
 ## Characters:
 
