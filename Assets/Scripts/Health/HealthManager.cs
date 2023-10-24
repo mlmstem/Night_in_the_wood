@@ -14,14 +14,12 @@ public class HealthManager : MonoBehaviour
 
     public Lizard_snake_chase script_snake;
 
-    public Lizard_snake_chase script_lizard;
-
+    public AIChase script_lizard;
+    
     public Image healthBar;
     public float health = 100f;
-    private float reduceHealthMultiplier = 0.6f;
+    [SerializeField] int reduceHealthMultiplier = 1;
     private bool isInTriggerZone = false;
-
-    public AudioClip damageSound;
 
     // Update is called once per frame
     void Update()
@@ -32,42 +30,11 @@ public class HealthManager : MonoBehaviour
             SceneManager.LoadScene("FailScreen");
         }
 
-        // Bear damage
-        if (script.distance < 6 && script.counter % 30 == 0 && script.isAttacking)
+        if ((script.distance < 5 && script.counter % 75 == 0 && script.isAttacking) || (script_monkey.distance < 5 && script_monkey.counter % 75 == 0 && script_monkey.isAttacking) || (script_deer.distance < 5 && script_deer.counter % 75 == 0 && script_deer.isAttacking)|| (script_snake.distance < 5 && script_snake.counter % 75 == 0 && script_snake.isAttacking) || (script_lizard.distance < 5 && script_lizard.counter % 75 == 0 && script_lizard.isAttacking))
         {
+            Debug.Log("Take Damage");
             TakeDamage(25);
-            GetComponent<AudioSource>().clip = damageSound;
-            GetComponent<AudioSource>().Play();
         }
-        // Monkey damage
-        else if (script_monkey.distance < 6 && script_monkey.counter % 30 == 0 && script_monkey.isAttacking)
-        {
-            TakeDamage(15);
-            GetComponent<AudioSource>().clip = damageSound;
-            GetComponent<AudioSource>().Play();
-        }
-        // Deer damage
-        else if (script_deer.distance < 6 && script_deer.counter % 30 == 0 && script_deer.isAttacking)
-        {
-            TakeDamage(15);
-            GetComponent<AudioSource>().clip = damageSound;
-            GetComponent<AudioSource>().Play();
-        }
-        // Snake damage
-        else if (script_snake.distance < 6 && script_snake.counter % 30 == 0 && script_snake.isAttacking)
-        {
-            TakeDamage(20);
-            GetComponent<AudioSource>().clip = damageSound;
-            GetComponent<AudioSource>().Play();
-        }
-        // Lizard damage
-        else if (script_lizard.distance < 6 && script_lizard.counter % 30 == 0 && script_lizard.isAttacking)
-        {
-            TakeDamage(10);
-            GetComponent<AudioSource>().clip = damageSound;
-            GetComponent<AudioSource>().Play();
-        }
-
 
         if (isInTriggerZone && GameObject.Find("Rain(Clone)") != null)
         {
@@ -79,7 +46,7 @@ public class HealthManager : MonoBehaviour
             if (GameObject.Find("Rain(Clone)") != null)
             {
                 // Increase health lost in the rain
-                health -= Time.deltaTime * reduceHealthMultiplier * 4;
+                health -= Time.deltaTime * reduceHealthMultiplier * 3;
             }
             else
             {
@@ -118,6 +85,7 @@ public class HealthManager : MonoBehaviour
         {
             // Player entered the shelter, stop reducing health
             isInTriggerZone = true;
+            Debug.Log("inzone");
         }
 
     }

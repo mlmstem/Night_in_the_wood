@@ -6,14 +6,25 @@ using UnityEngine.AI;
 public class Monkey_chase : MonoBehaviour
 {
     public float speed;
+    //public float FollowSpeed;
     public float distance;
     public int counter;
+    //private float angle;
+    //private Vector3 walkpoint;
+   // private Vector3 moveDirection;
     private Vector3 last_pos;
     private Animator animator;
+    //public float NoticeDistance = 5;
+    //public float AttackDistance = 1;
+    //public RaycastHit Shot;
+   // public float TargetDistance;
     public bool isAttacking = false;
     public bool monkey_eats;
+    // new version
     public NavMeshAgent agent;
     public Transform player;
+    //public LayerMask whatIsGround, whatIsPlayer;
+    //Patroling
     public Vector3 walkPoint;
     public Vector3 playerpoint;
     public Vector3 enemypoint;
@@ -32,6 +43,9 @@ public class Monkey_chase : MonoBehaviour
     }
     void Start()
     {
+        /*float randomz = Random.Range(-500, 500);
+        float randomx = Random.Range(-500, 500);
+        walkpoint = new Vector3(transform.position.x + randomx, transform.position.y, transform.position.z + randomz);*/
         last_pos = player.transform.position;
         animator = GetComponentInChildren<Animator>();
         counter = 0;
@@ -66,17 +80,18 @@ public class Monkey_chase : MonoBehaviour
             }
         }
 
-        if (counter % 30 == 0)
+        if (counter % 75 == 0)
         {
             last_pos = transform.position;
         }
     }
-
+   
     private void Patroling()
     {
+        //Debug.Log("patrol");
         animator.SetTrigger("monkey_walk");
         isAttacking = false;
-        if (!walkPointSet || last_pos == transform.position) SearchWalkPoint();
+        if (!walkPointSet || last_pos== transform.position) SearchWalkPoint();
 
         if (walkPointSet)
             agent.SetDestination(walkPoint);
@@ -93,12 +108,13 @@ public class Monkey_chase : MonoBehaviour
         float randomZ = Random.Range(-walkPointRange, walkPointRange);
         float randomX = Random.Range(-walkPointRange, walkPointRange);
 
-        walkPoint = new Vector3(transform.position.x + randomX, 0, transform.position.z + randomZ);
+        walkPoint = new Vector3(transform.position.x + randomX, 0,transform.position.z + randomZ);
         walkPointSet = true;
     }
 
     private void ChasePlayer()
     {
+        //Debug.Log("chase");
         isAttacking = false;
         playerpoint = new Vector3(player.position.x, 0, player.position.z);
         agent.SetDestination(playerpoint);
@@ -107,17 +123,18 @@ public class Monkey_chase : MonoBehaviour
 
     private void AttackPlayer()
     {
+        //Debug.Log("attack");
         isAttacking = true;
         //Make sure enemy doesn't move
         enemypoint = new Vector3(transform.position.x, 0, transform.position.z);
         agent.SetDestination(enemypoint);
         transform.LookAt(player);
         animator.SetTrigger("monkey_attack");
-    }
+    }   
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Item"))
+        if (other.CompareTag("Item") )
         {
             monkey_eats = true;
             Debug.Log("monkey_eats");
