@@ -169,9 +169,11 @@ Our evaluation plan for "Night in the Woods" employed a dual approach, combining
 
 **Alignment with Demographic**:
 * Lucas exhibited a strong desire to enhance survival skills and an appreciation for nature.
+
 **Observations**:
 * Lucas faced challenges with understanding the game's mechanics, including picking up items and managing health, particularly that he was too busy collecting food so that his health didn’t fully deteriorate
 * He suggested improvements in instructions, the visibility of questions, and reducing the difficulty.
+
 **Recommendations**:
 * Improve item interaction, make instructions clearer, and shift the focus away from collecting berries
 
@@ -179,10 +181,12 @@ Our evaluation plan for "Night in the Woods" employed a dual approach, combining
 
 **Alignment with Demographic**:
 * Caitlyn had a moderate interest in survival and adventure themes.
+
 **Observations**:
 * Caitlyn struggled with health management and did not prioritise answering questions as they appeared. She also mentioned that they were too long to read
 * She found the blue shades of berries confusing as the colours were too similar.
 * Moreover, she found that she could just run away from the animals as there was no incentive to fight them or answer the questions.
+
 **Recommendations**:
 Provide clearer instructions by reducing their length
 Add an incentive to answer the questions
@@ -191,9 +195,11 @@ Add an incentive to answer the questions
 
 **Alignment with Demographic**:
 * Simon had a strong appreciation for nature and wilderness but was not too keen on enhancing his survival skills or even had much of an interest in survival
+
 **Observations**:
 * Simon felt immersed in the game but had issues with picking up items and managing the controls, claiming that it was not easy for novices to pick up.
 * He suggested more explicit instructions and feedback mechanisms.
+
 **Recommendations**:
 * Improve item interaction, provide clearer instructions, and offer feedback on player actions.
 
@@ -201,21 +207,25 @@ Add an incentive to answer the questions
 
 **Alignment with Demographic**:
 * Cassandra showed an interest in enhancing survival skills and moderate enthusiasm for learning through play.
+
 **Observations**:
 * Cassandra faced challenges with understanding game mechanics, particularly related to item interaction and health management as with many other participants.
 * She commented on the text size being too small in the instructions and pop-up questions
 * Further, she found many areas in which she wasn't able to manoeuvre her character through
+
 **Recommendations**:
 * The game should enlarge and clarify the instructions, improve item interaction, and improve player collision 
 
 ***Participant 5 (Haotian Zhuang)***:
 
 **Alignment with Demographic**: 
-* Haotian is an experienced survival game fan player with a competent level of skill. 
+* Haotian is an experienced survival game fan player with a competent level of skill.
+
 **Observations**: 
 * Haotian had trouble reading from the text popups while playing the game; the popup text was way too small for him to look at. It was also quite hard for him to play while reading the text
 * Haotian was not aware of the crafting system, and was thinking about going into the covered area to escape the rain
 * He also had problems picking items. During the game he won, he didn't encounter many enemies, this is not great as the game is made to encourage players dealing with the enemies.
+
 **Recommendations**:
 * A sprinting feature should be implemented so that when a player's health is low he can run quicker to pick up items to restore his health.
 * Popup text should be clearer and easier to read.
