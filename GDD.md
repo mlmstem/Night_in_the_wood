@@ -61,14 +61,13 @@ An adventurous man embarked on a solo hike through South America's Amazon jungle
 * Small sparrow who follows the hiker protagonist
 
 ### Enemies
-
-<img align="right" src="https://github.com/COMP30019/project-1-cvts/assets/102479263/66bbd145-fe55-4110-88aa-7ee247df9765" width="300" > 
-
-* Bear - in order to defeat him you will have to stand still or he wil atack you.
-* Snake - in order to defeat him you will have to hit him with a stick or he wil atack you.
-* Monkey - in order to defeat him you will have to feed him with a strawberry or he wil atack you.
-* Lizard - in order to defeat him you will have to hit him with a stick or he wil atack you.
-* Deer - has a baby deer that follows hime, in order to defeat him you will have to stand still or he wil atack you.
+| Decription  | Phtoo |
+| ------------- | ------------- |
+| * Bear - in order to defeat him you will have to stand still or he wil atack you.   | <img align="right" src="https://github.com/COMP30019/project-1-cvts/assets/102479263/66bbd145-fe55-4110-88aa-7ee247df9765" width="100" height="100">  |
+| * Monkey - in order to defeat him you will have to feed him with a strawberry or he wil atack you. | <img align="right"  alt="monkey" src="https://github.com/COMP30019/project-2-cvts/assets/102479263/ea9695ca-30d0-403d-b800-a91dc4a67d1b" width="100"  height="100">  |
+| * Snake - in order to defeat him you will have to hit him with a stick or he wil atack you. | <img align="right" alt="snake" src="https://github.com/COMP30019/project-2-cvts/assets/102479263/5269e43f-fb3a-4267-b774-800d4bb152a4" width="100"  height="100">|
+| * Lizard - in order to defeat him you will have to hit him with a stick or he wil atack you. | <img align="right" alt="lizard" src="https://github.com/COMP30019/project-2-cvts/assets/102479263/6023aee2-c458-4bab-b470-a4b62bf0c645" width="100"  height="100">  |
+| * Deer - has a baby deer that follows hime, in order to defeat him you will have to stand still or he wil atack you.|<img align="right" alt="deer" src="https://github.com/COMP30019/project-2-cvts/assets/102479263/555eac15-2de2-4cdd-9b4a-73a6018b28a5" width="100"  height="100"> |
 
 ### Character background
 A traveller who is extensively exploring South America but with no previous experience in wilderness survival. Struggling with his lack of survival knowledge, he is confronted with the harsh reality of being lost.
