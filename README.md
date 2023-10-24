@@ -230,55 +230,112 @@ Suggestions were made to improve the visibility of questions, differentiate berr
 
 #### Questionnaire Results
 
-# INSERT IMAGE HERE
-
+<div align="center">
+   <img src="Images/intructions_chart.png" width="500"> 
+</div>
+<br>
 The majority of participants, specifically 83%, agreed that the “controls are intuitive”; however, it is worth noting that one participant encountered confusion regarding interactions due to unclear instructions, particularly related to jumping and item collection, where it was erroneously believed that every interaction was managed by pressing the 'E' key. They pointed out that this was due to unclear wording on the instructions
-
-# INSERT IMAGE HERE
-
+<br>
+<div align="center">
+   <img src="Images/health_chart.png" width="500"> 
+</div>
+<br>
 Each participant of the questionnaire, as well as those involved in the cooperative evaluation, expressed a unanimous concern that the health bar “just went down really quickly”. This rendered the game overly challenging and diminishing its overall enjoyability. This placed excessive focus on finding berries for health replenishment, as opposed to promoting exploration, which was cited as a significant issue.
 Furthermore, an overwhelming majority of players, 75% of participants, found the random events, such as rain, and animal encounters to be highly challenging. Additionally, 25% expressed neutrality towards this aspect. Valuable feedback highlighted concerns, including the significant damage inflicted by animals, with suggesting to “reduce the attack of animals”, the absence of clear indicators when being attacked, and the distraction caused by attempting to read the pop-up questions during these events as they “didn't really have time to read the questions because they were too long“ .
-
-# INSERT IMAGE HERE
-
+<br>
+<div align="center">
+   <img src="Images/updates_chart.png" width="500"> 
+</div>
+<br>
 The player feedback regarding updates from the rescue team was also notably positive, with an overwhelming majority expressing appreciation with only one participant disagreeing. This was due to a preference for a timer to precisely gauge the remaining time, as opposed to the minute-by-minute updates provided.
+<br>
+<br>
+<div align="center">
+   <img src="Images/companion_chart.png" width="500"> 
+   <img src="Images/gamelearn_chart.png" width="500"> 
+</div>
+<br>
+The graph on the left reveals that the companion questions yielded mixed results among participants. This variability can be attributed to challenges regarding information overload and the time required to read the questions. These issues were noted to cause distractions while participants were engaged in combat with the animals.
 
-# INSERT IMAGES HERE
-
-The initial graph reveals that the companion questions yielded mixed results among participants. This variability can be attributed to challenges regarding information overload and the time required to read the questions. These issues were noted to cause distractions while participants were engaged in combat with the animals.
-
-However, the second graph demonstrates that participants expressed interest in the concept of companion questions. With the suggested changes as recommended by participants in both the questionnaire and cooperative evaluations, there is potential for enhancing the learning and gaming experience. This suggests a move away from players feeling indifferent towards this aspect of the game.
-
-# INSERT IMAGE HERE
-
+However, the graph on the right demonstrates that participants expressed interest in the concept of companion questions. With the suggested changes as recommended by participants in both the questionnaire and cooperative evaluations, there is potential for enhancing the learning and gaming experience. This suggests a move away from players feeling indifferent towards this aspect of the game.
+<br>
+<br>
+<div align="center">
+   <img src="Images/overall_chart.png" width="500"> 
+</div>
+<br>
 The overall gameplay experience was predominantly positive, albeit somewhat hindered by a few minor issues. These issues included challenging encounters, rapid health depletion, and a sense of information overload resulting from the companion questions.
 
 The results align with those from the Cooperative Evaluations, reinforcing the identified issues. Importantly, no participant rated the experience below a 6, indicating a baseline level of satisfaction. The most frequently assigned rating was 8, demonstrating the overall favourable perception of the game.
 
-
 ### Recommendations and Action Plan
 #### Addressing Major Issues or Changes Based on Cooperative Evaluation and Questionnaire Findings
 
-* **Make Health Reduce Slower**:
-   * Adjusted the rate at which a player's health decreases from 1/sec to 0.6/sec to provide a more manageable gameplay experience and allow the player to explore more and pick up berries less.
-* **Change How Questions Appear**: 
-   * Revised the appearance of questions so that they pause the game when the player first experiences them, ensuring clarity for players as they will have time to read what is required of them.
-* **Make Instructions Clearer**: 
-   * Enhanced the clarity of instructions, detailing each individual action so players were not confused about the game mechanics
-* **Make It Easier to Pick Up Items (and Clearer)**: 
-   * Improve item interaction by enlarging the trigger area for picking up items.
-* **Made Berries More Distinct**: 
-   * Differentiate between nightshade berries and blueberries to help players easily identify them by making nightshade berries significantly darker.
-* **Reduced Attack Damage from Animals**: 
-   * Adjust the damage dealt by animals to make the game more balanced and fair.
-* **Removed Collision from Shrubbery**: 
-   * Removed collision issues with shrubbery to enhance player navigation.
-* **Clarified Health Loss Explanation**: 
-   * Provide a clear note in game lore to explain the reasons behind health loss, ensuring players understand why they’re losing health
-* **Make It More Clear that Shelter Is Required for Rain (Before It Occurs)**:
-   * Enhanced the game's communication regarding the need to craft shelter before rain occurs, ensuring players are prepared.
-* **Sound/Audio Cues**:
-   * Implement audio cues and feedback mechanisms to help players identify and respond to in-game events more effectively, such as attacks from animals. While this was already planned, it was not in the build that the participants played.
+**Make Health Reduce Slower**: <br>
+Adjusted the rate at which a player's health decreases from 1/sec to 0.6/sec to provide a more manageable gameplay experience and allow the player to explore more and pick up berries less.
+<div align="center">
+   <img src="Images/health_oldnew.gif" width="500"> 
+</div>
+<br>
+**Change How Questions Appear**: <br>
+Revised the appearance of questions so that they pause the game when the player first experiences them, ensuring clarity for players as they will have time to read what is required of them.
+<div align="center">
+   <img src="Images/questions_og.png" width="500"> 
+   <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" width="450"> 
+</div>
+<br>
+
+**Make Instructions Clearer**: <br>
+Enhanced the clarity of instructions, detailing each individual action so players were not confused about the game mechanics
+<div align="center">
+   <img src="Images/instructions_og.png" width="450"> 
+   <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" width="450"> 
+</div>
+<br>
+
+**Make It Easier to Pick Up Items (and Clearer)**: <br>
+Improved item interaction by enlarging the trigger area for picking up items.
+<div align="center">
+   <img src="Images/trigger_og.png" width="250"> 
+   <img src="Images/trigger_new.png" width="250">
+</div>
+<br>
+
+**Made Berries More Distinct**: <br>
+Differentiated between nightshade berries and blueberries to help players easily identify them by making nightshade berries significantly darker.
+<div align="center">
+   <img src="Images/berries_old.png" width="450"> 
+   <img src="Images/berries_new.png" width="450">
+</div>
+<br>
+
+**Reduced Attack Damage from Animals**: <br>
+Adjusted the damage dealt by animals to make the game more balanced and fair.
+
+**Removed Collision from Shrubbery**: <br>
+Removed collision issues with shrubbery to enhance player navigation.
+<div align="center">
+   <img src="Images/collide_og.gif" width="450"> 
+   <img src="Images/collide_new.gif" width="450">
+</div>
+<br>
+
+**Clarified Health Loss Explanation**: <br>
+Provided a clear note in game lore to explain the reasons behind health loss, ensuring players understand why they’re losing health
+<div align="center">
+   <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" width="450"> 
+</div>
+<br>
+
+**Make It More Clear that Shelter Is Required for Rain (Before It Occurs)**: <br>
+Enhanced the game's communication regarding the need to craft shelter before rain occurs, ensuring players are prepared.
+<div align="center">
+   <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" width="450"> 
+</div>
+<br>
+
+**Sound/Audio Cues**: 
+Implemented audio cues and feedback mechanisms to help players identify and respond to in-game events more effectively, such as attacks from animals. While this was already planned, it was not in the build that the participants played.
 
 ### Discussion
 
@@ -310,7 +367,7 @@ The rain particle system exhibits a range of attributes carefully chosen and adj
    <img src="Images/Rain.gif" width="500"> 
    <img src="Images/Splash.gif" width="500"> 
 </div>
-
+<br>
 
 <i> Links:</i>
 
