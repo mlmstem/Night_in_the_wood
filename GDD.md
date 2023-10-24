@@ -64,11 +64,11 @@ An adventurous man embarked on a solo hike through South America's Amazon jungle
 
 <img align="right" src="https://github.com/COMP30019/project-1-cvts/assets/102479263/66bbd145-fe55-4110-88aa-7ee247df9765" width="300" > 
 
-* Bear
-* Snake
-* Monkey
-* Lizard
-* Deer
+* Bear - in order to defeat him you will have to stand still or he wil atack you.
+* Snake - in order to defeat him you will have to hit him with a stick or he wil atack you.
+* Monkey - in order to defeat him you will have to feed him with a strawberry or he wil atack you.
+* Lizard - in order to defeat him you will have to hit him with a stick or he wil atack you.
+* Deer - has a baby deer that follows hime, in order to defeat him you will have to stand still or he wil atack you.
 
 ### Character background
 A traveller who is extensively exploring South America but with no previous experience in wilderness survival. Struggling with his lack of survival knowledge, he is confronted with the harsh reality of being lost.
