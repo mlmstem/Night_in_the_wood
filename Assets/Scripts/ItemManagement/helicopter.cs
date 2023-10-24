@@ -9,7 +9,7 @@ public class helicopter : MonoBehaviour
     void Start()
     { // Use Start or Awake depending on your goal
         gameObject.active = false;
-        Invoke("wakeup", 3f);  // Time in seconds
+        Invoke("wakeup", 290f);  // Time in seconds
     }
 
     void wakeup()
