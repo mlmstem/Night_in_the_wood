@@ -29,7 +29,7 @@ public class FollowPlayer : MonoBehaviour
             TargetDistance = Shot.distance;
             if (TargetDistance >= AllowedDistance)
             {
-                FollowSpeed = 0.2f;
+                FollowSpeed = 0.15f;
                 animator.SetTrigger("FlyTrigger");
                 transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, FollowSpeed);
             }
