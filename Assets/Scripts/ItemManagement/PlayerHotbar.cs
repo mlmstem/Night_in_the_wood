@@ -18,6 +18,10 @@ public class PlayerHotbar : MonoBehaviour
 
     [SerializeField] private GameObject log01a; // Reference to the log_01_a GameObject.
 
+    public AudioSource healSound;
+
+    public AudioSource throwSound;
+
     private void Start()
     {
         currentSlot = 0;
@@ -74,6 +78,7 @@ public class PlayerHotbar : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
+            throwSound.Play();
             UseItem(currentSlot);
         }
 
@@ -139,6 +144,7 @@ public class PlayerHotbar : MonoBehaviour
                 {
                     // Heal player if not crafting item rock or stick
                     healthManager.OnHealButtonClick();
+                    healSound.Play();
                     // Destroy Item
                     Destroy(itemGameObject);
                 }
@@ -243,6 +249,7 @@ public class PlayerHotbar : MonoBehaviour
                 PlayerHotbar hotbar = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHotbar>();
                 hotbar.isFull[currentSlot] = true;
                 Instantiate(craftedItem, hotbar.slots[currentSlot].transform, false);
+                healSound.Play();
 
                 // Reset the flag as crafting is complete
                 hasSufficientItems = false;

@@ -38,6 +38,8 @@ public class Lizard_snake_chase : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
+    public AudioSource animalSound;
+
     private void Awake()
     {
         player = GameObject.Find("Hiker").transform;
@@ -104,8 +106,10 @@ public class Lizard_snake_chase : MonoBehaviour
     private void ChasePlayer()
     {
         //Debug.Log("chase");
+        
         isAttacking = false;
         playerpoint = new Vector3(player.position.x, 0, player.position.z);
+        animalSound.Play();
         agent.SetDestination(playerpoint);
    
     }
@@ -114,6 +118,7 @@ public class Lizard_snake_chase : MonoBehaviour
     {
         //Debug.Log("attack");
         isAttacking = true;
+        animalSound.Play();
         //Make sure enemy doesn't move
         enemypoint = new Vector3(transform.position.x, 0, transform.position.z);
         agent.SetDestination(enemypoint);
