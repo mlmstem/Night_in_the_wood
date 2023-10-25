@@ -285,7 +285,7 @@ Revised the appearance of questions so that they pause the game when the player 
 <br>
 <div align="center">
    <img src="Images/questions_og.png" width="500"> 
-   <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" width="450"> 
+   <img src="Images/questions_new.png" width="450"> 
 </div>
 <br>
 
@@ -294,7 +294,7 @@ Enhanced the clarity of instructions, detailing each individual action so player
 <br>
 <div align="center">
    <img src="Images/instructions_og.png" width="450"> 
-   <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" width="450"> 
+   <img src="Images/Instructions_new.png" width="450"> 
 </div>
 <br>
 
@@ -331,16 +331,12 @@ Removed collision issues with shrubbery to enhance player navigation.
 **Clarified Health Loss Explanation**: <br>
 Provided a clear note in game lore to explain the reasons behind health loss, ensuring players understand why they’re losing health
 <br>
-<div align="center">
-   <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" width="450"> 
-</div>
 <br>
-
 **Make It More Clear that Shelter Is Required for Rain (Before It Occurs)**: <br>
 Enhanced the game's communication regarding the need to craft shelter before rain occurs, ensuring players are prepared.
 <br>
 <div align="center">
-   <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" width="450"> 
+   <img src="Images/lore.png" width="450"> 
 </div>
 <br>
 
