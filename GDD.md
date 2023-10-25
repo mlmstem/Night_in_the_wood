@@ -7,7 +7,7 @@
 
 <img align="right" src="https://images.unsplash.com/photo-1512747646639-ed824d861e0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9yZXN0JTIwbmlnaHR8ZW58MHx8MHx8fDA%3D&w=1000&q=80" width="250">
 
-Night in the Woods is a captivating survival and educational experience set in a lush forest environment. The game revolves around a human protagonist who finds themselves stranded in the middle of the night in a dense forest, with the goal of surviving until sunrise when a rescue team is expected to find them. The player, accompanied by a companion, must navigate through various survival challenges posed by the wilderness and learn essential survival techniques and skills to ensure their safety until help arrives. Their role is to make critical decisions to find food, build shelter, start a fire, and protect themselves from animals and weather conditions.
+Night in the Woods is a captivating survival and educational experience set in a lush forest environment. The game revolves around a human protagonist who finds themselves stranded in the middle of the night in a dense forest, with the goal of surviving until sunrise when a rescue team is expected to rescue them. The player, accompanied by a companion, must navigate through various survival challenges posed by the wilderness and learn essential survival techniques and skills to ensure their safety until help arrives. Their role is to make critical decisions to find food, build shelter, protect themselves from animals and weather conditions, and navigatig in the woods to find the meeting point with the rescue helicopter.
 
 <sup><sub> Image from https://images.unsplash.com/photo-1512747646639-ed824d861e0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9yZXN0JTIwbmlnaHR8ZW58MHx8MHx8fDA%3D&w=1000&q=80 </sub></sup>
 
@@ -43,7 +43,7 @@ The game uniquely combines survival mechanics with educational elements, teachin
 
 # Story & Narrative
 ## Story
-An adventurous man embarked on a solo hike through South America's Amazon jungle. After days of exploring, his phone stopped working, leaving him stranded and lost in the wilderness. Tasked with surviving the night, he must await rescue until he is noticed missing and a specialised team mobilises to secure his safety.
+An adventurous man embarked on a solo hike through South America's Amazon jungle. After days of exploring, a monkey steals his phone, leaving him stranded and lost in the wilderness. Tasked with surviving the night, he must await rescue until he is noticed missing and a specialised team mobilises to secure his safety.
 
 ## Characters:
 
@@ -61,19 +61,18 @@ An adventurous man embarked on a solo hike through South America's Amazon jungle
 * Small sparrow who follows the hiker protagonist
 
 ### Enemies
-
-<img align="right" src="https://github.com/COMP30019/project-1-cvts/assets/102479263/66bbd145-fe55-4110-88aa-7ee247df9765" width="300" > 
-
-* Bear
-* Snake
-* Monkey
-* Lizard
-* Deer
+| Decription  | Phtoo |
+| ------------- | ------------- |
+| * Bear - in order to defeat him you will have to stand still or he wil atack you.   | <img align="right" src="https://github.com/COMP30019/project-1-cvts/assets/102479263/66bbd145-fe55-4110-88aa-7ee247df9765" width="100" height="100">  |
+| * Monkey - in order to defeat him you will have to feed him with a strawberry or he wil atack you. | <img align="right"  alt="monkey" src="https://github.com/COMP30019/project-2-cvts/assets/102479263/ea9695ca-30d0-403d-b800-a91dc4a67d1b" width="100"  height="100">  |
+| * Snake - in order to defeat him you will have to hit him with a stick or he wil atack you. | <img align="right" alt="snake" src="https://github.com/COMP30019/project-2-cvts/assets/102479263/5269e43f-fb3a-4267-b774-800d4bb152a4" width="100"  height="100">|
+| * Lizard - in order to defeat him you will have to hit him with a stick or he wil atack you. | <img align="right" alt="lizard" src="https://github.com/COMP30019/project-2-cvts/assets/102479263/6023aee2-c458-4bab-b470-a4b62bf0c645" width="100"  height="100">  |
+| * Deer - has a baby deer that follows hime, in order to defeat him you will have to stand still or he wil atack you.|<img align="right" alt="deer" src="https://github.com/COMP30019/project-2-cvts/assets/102479263/555eac15-2de2-4cdd-9b4a-73a6018b28a5" width="100"  height="100"> |
 
 ### Character background
 A traveller who is extensively exploring South America but with no previous experience in wilderness survival. Struggling with his lack of survival knowledge, he is confronted with the harsh reality of being lost.
 
-The hiker's motivation is to ensure survival by learning how to independently manage life in the woods. He forms a friendship with a little bird, while all other characters (animals) in the game serve as enemies trying to protect their home. The character's goals involve utilising natural resources to remain alive until someone realises they're lost and send help. They must conquer nature's challenges, including finding food, making fire and seeking shelter from both the elements and animal adversaries.
+The hiker's motivation is to ensure survival by learning how to independently manage life in the woods. He forms a friendship with a little bird, while all other characters (animals) in the game serve as enemies trying to protect their home. The character's goals involve utilising natural resources to remain alive until someone realises they're lost and send help. They must conquer nature's challenges, including finding food,seeking shelter from both the elements and animal adversaries and navigating in the woods.
 
 ### Character personality
 
@@ -87,7 +86,7 @@ Eager for adventures and a genuine love for learning, he thrives on new experien
 
 ### Setting
 
-The forest is full with trees, bushes, rivers, caves and a diverse array of animals. As the game progresses, the player receives updates on the rescue team's progress, offering updated on whether they've become aware of the player's absence, their understanding of the location, and their presence within the jungle.
+The forest is full with trees, bushes, rivers, rocks and a diverse array of animals. As the game progresses, the player receives updates on the rescue team's progress, offering updated on whether they've become aware of the player's absence, their understanding of the location, and their presence within the jungle in a meeting point he should get to.
 
 ## Gameplay & Mechanics
 
@@ -97,14 +96,14 @@ The forest is full with trees, bushes, rivers, caves and a diverse array of anim
 
 In our game, players experience the environment from a first-person perspective. The camera remains fixed most of the time, providing a sense of immersion.
 
-Importantly, the player's character is not directly visible on the screen, except through animations. For example, when performing actions like building a fire, the camera may briefly shift to a third-person perspective, giving the player a broader view.
+The player's character is not directly visible on the screen.
 
 <sup><sub> image from https://a.silvergames.com/screenshots/forest-survival-simulator/the-forest.jpg </sub></sup>
 
 
 ### Controls: Item Collection / Build / Attack / Defence 
 
-We've designed the controls to be intuitive, utilising standards across most games. Standard movement is achieved using the WASD keys, while interaction with objects is done with the 'E' key. The inventory and survival skills menu can be accessed via the 'I' key. Additionally, players can call for help from their companion using the 'H' key, sprint using 'Shift,' crouch with 'Ctrl,' and jump with the 'Spacebar.' These controls provide players with a comprehensive way to navigate and engage with the game's world.
+We've designed the controls to be intuitive, utilising standards across most games. Standard movement is achieved using the WASD keys, while interaction with objects is done with the 'E' key. The inventory and survival skills menu can be accessed via the 1-5 keys and the mouse scroller, and the items in the inventory can be dropped with 'Q' key, read the map with the 'M' key ,jump with the 'Spacebar'. These controls provide players with a comprehensive way to navigate and engage with the game's world.
 
 <table align="center">
    <tr>
@@ -127,12 +126,12 @@ We've designed the controls to be intuitive, utilising standards across most gam
       <td>E</td>
    </tr>
    <tr>
-      <td>Attack (other option)</td>
-      <td> Left Mouse Click </td>
+      <td>Access inventory items</td>
+      <td> 1-5 or scroller </td>
    </tr>
   <tr>
-      <td>Craft</td>
-      <td>C</td>
+      <td>Read map</td>
+      <td>M</td>
    </tr>
    <tr>
       <td>Drop Item</td>
@@ -143,7 +142,7 @@ We've designed the controls to be intuitive, utilising standards across most gam
 
 ### Progression
 
-The game's progression is a balance between survival and learning with constant updates from the rescue team allowing the player to track their progress. Players must not only survive the night but also aim to improve their survival skills and knowledge. Central to this is the health bar, which players must continuously monitor as it diminishes over time due to environmental factors, injuries, enemies, and other challenges; however, players can regenerate it with consumables, such as food. This adds an element of resource management to the game, which becomes increasingly challenging due to external events and animal attacks, ramping up the pressure on the player.
+The game's progression is a balance between survival and learning with constant updates from the rescue team allowing the player to track their progress. Players must not only survive the night but also aim to improve their survival skills and knowledge. Central to this is the health bar, which players must continuously monitor as it diminishes over time due to environmental factors,hunger, injuries, enemies, and other challenges; however, players can regenerate it with consumables, such as food. This adds an element of resource management to the game, which becomes increasingly challenging due to external events and animal attacks, ramping up the pressure on the player.
 
 <div align="center" >
   <img src="https://i.pinimg.com/originals/5d/5a/1a/5d5a1aab51b2b5985d0b578b83e53e1f.png" width="200">
@@ -163,6 +162,7 @@ Furthermore, the game will periodically present players with survival-related qu
 ### Challenges
 
 The game also encourages progression through constant random challenges. Animal attacks can harm the player's health, forcing them to use their skills to defend themselves or find ways to avoid these encounters. Moreover, random external events, like sudden weather changes, add unpredictability to the gameplay. The constantly diminishing health also adds further urgency, creating tension and a sense of accomplishment when the player survives the night.
+Throughout the game the player must face his ememies as every meeting with an enemy reveals another part o his map until he will be able to see the location of the meeting point he has to get to before time ends.
 <div align="center">
   <img src="https://i.ytimg.com/vi/3uLjSx6kvCs/maxresdefault.jpg" width="300" margin-right="50rem">
   <img src="Images/Rain_Event.png" width="250">
@@ -199,7 +199,7 @@ However, The "time survival" mechanic serves as the overarching framework. Playe
 
 The virtual world system in the game primarily comprises three key categories: items, structures, and enemies. Items denote entities that can be carried within the character's inventory. Conversely, structures encompass various features within the game world, each serving distinct functions, and are created with items. For example, players have the capacity to craft a campfire by using items such as 'sticks' and 'rocks'. These structures are then placed at fixed locations for the player's use.
 
-On the other hand, enemies are entities equipped with a health bar and attack damage, capable of engaging the player, each with their own distinctive movement pattern. Varied enemies have distinct speeds and occupy specific positions on the screen. For instance, wasps serve as aerial adversaries, thus maintaining higher positions, requiring the player to move downward to evade them.
+On the other hand, enemies are entities equipped with a health bar and attack damage, capable of engaging the player, each with their own distinctive movement pattern. Varied enemies have distinct speeds and occupy specific positions on the screen.
 
 The presentation of the game consist of four parts:
 * The character’s body from a first person perspective
@@ -218,9 +218,9 @@ The environment, as previously mentioned, is a low-poly cartoon forest, that is 
 
 ### Objects
 
-The crafting system follows the general rule of the forest in nature, such as creating campfires and shelter from items like wood and rocks. Most of the objects are used in ways to facilitate player’s survival, such as food and a simple crafting system. Letting the player utilise the objects correctly is also a critical part of the game which educates players on their knowledge of survival practices in the wilderness. The objects can also be used to create weapons to have a tougher attack damage against the enemies. Common weapons in the game include sharpened sticks and rocks.
+The crafting system follows the general rule of the forest in nature, such as creating shelter from items like wood and rocks. Most of the objects are used in ways to facilitate player’s survival, such as food and a simple crafting system. Letting the player utilise the objects correctly is also a critical part of the game which educates players on their knowledge of survival practices in the wilderness. The objects can also be used to attack the enemies.For instance, sharpened stick.
 
-Furthermore, there are also objects that can be used as consumable to help the player replenish health. While food is the main consumable there are also other natural healing items that can be used such medicinal plants (i.e. aloe vera) or tree sap.
+Furthermore, there are also objects that can be used as consumable to help the player replenish health, but some of theam migth reduce health. While food is the main consumable there are also fruits that contain poison and if he eats him he will lose health.
 
 <div align = "center">
   <img align="center" src = "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/836bd1c4-57d2-4c58-bd31-0e2208eaddad.webp" width="300">
@@ -232,7 +232,7 @@ Furthermore, there are also objects that can be used as consumable to help the p
 
 The fundamental physics are integrated into the game, resulting in the player losing health due to actions such as jumping or being attacked.
 
-The character's vertical movement adheres to a standard physics principle: when the player jumps, they ascend a particular height. Upon descending, falling damage is computed using a physics formula, where if the player falls beyond a certain threshold, an additional amount of damage is done for each set length.
+The character's vertical movement adheres to a standard physics principle: when the player jumps, they ascend a particular height.
 
 Moreover, animals possess distinctive attack patterns and speeds, with their attributes crafted based on both general knowledge and the inherent traits of each creature. Attacks also benefit from one-way collisions in which the player will only take damage if directly hit by an animal and not if they are the one initiating the attack.
 
@@ -281,7 +281,7 @@ Further, the eerie music not only carries a haunting ambiance to heighten excite
 
 The assets of the game includes the environmental and operable elements such as: 
 
-Trees, rocks, grass, bushes, (all) animals, water (lake/river), day/night sky, (all) items, rain/snow, clouds, the companion and human protagonist. This also includes any 2d sprites used for item icons in the inventory hotbar and UI.
+Trees, rocks, grass, bushes, (all) animals, water (lake/river), day/night sky, (all) items, rain, map, the companion and human protagonist. This also includes any 2d sprites used for item icons in the inventory hotbar and UI.
 
 <div align = "center">
   <img src = "https://assetstorev1-prd-cdn.unity3d.com/key-image/04fb0ee1-1819-47a5-be7a-844a1d3bd2d1.webp" width="300">

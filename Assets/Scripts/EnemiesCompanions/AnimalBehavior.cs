@@ -16,7 +16,7 @@ public class AnimalBehavior : MonoBehaviour
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform; // Assuming player tag is "Player."
         initialPosition = transform.position;
         animator = GetComponent<Animator>();
     }
@@ -78,14 +78,14 @@ public class AnimalBehavior : MonoBehaviour
 
         Debug.Log("hitting the enemy");
 
-
+   
         animator.SetBool("Dead", true);
         Debug.Log("Dead");
 
         StartCoroutine(DestroyAfterAnimation());
-
-
-
+            
+            
+        
     }
 
     private IEnumerator DestroyAfterAnimation()
