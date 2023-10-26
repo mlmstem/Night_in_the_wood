@@ -428,6 +428,13 @@ _MainTex: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials
 ### Chris Chen
 
 ### Quiana Sison
+- Implemented the bird companion functionality including questions and follow script
+- Designed and implemented the User Interface of scenes
+- Planned and created the Gameplay Video
+- Created the Evaluation Questionnaire
+- Conducted Cooperative Evaluations and Questionnaire
+- Created the Water Shader
+- Implemented Pause functionality
 
 ### Stefan Temelkovski
 - Created Inventory/Hotbar System + Item Pick Up
