@@ -103,14 +103,14 @@ The player's character is not directly visible on the screen.
 
 ### Controls: Item Collection / Build / Attack / Defence 
 
-We've designed the controls to be intuitive, utilising standards across most games. Standard movement is achieved using the WASD keys, while interaction with objects is done with the 'E' key. The inventory and survival skills menu can be accessed via the 1-5 keys and the mouse scroller, and the items in the inventory can be dropped with 'Q' key, read the map with the 'M' key ,jump with the 'Spacebar'. These controls provide players with a comprehensive way to navigate and engage with the game's world.
+We've designed the controls to be intuitive, utilising standards across most games. Standard movement is achieved using the WASD keys, while interaction with objects is done with the 'E' key. The inventory and survival skills menu can be accessed via the 1-5 keys and the mouse scroller, and the items in the inventory can be dropped with 'Q' key, read the map with the 'M' key, jump with the 'Spacebar'. These controls provide players with a comprehensive way to navigate and engage with the game's world.
 
 <table align="center">
    <tr>
       <th>Action</th>
       <th>Key(s)</th>
-      <th rowspan="7">
-        <img src="Images/apple-wireless-keyboard (2).jpg" width="300" alt="Keyboard Image"/>
+      <th rowspan="9">
+        <img src="Images/Keyboard.png" width="300" alt="Keyboard Image"/>
       </th>
    </tr>
    <tr>
@@ -126,17 +126,25 @@ We've designed the controls to be intuitive, utilising standards across most gam
       <td>E</td>
    </tr>
    <tr>
-      <td>Access inventory items</td>
+      <td>Access Inventory Items</td>
       <td> 1-5 or scroller </td>
    </tr>
   <tr>
-      <td>Read map</td>
+      <td>Read Map</td>
       <td>M</td>
    </tr>
    <tr>
       <td>Drop Item</td>
       <td>Q</td>
-   </tr> 
+  </tr> 
+  <tr>
+      <td>Craft Shelter</td>
+      <td>C</td>
+  </tr> 
+  <tr>
+      <td>Pause</td>
+      <td>P</td>
+  </tr> 
 </table>
 
 

@@ -294,7 +294,7 @@ Enhanced the clarity of instructions, detailing each individual action so player
 <br>
 <div align="center">
    <img src="Images/instructions_og.png" width="450"> 
-   <img src="Images/Instructions_new.png" width="450"> 
+   <img src="Images/Instructions_use.png" width="450"> 
 </div>
 <br>
 
