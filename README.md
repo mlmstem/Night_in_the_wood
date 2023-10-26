@@ -449,14 +449,14 @@ _MainTex: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials
 - Helped with merge conflicts
 
 ### Ben Volovelsky
--Created bear enemy, include his movement, and way to defeat it.
--Created deer enemy, include his movement, and way to defeat it, and baby deer which follows it.
--Created monkey enemy, include his movement, and way to defeat it.
--Created the map that the hiker navigates with and it's functionallity.
--Created an Helicopter which the hiker has to get to in order to win.
--Created change scenes mechanisem.
--Created meshrender which fixed the whole collision problens.
--Created an Ocean around the world.
+- Created bear enemy, include his movement, and way to defeat it.
+- Created deer enemy, include his movement, and way to defeat it, and baby deer which follows it.
+- Created monkey enemy, include his movement, and way to defeat it.
+- Created the map that the hiker navigates with and it's functionallity.
+- Created an Helicopter which the hiker has to get to in order to win.
+- Created change scenes mechanisem.
+- Created meshrender which fixed the whole collision problens.
+- Created an Ocean around the world.
 
 ## References and External Resources
 
