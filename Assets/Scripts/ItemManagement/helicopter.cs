@@ -19,7 +19,7 @@ public class helicopter : MonoBehaviour
     private void Update()
     {
         // Move the helicopter downwards in the Y-axis
-        if (this.transform.position.y > 10)
+        if (this.transform.position.y > 5)
         {
             transform.Translate(Vector3.down * fallSpeed * Time.deltaTime);
         }

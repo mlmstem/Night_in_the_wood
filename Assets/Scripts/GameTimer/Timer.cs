@@ -37,7 +37,7 @@ public class Timer : MonoBehaviour
             else
             {
                 float distance = Vector3.Distance(helicopter.transform.position, player.transform.position);
-                if (distance < 5)
+                if (distance < 25)
                 {
                     Debug.Log("Congratulations, the rescue team has arrived!");
                     isTimerActive = false;
