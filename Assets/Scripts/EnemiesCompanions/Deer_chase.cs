@@ -45,6 +45,7 @@ public class Deer_chase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         freeze = false;
         if (last__player_pos == player.transform.position)
         {
@@ -99,6 +100,10 @@ public class Deer_chase : MonoBehaviour
 
     private void AttackPlayer()
     {
+        if (Time.timeScale == 0f) {
+            return;
+        }
+        
         Debug.Log("attack");
         deerSound.Play();
         isAttacking = true;

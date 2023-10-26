@@ -95,6 +95,10 @@ public class Lizard_snake_chase : MonoBehaviour
 
     private void AttackPlayer()
     {
+        if (Time.timeScale == 0f) {
+            return;
+        }
+        
         //Debug.Log("attack");
         isAttacking = true;
         animalSound.Play();

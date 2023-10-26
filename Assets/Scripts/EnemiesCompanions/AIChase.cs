@@ -99,6 +99,10 @@ public class AIChase : MonoBehaviour
 
     private void AttackPlayer()
     {
+        if (Time.timeScale == 0f) {
+            return;
+        }
+        
         Debug.Log("attack");
         isAttacking = true;
         //Make sure enemy doesn't move
