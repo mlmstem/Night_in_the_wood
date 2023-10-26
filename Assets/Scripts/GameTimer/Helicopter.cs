@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class helicopter : MonoBehaviour
+public class Helicopter : MonoBehaviour
 {
-    // Start is called before the first frame update
+
     public float fallSpeed = 0.01f;
     void Start()
-    { // Use Start or Awake depending on your goal
+    {
         gameObject.active = false;
-        Invoke("wakeup", 10f);  // Time in seconds
+        // Spawn helicopter in 15 second before end of game
+        Invoke("wakeup", 10f);
     }
 
     void wakeup()
