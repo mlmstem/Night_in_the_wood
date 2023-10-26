@@ -57,7 +57,7 @@ public class Deer_chase : MonoBehaviour
         if ((!playerInSightRange && !playerInAttackRange) || freeze) Patroling();
         if (playerInSightRange && !playerInAttackRange && !freeze) ChasePlayer();
         if (playerInAttackRange && playerInSightRange && !freeze) AttackPlayer();
-        if (counter % 30 == 0)
+        if (counter % 10 == 0)
         {
             last_pos = transform.position;
             last__player_pos = player.transform.position;
@@ -91,7 +91,6 @@ public class Deer_chase : MonoBehaviour
     private void ChasePlayer()
     {
         Debug.Log("chase");
-        deerSound.Play();
         isAttacking = false;
         playerpoint = new Vector3(player.position.x, 0, player.position.z);
         agent.SetDestination(playerpoint);
@@ -101,6 +100,7 @@ public class Deer_chase : MonoBehaviour
     private void AttackPlayer()
     {
         Debug.Log("attack");
+        deerSound.Play();
         isAttacking = true;
         //Make sure enemy doesn't move
         enemypoint = new Vector3(transform.position.x, 0, transform.position.z);

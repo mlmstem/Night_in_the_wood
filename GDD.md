@@ -61,13 +61,13 @@ An adventurous man embarked on a solo hike through South America's Amazon jungle
 * Small sparrow who follows the hiker protagonist
 
 ### Enemies
-| Decription  | Phtoo |
+| Description  | Photo |
 | ------------- | ------------- |
-| * Bear - in order to defeat him you will have to stand still or he wil atack you.   | <img align="right" src="https://github.com/COMP30019/project-1-cvts/assets/102479263/66bbd145-fe55-4110-88aa-7ee247df9765" width="100" height="100">  |
-| * Monkey - in order to defeat him you will have to feed him with a strawberry or he wil atack you. | <img align="right"  alt="monkey" src="https://github.com/COMP30019/project-2-cvts/assets/102479263/ea9695ca-30d0-403d-b800-a91dc4a67d1b" width="100"  height="100">  |
-| * Snake - in order to defeat him you will have to hit him with a stick or he wil atack you. | <img align="right" alt="snake" src="https://github.com/COMP30019/project-2-cvts/assets/102479263/5269e43f-fb3a-4267-b774-800d4bb152a4" width="100"  height="100">|
-| * Lizard - in order to defeat him you will have to hit him with a stick or he wil atack you. | <img align="right" alt="lizard" src="https://github.com/COMP30019/project-2-cvts/assets/102479263/6023aee2-c458-4bab-b470-a4b62bf0c645" width="100"  height="100">  |
-| * Deer - has a baby deer that follows hime, in order to defeat him you will have to stand still or he wil atack you.|<img align="right" alt="deer" src="https://github.com/COMP30019/project-2-cvts/assets/102479263/555eac15-2de2-4cdd-9b4a-73a6018b28a5" width="100"  height="100"> |
+| Bear - in order to defeat him you will have to stand still or he will atack you.   | <img align="right" src="https://github.com/COMP30019/project-1-cvts/assets/102479263/66bbd145-fe55-4110-88aa-7ee247df9765" width="100" height="100">  |
+| Monkey - in order to defeat him you will have to feed him with any berry or he will atack you. | <img align="right"  alt="monkey" src="https://github.com/COMP30019/project-2-cvts/assets/102479263/ea9695ca-30d0-403d-b800-a91dc4a67d1b" width="100"  height="100">  |
+| Snake - in order to defeat him you will have to hit him with a stick or he will atack you. | <img align="right" alt="snake" src="https://github.com/COMP30019/project-2-cvts/assets/102479263/5269e43f-fb3a-4267-b774-800d4bb152a4" width="100"  height="100">|
+| Lizard - in order to defeat him you will have to hit him with a stick or he will atack you. | <img align="right" alt="lizard" src="https://github.com/COMP30019/project-2-cvts/assets/102479263/6023aee2-c458-4bab-b470-a4b62bf0c645" width="100"  height="100">  |
+| Deer - has a baby deer that follows her. In order to defeat her you will have to stand still or she wil atack you.|<img align="right" alt="deer" src="https://github.com/COMP30019/project-2-cvts/assets/102479263/555eac15-2de2-4cdd-9b4a-73a6018b28a5" width="100"  height="100"> |
 
 ### Character background
 A traveller who is extensively exploring South America but with no previous experience in wilderness survival. Struggling with his lack of survival knowledge, he is confronted with the harsh reality of being lost.
@@ -200,14 +200,14 @@ However, The "time survival" mechanic serves as the overarching framework. Playe
 ### Game world
 
 <div align="center">
-  <img src= "https://images.immediate.co.uk/production/volatile/sites/3/2021/07/campfire-minecraft-3c7ecb1.png" width="300">
+  <img src= "https://media.sketchfab.com/models/ab94e72440604d889187e1f723168eca/thumbnails/c0e5c1e5d7334daf9c9aa56b03ca3103/1024x576.jpeg" width="300">
   
-  <sup><sub> Image from https://images.immediate.co.uk/production/volatile/sites/3/2021/07/campfire-minecraft-3c7ecb1.png </sub></sup>
+  <sup><sub> Image from https://media.sketchfab.com/models/ab94e72440604d889187e1f723168eca/thumbnails/c0e5c1e5d7334daf9c9aa56b03ca3103/1024x576.jpeg </sub></sup>
 </div>
 
-The virtual world system in the game primarily comprises three key categories: items, structures, and enemies. Items denote entities that can be carried within the character's inventory. Conversely, structures encompass various features within the game world, each serving distinct functions, and are created with items. For example, players have the capacity to craft a campfire by using items such as 'sticks' and 'rocks'. These structures are then placed at fixed locations for the player's use.
+The virtual world system in the game primarily comprises three key categories: items, structures, and enemies. Items denote entities that can be carried within the character's inventory. Conversely, structures encompass various features within the game world, each serving distinct functions, and are created with items. For example, players have the capacity to craft a shelter by using items such as 'sticks' and 'rocks'. These structures can then be placed for the player's use.
 
-On the other hand, enemies are entities equipped with a health bar and attack damage, capable of engaging the player, each with their own distinctive movement pattern. Varied enemies have distinct speeds and occupy specific positions on the screen.
+On the other hand, enemies are entities equipped with a health bar and attack damage, capable of engaging the player. Varied enemies have distinct speeds and occupy specific positions in the world.
 
 The presentation of the game consist of four parts:
 * The character’s body from a first person perspective

@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Controlls : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     [SerializeField] Transform playerCamera = null;
     [SerializeField] float mouseSensitivity = 0.8f;
     [SerializeField] float walkSpeed = 6.0f;
-    [SerializeField][Range(0.0f,0.5f)] float moveSmoothTime = 0.3f;
-    [SerializeField][Range(0.0f,0.5f)] float mouseSmoothTime = 0.03f;
+    [SerializeField][Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
+    [SerializeField][Range(0.0f, 0.5f)] float mouseSmoothTime = 0.03f;
 
     [SerializeField] float jumpForce = 8.0f;
     [SerializeField] float gravity = -9.81f;
@@ -50,7 +50,7 @@ public class Controlls : MonoBehaviour
     }
 
     void Update()
-    {   
+    {
         // Check if the player has moved to a new position
         if (Time.timeScale == 0f) {
             return;
@@ -67,7 +67,7 @@ public class Controlls : MonoBehaviour
         else
         {
             isMovingForward = false;
-            animator.SetBool("isRunning",isMovingForward);
+            animator.SetBool("isRunning", isMovingForward);
         }
 
         lastPosition = transform.position;
