@@ -26,6 +26,7 @@ public class Map : MonoBehaviour
     public GameObject Image5;
 
     private bool active = false;
+    private bool old = false;
     void Start()
     {
         Canvas.SetActive(active);
@@ -34,8 +35,9 @@ public class Map : MonoBehaviour
     {
        if (Input.GetKeyDown(KeyCode.M))
        {
-            Canvas.SetActive(!active);
             active = !active;
+            logic(active, old);
+            old = !old;
         }
        
     
@@ -63,6 +65,13 @@ public class Map : MonoBehaviour
         if (distance_deer < 5)
         {
             Image5.SetActive(false);
+        }
+    }
+    void logic(bool active, bool old)
+    {
+        if (old != active)
+        {
+            Canvas.SetActive(active);
         }
     }
     
