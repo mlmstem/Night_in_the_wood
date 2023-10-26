@@ -55,7 +55,7 @@ public class PlayerHotbar : MonoBehaviour
         if (slots[currentSlot].transform.childCount > 0)
         {
             GameObject itemGameObject = slots[currentSlot].transform.GetChild(0).gameObject;
-            if (itemGameObject.name.Contains("Stick"))
+            if (itemGameObject.name.Contains("Stick") && Time.timeScale == 1f)
             {
                 log01a.SetActive(true);
                 popupTextStick.gameObject.SetActive(true);
@@ -67,7 +67,7 @@ public class PlayerHotbar : MonoBehaviour
                 popupTextStick.gameObject.SetActive(false);
             }
 
-            if (itemGameObject.name.Contains("Shelter"))
+            if (itemGameObject.name.Contains("Shelter") && Time.timeScale == 1f)
             {
                 popupTextShelter.gameObject.SetActive(true);
 
