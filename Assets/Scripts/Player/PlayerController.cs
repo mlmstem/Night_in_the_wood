@@ -52,7 +52,9 @@ public class Controlls : MonoBehaviour
     void Update()
     {   
         // Check if the player has moved to a new position
-        
+        if (Time.timeScale == 0f) {
+            return;
+        }
 
         UpdateMouseLook();
         UpdateMovement();
