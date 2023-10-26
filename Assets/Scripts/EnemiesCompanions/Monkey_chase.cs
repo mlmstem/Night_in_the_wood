@@ -25,6 +25,8 @@ public class Monkey_chase : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
+    public AudioSource monkeySound;
+
     private void Awake()
     {
         player = GameObject.Find("Hiker").transform;
@@ -99,6 +101,8 @@ public class Monkey_chase : MonoBehaviour
 
     private void ChasePlayer()
     {
+        //Debug.Log("chase");
+        monkeySound.Play();
         isAttacking = false;
         playerpoint = new Vector3(player.position.x, 0, player.position.z);
         agent.SetDestination(playerpoint);
@@ -107,6 +111,10 @@ public class Monkey_chase : MonoBehaviour
 
     private void AttackPlayer()
     {
+        if (Time.timeScale == 0f) {
+            return;
+        }
+        
         isAttacking = true;
         //Make sure enemy doesn't move
         enemypoint = new Vector3(transform.position.x, 0, transform.position.z);

@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 1c77555fce85aa74da16fd6cadfac6b8
 ModelImporter:
-  serializedVersion: 20200
+  serializedVersion: 22200
   internalIDToNameTable:
   - first:
       74: 6720303635017113406
@@ -73,8 +73,10 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftUpperLeg' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -82,7 +84,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -620,10 +622,12 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
     fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -635,6 +639,7 @@ ModelImporter:
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
+    optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
@@ -645,6 +650,7 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -658,7 +664,62 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: Taipan_Animations(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rig
+      parentName: Taipan_Animations(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 39.999996, y: 39.999996, z: 39.999996}
+    - name: root
+      parentName: Rig
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.44729838, y: -0.0016506495, z: -3.49246e-10, w: 0.8943833}
+      scale: {x: 1, y: 1, z: 1}
+    - name: body
+      parentName: root
+      position: {x: 0.000013976813, y: -0.0037874829, z: 0.0007237226}
+      rotation: {x: 0.9075574, y: 0.0010753502, z: -0.00087462337, w: 0.41992584}
+      scale: {x: 1, y: 1, z: 1}
+    - name: tail.01
+      parentName: body
+      position: {x: -0.000013976813, y: 0.002688264, z: -0.0025356805}
+      rotation: {x: 0.45869115, y: 0.60289574, z: -0.5196598, w: 0.39506048}
+      scale: {x: 1, y: 0.9999999, z: 0.9999986}
+    - name: tail.02
+      parentName: tail.01
+      position: {x: -1.1644386e-12, y: 0.0050263777, z: -8.1956386e-10}
+      rotation: {x: 0.030364461, y: -0.03153082, z: 0.1213287, w: 0.99164665}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.99999994}
+    - name: tail.03
+      parentName: tail.02
+      position: {x: -1.8013368e-16, y: 0.0048308526, z: 2.9802322e-10}
+      rotation: {x: -0.32113892, y: 5.1799632e-14, z: 0.0000002016216, w: 0.94703215}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: neck.01
+      parentName: body
+      position: {x: -0.000013976813, y: 0.010001264, z: -0.0024656798}
+      rotation: {x: -0.00000032542218, y: 0.99836797, z: -0.057108484, w: 0.000005887147}
+      scale: {x: 1, y: 1, z: 1}
+    - name: neck.02
+      parentName: neck.01
+      position: {x: -0, y: 0.003934609, z: 0}
+      rotation: {x: -0.6257265, y: 0.0000005579305, z: 0.0000068078007, w: 0.7800425}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head
+      parentName: neck.02
+      position: {x: 1.575597e-14, y: 0.005088063, z: 4.4703483e-10}
+      rotation: {x: -0.18948221, y: -0.0000026921477, z: 0.0000024455312, w: 0.9818842}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Mesh
+      parentName: Taipan_Animations(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 39.999996, y: 39.999996, z: 39.999996}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -669,7 +730,7 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
@@ -677,6 +738,8 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

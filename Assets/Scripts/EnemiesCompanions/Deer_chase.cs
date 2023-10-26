@@ -27,6 +27,8 @@ public class Deer_chase : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
+    public AudioSource deerSound;
+
     private void Awake()
     {
         player = GameObject.Find("Hiker").transform;
@@ -43,6 +45,7 @@ public class Deer_chase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         freeze = false;
         if (last__player_pos == player.transform.position)
         {
@@ -97,7 +100,12 @@ public class Deer_chase : MonoBehaviour
 
     private void AttackPlayer()
     {
+        if (Time.timeScale == 0f) {
+            return;
+        }
+        
         Debug.Log("attack");
+        deerSound.Play();
         isAttacking = true;
         //Make sure enemy doesn't move
         enemypoint = new Vector3(transform.position.x, 0, transform.position.z);
@@ -106,5 +114,4 @@ public class Deer_chase : MonoBehaviour
         animator.SetTrigger("deer_attack");
     }
 }
-
 

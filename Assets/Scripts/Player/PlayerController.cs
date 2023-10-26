@@ -12,10 +12,12 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] float jumpForce = 8.0f;
     [SerializeField] float gravity = -9.81f;
+
+    [SerializeField] public AudioSource jumpeffect;
+
+
     float verticalVelocity = 0.0f;
     bool isGrounded = true;
-
-    [SerializeField] bool lockCursor = true;
 
     float cameraPitch = 0.0f;
     CharacterController controller = null;
@@ -42,14 +44,18 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         // Check if the player has moved to a new position
-
+        if (Time.timeScale == 0f)
+        {
+            return;
+        }
 
         UpdateMouseLook();
         UpdateMovement();
 
-        if (transform.position != lastPosition)
+        if (transform.position != lastPosition || Input.GetKey(KeyCode.W))
         {
             isMovingForward = true;
+
         }
         else
         {
@@ -69,7 +75,7 @@ public class PlayerController : MonoBehaviour
         currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMousoeDeltaVelocity, mouseSmoothTime);
 
         // Reverse the vertical mouse rotation direction
-        float mouseYRotation = -currentMouseDelta.y * mouseSensitivity;  // Invert the sign for vertical rotation
+        float mouseYRotation = -currentMouseDelta.y * mouseSensitivity;
         cameraPitch = Mathf.Clamp(cameraPitch + mouseYRotation, -90.0f, 90.0f);
 
         playerCamera.localEulerAngles = Vector3.right * cameraPitch;
@@ -87,12 +93,17 @@ public class PlayerController : MonoBehaviour
         // Check if the player is moving forward.
         isMovingForward = currentDir.y > 0.0f;
 
+        if (isMovingForward)
+        {
+        }
+
         Vector3 velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * walkSpeed;
 
         // Jump logic
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
             // Trigger the "isJumping" animation when the player jumps.
+            jumpeffect.Play();
             animator.SetTrigger("isJumping");
 
             verticalVelocity = jumpForce;
@@ -108,7 +119,6 @@ public class PlayerController : MonoBehaviour
         isGrounded = (flags & CollisionFlags.Below) != 0;
 
         // Trigger the "isRunning" animation when the player moves forward.
-
         animator.SetBool("isRunning", isMovingForward);
     }
 }

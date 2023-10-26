@@ -12,9 +12,11 @@ public class AnimalBehavior : MonoBehaviour
     private Animator animator;
     private int hitCounter = 0; // Counter to track hits with a stick.
 
+    public AudioSource soundeffect;
+
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform; // Assuming player tag is "Player."
         initialPosition = transform.position;
         animator = GetComponent<Animator>();
     }
@@ -28,6 +30,7 @@ public class AnimalBehavior : MonoBehaviour
         if (distanceToPlayer < retreatDistance)
         {
             // Move the animal backward when the player is too close.
+            soundeffect.Play();
             Retreat();
         }
         else
@@ -75,14 +78,14 @@ public class AnimalBehavior : MonoBehaviour
 
         Debug.Log("hitting the enemy");
 
-
+   
         animator.SetBool("Dead", true);
         Debug.Log("Dead");
 
         StartCoroutine(DestroyAfterAnimation());
-
-
-
+            
+            
+        
     }
 
     private IEnumerator DestroyAfterAnimation()

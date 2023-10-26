@@ -18,7 +18,9 @@ public class PlayerHotbar : MonoBehaviour
     [SerializeField] public GameObject craftedItem;
     private bool hasSufficientItems = false;
 
-    [SerializeField] private GameObject log01a; // Reference to the log_01_a GameObject.
+    [SerializeField] private GameObject log01a;
+    public AudioSource healSound;
+    public AudioSource hurtSound;
 
     private void Start()
     {
@@ -53,7 +55,7 @@ public class PlayerHotbar : MonoBehaviour
         if (slots[currentSlot].transform.childCount > 0)
         {
             GameObject itemGameObject = slots[currentSlot].transform.GetChild(0).gameObject;
-            if (itemGameObject.name.Contains("Stick"))
+            if (itemGameObject.name.Contains("Stick") && Time.timeScale == 1f)
             {
                 log01a.SetActive(true);
                 popupTextStick.gameObject.SetActive(true);
@@ -65,7 +67,7 @@ public class PlayerHotbar : MonoBehaviour
                 popupTextStick.gameObject.SetActive(false);
             }
 
-            if (itemGameObject.name.Contains("Shelter"))
+            if (itemGameObject.name.Contains("Shelter") && Time.timeScale == 1f)
             {
                 popupTextShelter.gameObject.SetActive(true);
 
@@ -147,6 +149,7 @@ public class PlayerHotbar : MonoBehaviour
                 {
                     StartCoroutine(RepeatDamageOverTime(5, 2.5f, healthManager));
                     Destroy(itemGameObject);
+                    hurtSound.Play();
                 }
                 else if (!(itemGameObject.name.Contains("Rock")
                 || itemGameObject.name.Contains("Stick")
@@ -154,6 +157,7 @@ public class PlayerHotbar : MonoBehaviour
                 {
                     // Heal player if not crafting item rock or stick
                     healthManager.OnHealButtonClick();
+                    healSound.Play();
                     // Destroy Item
                     Destroy(itemGameObject);
                 }
@@ -259,7 +263,7 @@ public class PlayerHotbar : MonoBehaviour
                 PlayerHotbar hotbar = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHotbar>();
                 hotbar.isFull[currentSlot] = true;
                 Instantiate(craftedItem, hotbar.slots[currentSlot].transform, false);
-
+                healSound.Play();
                 // Reset the flag as crafting is complete
                 hasSufficientItems = false;
             }

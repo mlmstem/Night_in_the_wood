@@ -21,51 +21,49 @@ public class HealthManager : MonoBehaviour
     private float reduceHealthMultiplier = 0.6f;
     private bool isInTriggerZone = false;
 
-    public AudioClip damageSound;
+     public AudioSource damageSound;
 
     // Update is called once per frame
     void Update()
     {
+        if (Time.timeScale == 0f) {
+            return;
+        }
 
         if (health <= 0)
         {
-            SceneManager.LoadScene("FailScreen");
+           SceneManager.LoadScene("failscreen");
         }
 
         // Bear damage
         if (script.distance < 6 && script.counter % 30 == 0 && script.isAttacking)
         {
             TakeDamage(25);
-            GetComponent<AudioSource>().clip = damageSound;
-            GetComponent<AudioSource>().Play();
+            damageSound.Play();
         }
         // Monkey damage
         else if (script_monkey.distance < 6 && script_monkey.counter % 30 == 0 && script_monkey.isAttacking)
         {
             TakeDamage(15);
-            GetComponent<AudioSource>().clip = damageSound;
-            GetComponent<AudioSource>().Play();
+            damageSound.Play();
         }
         // Deer damage
         else if (script_deer.distance < 6 && script_deer.counter % 30 == 0 && script_deer.isAttacking)
         {
             TakeDamage(15);
-            GetComponent<AudioSource>().clip = damageSound;
-            GetComponent<AudioSource>().Play();
+            damageSound.Play();
         }
         // Snake damage
         else if (script_snake.distance < 6 && script_snake.counter % 30 == 0 && script_snake.isAttacking)
         {
             TakeDamage(20);
-            GetComponent<AudioSource>().clip = damageSound;
-            GetComponent<AudioSource>().Play();
+            damageSound.Play();
         }
         // Lizard damage
         else if (script_lizard.distance < 6 && script_lizard.counter % 30 == 0 && script_lizard.isAttacking)
         {
             TakeDamage(10);
-            GetComponent<AudioSource>().clip = damageSound;
-            GetComponent<AudioSource>().Play();
+            damageSound.Play();
         }
 
 

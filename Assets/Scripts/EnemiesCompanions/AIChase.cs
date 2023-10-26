@@ -26,6 +26,8 @@ public class AIChase : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
+    public AudioSource animalSound;
+
     private void Awake()
     {
         player = GameObject.Find("Hiker").transform;
@@ -88,6 +90,7 @@ public class AIChase : MonoBehaviour
     private void ChasePlayer()
     {
         Debug.Log("chase");
+        animalSound.Play();
         isAttacking = false;
         playerpoint = new Vector3(player.position.x, 0, player.position.z);
         agent.SetDestination(playerpoint);
@@ -96,6 +99,10 @@ public class AIChase : MonoBehaviour
 
     private void AttackPlayer()
     {
+        if (Time.timeScale == 0f) {
+            return;
+        }
+        
         Debug.Log("attack");
         isAttacking = true;
         //Make sure enemy doesn't move
@@ -105,6 +112,5 @@ public class AIChase : MonoBehaviour
         animator.SetTrigger("AttackTR");
     }
 }
-
 
 
