@@ -14,7 +14,7 @@
 ### Evaluation Techniques
 
 **1. Questionnaire:**
-   - *Why:* The questionnaire is a powerful tool for gathering quantitative data quickly and efficiently.
+   - *Why:* A questionnaire is great for gathering quantitative data quickly and efficiently.
    - *Benefits:*
      - Provides a structured way to collect user feedback.
      - Allows you to obtain direct feedback on various game features.
@@ -23,7 +23,7 @@
      - Questionnaire Link: https://docs.google.com/forms/u/1/d/e/1FAIpQLSe3Yxy0fIxNo-uLitACOqKc1xJjpAFPvUdw9duivfnhWJoQYg/viewform?usp=sharing&fbclid=IwAR0-Jp6ly-RJMXUgxh3wchYhzGywGuVIJf07WxwDISIcQa30kMEKQowUnxA
 
 **2. Cooperative Evaluation:**
-   - *Why:* Cooperative evaluation provides a less intrusive way to observe and interact with users while they engage with your game.
+   - *Why:* Cooperative evaluation provides a less intrusive way to observe and interact with users while they engage with the game.
    - *Benefits:*
      - Allows you to watch how participants play the game and see if they are using it in the intended way.
      - Enables the evaluator to provide immediate solutions to identified problems.
