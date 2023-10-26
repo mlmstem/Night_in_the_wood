@@ -26,19 +26,19 @@ public class Map : MonoBehaviour
     public GameObject Image5;
 
     private bool active = false;
+    void Start()
+    {
+        Canvas.SetActive(active);
+    }
     void Update()
     {
-
-        Canvas.SetActive(active);
-        if (Input.GetKey(KeyCode.M))
-        {
-            active=true;
+       if (Input.GetKeyDown(KeyCode.M))
+       {
+            Canvas.SetActive(!active);
+            active = !active;
         }
-        else
-        {
-            active = false; ;
-
-        }
+       
+    
         float distance_bear = Vector3.Distance(bear.transform.position, player.transform.position);
         float distance_monkey = Vector3.Distance(monkey.transform.position, player.transform.position);
         float distance_snake = Vector3.Distance(snake.transform.position, player.transform.position);
