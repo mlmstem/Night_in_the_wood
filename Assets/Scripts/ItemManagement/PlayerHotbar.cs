@@ -20,6 +20,7 @@ public class PlayerHotbar : MonoBehaviour
 
     [SerializeField] private GameObject log01a;
     public AudioSource healSound;
+    public AudioSource hurtSound;
 
     private void Start()
     {
@@ -148,6 +149,7 @@ public class PlayerHotbar : MonoBehaviour
                 {
                     StartCoroutine(RepeatDamageOverTime(5, 2.5f, healthManager));
                     Destroy(itemGameObject);
+                    hurtSound.Play();
                 }
                 else if (!(itemGameObject.name.Contains("Rock")
                 || itemGameObject.name.Contains("Stick")
