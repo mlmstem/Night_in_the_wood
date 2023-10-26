@@ -19,8 +19,6 @@ public class PlayerController : MonoBehaviour
     float verticalVelocity = 0.0f;
     bool isGrounded = true;
 
-    [SerializeField] bool lockCursor = true;
-
     float cameraPitch = 0.0f;
     CharacterController controller = null;
 
@@ -41,18 +39,13 @@ public class PlayerController : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
 
         lastPosition = transform.position;
-
-        // if (lockCursor){
-        //     Cursor.lockState = CursorLockMode.Locked;
-        //     Cursor.visible = false;
-
-        // }   
     }
 
     void Update()
     {
         // Check if the player has moved to a new position
-        if (Time.timeScale == 0f) {
+        if (Time.timeScale == 0f)
+        {
             return;
         }
 
@@ -82,7 +75,7 @@ public class PlayerController : MonoBehaviour
         currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMousoeDeltaVelocity, mouseSmoothTime);
 
         // Reverse the vertical mouse rotation direction
-        float mouseYRotation = -currentMouseDelta.y * mouseSensitivity;  // Invert the sign for vertical rotation
+        float mouseYRotation = -currentMouseDelta.y * mouseSensitivity;
         cameraPitch = Mathf.Clamp(cameraPitch + mouseYRotation, -90.0f, 90.0f);
 
         playerCamera.localEulerAngles = Vector3.right * cameraPitch;
@@ -126,7 +119,6 @@ public class PlayerController : MonoBehaviour
         isGrounded = (flags & CollisionFlags.Below) != 0;
 
         // Trigger the "isRunning" animation when the player moves forward.
-
         animator.SetBool("isRunning", isMovingForward);
     }
 }
