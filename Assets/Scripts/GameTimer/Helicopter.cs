@@ -5,25 +5,35 @@ using UnityEngine;
 public class Helicopter : MonoBehaviour
 {
 
-    public float fallSpeed = 0.01f;
+    public float fallSpeed = 5f;
+    public float yPosition = 50f;
+    public UnityEngine.AI.NavMeshAgent agent;
+    private Vector3 walkPoint;
     void Start()
     {
         gameObject.active = false;
+        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         // Spawn helicopter in 15 second before end of game
-        Invoke("wakeup", 10f);
+        Invoke("wakeup", 290f);
+        
+        //agent.SetDestination(walkPoint);
     }
 
     void wakeup()
     {
         gameObject.active = true;
+        //agent.SetDestination(walkPoint);
     }
-    private void Update()
+    void update()
     {
-        // Move the helicopter downwards in the Y-axis
-        if (this.transform.position.y > 5)
-        {
-            transform.Translate(Vector3.down * fallSpeed * Time.deltaTime);
-        }
+        //gameObject.active = true;
+        //walkPoint = new Vector3(transform.position.x, transform.position.y - 50, transform.position.z);
+        //agent.SetDestination(walkPoint);
+        //transform.position.y = transform.position.y - fallSpeed * Time.deltaTime;
+        //transform.Translate(Vector3.down * fallSpeed * Time.deltaTime);
+        yPosition -= fallSpeed * Time.deltaTime;
+        transform.position = new Vector3(transform.position.x, yPosition, transform.position.z);
     }
+
 
 }
