@@ -27,7 +27,7 @@ public class Timer : MonoBehaviour
     {
         if (isTimerActive)
         {
-            if (timeLeft > 270) //change to 0
+            if (timeLeft > 0) //change to 0
             {
                 timeLeft -= Time.deltaTime;
                 updateTimeText(timeLeft);

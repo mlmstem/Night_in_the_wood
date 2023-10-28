@@ -1,39 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Helicopter : MonoBehaviour
+public class FallingObject : MonoBehaviour
 {
+    public float fallSpeed = 1.0f; // Adjust the fall speed as needed
+    public float terminalVelocity = 2.0f; // Adjust the terminal velocity if necessary
+    private Vector3 initialPosition;
 
-    public float fallSpeed = 5f;
-    public float yPosition = 50f;
-    public UnityEngine.AI.NavMeshAgent agent;
-    private Vector3 walkPoint;
-    void Start()
+    private void Start()
     {
-        gameObject.active = false;
-        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-        // Spawn helicopter in 15 second before end of game
-        Invoke("wakeup", 290f);
-        
-        //agent.SetDestination(walkPoint);
+        initialPosition = transform.position;
     }
 
-    void wakeup()
+    private void Update()
     {
-        gameObject.active = true;
-        //agent.SetDestination(walkPoint);
-    }
-    void update()
-    {
-        //gameObject.active = true;
-        //walkPoint = new Vector3(transform.position.x, transform.position.y - 50, transform.position.z);
-        //agent.SetDestination(walkPoint);
-        //transform.position.y = transform.position.y - fallSpeed * Time.deltaTime;
-        //transform.Translate(Vector3.down * fallSpeed * Time.deltaTime);
-        yPosition -= fallSpeed * Time.deltaTime;
-        transform.position = new Vector3(transform.position.x, yPosition, transform.position.z);
-    }
+        // Calculate the new position by moving the object down
+        Vector3 newPosition = transform.position - Vector3.up * fallSpeed * Time.deltaTime;
 
+        // Limit the maximum fall speed (terminal velocity)
+        if (fallSpeed > terminalVelocity)
+        {
+            fallSpeed = terminalVelocity;
+        }
 
+        // Update the object's position
+        transform.position = newPosition;
+
+        // Check if the object has reached the floor (you can customize this condition)
+        if (transform.position.y <= 0)
+        {
+            // Reset the position to the initial position
+            transform.position = initialPosition;
+            fallSpeed = 0;
+        }
+    }
 }
