@@ -43,7 +43,7 @@ The game uniquely combines survival mechanics with educational elements, teachin
 
 # Story & Narrative
 ## Story
-An adventurous man embarked on a solo hike through South America's Amazon jungle. After days of exploring, a monkey steals his phone, leaving him stranded and lost in the wilderness. Tasked with surviving the night, he must await rescue until he is noticed missing and a specialised team mobilises to secure his safety.
+An adventurous man embarked on a solo hike through South America's Amazon jungle. After days of exploring, a monkey steals his map, leaving him stranded and lost in the wilderness. Tasked with surviving the night, he must await rescue until he is noticed missing and a specialised team mobilises to secure his safety.
 
 ## Characters:
 
@@ -72,7 +72,7 @@ An adventurous man embarked on a solo hike through South America's Amazon jungle
 ### Character background
 A traveller who is extensively exploring South America but with no previous experience in wilderness survival. Struggling with his lack of survival knowledge, he is confronted with the harsh reality of being lost.
 
-The hiker's motivation is to ensure survival by learning how to independently manage life in the woods. He forms a friendship with a little bird, while all other characters (animals) in the game serve as enemies trying to protect their home. The character's goals involve utilising natural resources to remain alive until someone realises they're lost and send help. They must conquer nature's challenges, including finding food,seeking shelter from both the elements and animal adversaries and navigating in the woods.
+The hiker's motivation is to ensure survival by learning how to independently manage life in the woods. He forms a friendship with a little bird, while all other characters (animals) in the game serve as enemies trying to protect their home. The character's goals involve utilising natural resources to remain alive until someone realises they're lost and send help. They must conquer nature's challenges, including finding food, seeking shelter from both the elements and animal adversaries and navigating in the woods.
 
 ### Character personality
 
@@ -103,7 +103,7 @@ The player's character is not directly visible on the screen.
 
 ### Controls: Item Collection / Build / Attack / Defence 
 
-We've designed the controls to be intuitive, utilising standards across most games. Standard movement is achieved using the WASD keys, while interaction with objects is done with the 'E' key. The inventory and survival skills menu can be accessed via the 1-5 keys and the mouse scroller, and the items in the inventory can be dropped with 'Q' key, read the map with the 'M' key, jump with the 'Spacebar'. These controls provide players with a comprehensive way to navigate and engage with the game's world.
+We've designed the controls to be intuitive, utilising standards across most games. Standard movement is achieved using the WASD keys, while interaction with objects is done with the 'E' key. The inventory and survival skills menu can be accessed via the 1-5 keys and the mouse scroller, and the items in the inventory can be dropped with 'Q' key, read the map with the 'M' key, and jump with the 'Spacebar'. These controls provide players with a comprehensive way to navigate and engage with the game's world.
 
 <table align="center">
    <tr>
