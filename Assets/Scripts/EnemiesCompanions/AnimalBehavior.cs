@@ -13,6 +13,7 @@ public class AnimalBehavior : MonoBehaviour
     private int hitCounter = 0;
 
     public AudioSource soundeffect;
+    public AudioSource death;
 
     private void Start()
     {
@@ -75,6 +76,8 @@ public class AnimalBehavior : MonoBehaviour
 
         animator.SetBool("Dead", true);
         Debug.Log("Dead");
+
+        death.Play();
 
         StartCoroutine(DestroyAfterAnimation());
     }
