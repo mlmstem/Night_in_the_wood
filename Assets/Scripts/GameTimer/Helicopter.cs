@@ -13,12 +13,10 @@ public class FallingObject : MonoBehaviour
     public MeshRenderer PLS6;
     public MeshRenderer PLS7;
     public MeshRenderer PLS8;
-    //public float timeLeft = 300.0f;
 
     private void Start()
     {
         initialPosition = transform.position;
-        //gameObject.SetActive(false);
         PLS1.enabled = false;
         PLS2.enabled = false;
         PLS3.enabled = false;
@@ -31,22 +29,12 @@ public class FallingObject : MonoBehaviour
 
     private void Update()
     {
-        //timeLeft -= Time.deltaTime;
-        //if (timeLeft <= 30)
-        //{
-            
-        //    gameObject.SetActive(true);
-            //PLS.enabled = true;
 
-        //}
-        
         Vector3 newPosition = transform.position - Vector3.up * fallSpeed * Time.deltaTime;
         transform.position = newPosition;
 
-        if (transform.position.y <= 38)
+        if (transform.position.y <= 28)
         {
-            // Reset the position to the initial position
-            //gameObject.SetActive(true);
             PLS1.enabled = true;
             PLS2.enabled = true;
             PLS3.enabled = true;
