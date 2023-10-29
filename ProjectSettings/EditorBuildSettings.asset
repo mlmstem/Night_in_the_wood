@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/StartScene.unity
     guid: 86a6d7b9a1daf56439425bb038e4437f
   - enabled: 1
-    path: Assets/Scenes/MainScene.unity
-    guid: 164fc101ab8f1584d9f3f9772734e457
-  - enabled: 1
     path: Assets/Scenes/EndScreen.unity
     guid: 501f09a60dec96648881a5b9e517ce69
   - enabled: 1
@@ -20,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FailScreen.unity
     guid: 7bb30ff7dbb9c4e8e9cc4dfc7f5a120c
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: 5424eb0fa7cfed047b727d6174dd2c3d
   m_configObjects: {}
