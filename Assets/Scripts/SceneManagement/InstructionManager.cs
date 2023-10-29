@@ -7,20 +7,41 @@ public class InstructionManager : MonoBehaviour
 {
     [SerializeField] GameObject instructions;
 
-    void Start() {
+    // Reference to the background music GameObject
+    public GameObject backgroundMusic;
+
+    void Start()
+    {
         instructions.SetActive(false);
+
+        // Ensure the background music is not destroyed when loading scenes
+        DontDestroyOnLoad(backgroundMusic);
     }
 
-    public void Instructions() {
+    public void Instructions()
+    {
         instructions.SetActive(true);
     }
 
-    public void CloseInstructions() {
+    public void CloseInstructions()
+    {
         instructions.SetActive(false);
     }
 
-    public void Quit() {
+    public void Quit()
+    {
         Time.timeScale = 1f;
         SceneManager.LoadScene("StartScene");
+    }
+
+    // This method will be called when switching scenes
+    public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Check the name of the current scene
+        if (scene.name == "MainScene")
+        {
+            // If it's the MainScene, destroy the background music
+            Destroy(backgroundMusic);
+        }
     }
 }
