@@ -65,21 +65,21 @@ public class Timer : MonoBehaviour
             }
             else if (min == 2)
             {
-                TimerText.text = string.Format("The rescue team are on their way. You have three minutes until they arrive!");
+                TimerText.text = string.Format("The rescue team have left their base. You have three minutes until they arrive!");
             }
             else if (min == 1)
             {
-                TimerText.text = string.Format("The rescue team have landed in the forest. You have two minutes until they arrive!");
+                TimerText.text = string.Format("The rescue team are on their way. You have two minutes until they arrive!");
             }
             else if (min == 0)
             {
-                TimerText.text = string.Format("The rescue team have located you. You have one minute until they arrive! Press m to find the meeting point in your map");
+                TimerText.text = string.Format("You have one minute until the rescue team arrives! Press m to find the meeting point on your map");
             }
 
         }
         else if (sec >= 25 && sec <= 30 && min < 0)
         {
-            TimerText.text = string.Format("You have 30 seconds until the rescue team arrive arrive!");
+            TimerText.text = string.Format("You have 30 seconds until the rescue team arrives! Make sure to get to the meeting point in time");
         }
         else
         {
