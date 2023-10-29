@@ -257,8 +257,9 @@ The player feedback regarding updates from the rescue team was also notably posi
 </div>
 <br>
 The graph on the left reveals that the companion questions yielded mixed results among participants. This variability can be attributed to challenges regarding information overload and the time required to read the questions. These issues were noted to cause distractions while participants were engaged in combat with the animals.
-
-However, the graph on the right demonstrates that participants expressed interest in the concept of companion questions. With the suggested changes as recommended by participants in both the questionnaire and cooperative evaluations, there is potential for enhancing the learning and gaming experience. This suggests a move away from players feeling indifferent towards this aspect of the game.
+<br>
+<br>
+However, the graph on the right demonstrates that participants expressed interest in the concept of companion questions. With the suggested changes, as recommended by participants in both the questionnaire and cooperative evaluations, there is potential for enhancing the learning and gaming experience. This suggests a move away from players feeling indifferent towards this aspect of the game.
 <br>
 <br>
 <div align="center">
@@ -267,7 +268,7 @@ However, the graph on the right demonstrates that participants expressed interes
 <br>
 The overall gameplay experience was predominantly positive, albeit somewhat hindered by a few minor issues. These issues included challenging encounters, rapid health depletion, and an overload of information resulting from the companion questions.
 
-The results align with those from the Cooperative Evaluations, reinforcing the identified issues. Importantly, no participant rated the experience below a 6, indicating a baseline level of satisfaction. The most frequently assigned rating was 8, demonstrating an overall favourable perception of the game.
+The results align with those from the Cooperative Evaluations, reinforcing the identified issues. Importantly, no participant rated the experience below a 6, indicating a baseline level of satisfactio and an overall favourable perception of the game, with the most common score being 8 out of 10.
 
 ### Recommendations and Action Plan
 #### Addressing Major Issues or Changes Based on Cooperative Evaluation and Questionnaire Findings
@@ -298,7 +299,7 @@ Enhanced the clarity of instructions, detailing each individual action so player
 </div>
 <br>
 
-**Make It Easier to Pick Up Items (and Clearer)**: <br>
+**Make It Easier to Pick Up Items**: <br>
 Improved item interaction by enlarging the trigger area for picking up items.
 <br>
 <div align="center">
@@ -446,7 +447,6 @@ _MainTex: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials
 - Wrote Evaluation Plan
 - Wrote Evaluation Report
 - Organised team meetings
-- Helped with merge conflicts
 
 ### Ben Volovelsky
 - Created bear enemy, include his movement, and way to defeat it.
@@ -456,7 +456,7 @@ _MainTex: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials
 - Created an Helicopter which the hiker has to get to in order to win.
 - Created change scenes mechanisem.
 - Created meshrender which fixed the whole collision problens.
-- Created an Ocean around the world.
+- Created an ocean around the world.
 
 ## References and External Resources
 
