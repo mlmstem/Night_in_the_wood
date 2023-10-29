@@ -1,4 +1,4 @@
-# Project 2 Report
+![image](https://github.com/COMP30019/project-2-cvts/assets/100817974/aa2c45bd-c2cf-4240-83c9-50583ed4e998)# Project 2 Report
 
 ## Table of Contents
 
@@ -471,16 +471,20 @@ Environment: https://assetstore.unity.com/packages/3d/environments/landscapes/fr
 
 Food: https://assetstore.unity.com/packages/3d/props/food/fruit-blocks-128327
 
-
-### Animals
+### Unity Tutorials
 Animator: https://youtu.be/tveRasxUabo?si=i1JQ-UERIopwjCZP
 
 Follow Player: https://www.youtube.com/watch?v=zssU0MZcIx8
 
-### Shaders
-https://www.youtube.com/watch?v=wcGT_jji5xQ
-https://learn.unity.com/tutorial/creating-a-vertex-displacement-shader#
+Shaders: https://www.youtube.com/watch?v=wcGT_jji5xQ, https://learn.unity.com/tutorial/creating-a-vertex-displacement-shader#
 
-### Timer
-https://www.youtube.com/watch?v=hxpUk0qiRGs
+Timer: https://www.youtube.com/watch?v=hxpUk0qiRGs
+
+Health: https://www.youtube.com/watch?v=0tDPxNB2JNs
+
+Item Management: https://www.youtube.com/watch?v=DLAIYSMYy2g
+
+Day/Night Cycle: https://www.youtube.com/watch?v=m9hj9PdO328&t=221s
+
+
 
