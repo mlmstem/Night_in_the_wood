@@ -71,8 +71,8 @@ ModelImporter:
       name: MeleeAttack_TwoHanded
       takeName: hum_male_meleeattack_2H_Weapon_01
       internalID: 0
-      firstFrame: 40
-      lastFrame: 118
+      firstFrame: 44
+      lastFrame: 91
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

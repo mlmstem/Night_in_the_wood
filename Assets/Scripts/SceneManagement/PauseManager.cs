@@ -8,11 +8,9 @@ using UnityEngine.SceneManagement;
 public class PauseManager : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
-    [SerializeField] GameObject instructions;
 
     void Start() {
         pauseMenu.SetActive(false);
-        instructions.SetActive(false);
     }
 
     // Update is called once per frame
@@ -34,19 +32,6 @@ public class PauseManager : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         LockCursor();
-    }
-
-    public void Quit() {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("StartScene");
-    }
-
-    public void Instructions() {
-        instructions.SetActive(true);
-    }
-
-    public void CloseInstructions() {
-        instructions.SetActive(false);
     }
 
     private void LockCursor()

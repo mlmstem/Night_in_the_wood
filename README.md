@@ -14,23 +14,23 @@
 ### Evaluation Techniques
 
 **1. Questionnaire:**
-   - *Why:* The questionnaire is a powerful tool for gathering quantitative data quickly and efficiently.
+   - *Why:* A questionnaire is great for gathering quantitative data quickly and efficiently.
    - *Benefits:*
      - Provides a structured way to collect user feedback.
-     - Allows you to obtain direct feedback on various game features.
-     - Enables you to measure user satisfaction and preferences.
+     - Direct feedback can be obtained on various game features.
+     - User satisfaction and preferences can be measured.
    - *Tasks:* Participants will be asked to fill out a questionnaire that assesses their overall experience, satisfaction, and specific feedback on game features.
      - Questionnaire Link: https://docs.google.com/forms/u/1/d/e/1FAIpQLSe3Yxy0fIxNo-uLitACOqKc1xJjpAFPvUdw9duivfnhWJoQYg/viewform?usp=sharing&fbclid=IwAR0-Jp6ly-RJMXUgxh3wchYhzGywGuVIJf07WxwDISIcQa30kMEKQowUnxA
 
 **2. Cooperative Evaluation:**
-   - *Why:* Cooperative evaluation provides a less intrusive way to observe and interact with users while they engage with your game.
+   - *Why:* Cooperative evaluation provides a less intrusive way to observe and interact with users while they engage with the game.
    - *Benefits:*
-     - Allows you to watch how participants play the game and see if they are using it in the intended way.
+     - The evaluator can watch how participants play the game and see if they are using it in the intended way.
      - Enables the evaluator to provide immediate solutions to identified problems.
    - *Tasks:* In this evaluation technique, users will be encouraged to perform tasks such as crafting, eating, and attacking within the game, while the evaluator observes and records their actions and interactions.
      - Read the instructions and start the game
      - Survive the full 5 minutes
-        - Defeat the bear
+        - Defeat the bear, snake, lizard, deer and mokey
         - Find and choose between berries
         - Find Materials and Craft a Shelter
         - Complete all the questions
@@ -85,10 +85,10 @@ For our evaluation, we will employ the following participant recruitment strateg
 
 **2. Evaluation Data Analysis:**
    - *Metrics:*
-     - **Frequency of Player Deaths:** We will measure the frequency of player deaths throughout the game to assess gameplay performance.
+     - **Frequency of Player Deaths:** We will measure the frequency and location of player deaths throughout the game to assess gameplay performance.
      - **Task Completion Time**: Measure the time taken to complete each task.
      - **Number of Attempts**: Count the number of attempts made for each task.
-     - **Time to Find Materials/Item**: Measure the time taken to find materials for crafting o items for consumption.
+     - **Time to Find Materials/Item**: Measure the time taken to find materials for crafting of items for consumption.
    - *Description:* During the evaluation phase, our focus will be on quantitative metrics related to gameplay. Specifically, we will scrutinise the frequency of player deaths, as this metric can unveil potential challenges or spikes in difficulty at specific points in the game. Identifying these patterns will be crucial for pinpointing areas that may require adjustments to create a more balanced and enjoyable gaming experience.
 
 ### Timeline
@@ -105,7 +105,7 @@ Following the analysis phase, we will enter a period dedicated to implementing c
 ### Responsibilities
 Task Responsibilities and Ensuring Equal Contributions
 
-To effectively manage responsibilities within our team and ensure equal contributions, we have established clear task assignments for each team member. Here's a breakdown of who is responsible for each task and how we will achieve equal participation:
+To effectively manage responsibilities within our team and ensure equal contributions, we have established clear task assignments for each team member.
 
 **Responsibilities:**
 
@@ -265,9 +265,9 @@ However, the graph on the right demonstrates that participants expressed interes
    <img src="Images/overall_chart.png" width="500"> 
 </div>
 <br>
-The overall gameplay experience was predominantly positive, albeit somewhat hindered by a few minor issues. These issues included challenging encounters, rapid health depletion, and a sense of information overload resulting from the companion questions.
+The overall gameplay experience was predominantly positive, albeit somewhat hindered by a few minor issues. These issues included challenging encounters, rapid health depletion, and an overload of information resulting from the companion questions.
 
-The results align with those from the Cooperative Evaluations, reinforcing the identified issues. Importantly, no participant rated the experience below a 6, indicating a baseline level of satisfaction. The most frequently assigned rating was 8, demonstrating the overall favourable perception of the game.
+The results align with those from the Cooperative Evaluations, reinforcing the identified issues. Importantly, no participant rated the experience below a 6, indicating a baseline level of satisfaction. The most frequently assigned rating was 8, demonstrating an overall favourable perception of the game.
 
 ### Recommendations and Action Plan
 #### Addressing Major Issues or Changes Based on Cooperative Evaluation and Questionnaire Findings
@@ -345,7 +345,7 @@ Implemented audio cues and feedback mechanisms to help players identify and resp
 
 ### Discussion
 
-In retrospect, there were several aspects of the evaluation process that could have been improved. Timing and coordinating tasks were often challenging, especially when multiple tasks needed to be completed simultaneously. This could potentially lead to some evaluation bias, as the participants' experiences may have been influenced by the timing of specific tasks. For instance, when fighting the snake, participants encountered the lizard and thus knew how to defend against it before reaching the lizard task.
+In retrospect, there were several aspects of the evaluation process that could have been improved. Timing and coordinating tasks were often challenging, especially when multiple tasks needed to be completed simultaneously. This could potentially lead to some evaluation bias, as the participants' experiences may have been influenced by the timing of specific tasks. For instance, when fighting the snake, participants encountered the lizard and thus knew how to defend against it before being asked to complete the lizard task.
 
 Moreover, the fact that the evaluation was not entirely anonymous may have affected the participants' responses as they may have held back some feedback to maintain relationships with the evaluator. In the future, ensuring complete anonymity in the evaluation process may result in more unbiased responses. 
 
@@ -367,7 +367,7 @@ Looking forward, the game will continue to be evaluated at different stages to e
 ## Shaders and Special Effects
 
 ### Rain Particle System
-The rain particle system exhibits a range of attributes carefully chosen and adjusted to craft a realistic and dynamic rain effect to act as an adversary for the player. These customisations include colour over the lifetime of the raindrop to replicate their natural appearance. The "3D Start Size" attribute introduces a variation in raindrop sizes, creating diversity in their descent. Moreover, to exacerbate their intensity, the "Emission" rate is increased, resulting in more particles, evoking a sense of a stronger and more hazardous rain storm. The choice of a "Box" shape for emission provides a flat rain spawn to look more natural. Continuing, the "Velocity over Lifetime" feature enhances the speed of falling raindrops and introduces random direction changes, mirroring the influence of wind. Further, by altering the "Collision" settings, raindrops now make contact with the ground, enabling the creation of child particle effects for a splash effect. The "Sub-emitter" plays a vital role in generating ground impact effects, further enhancing realism. Through adjustments to the "Renderer," the apparent speed of raindrops is accentuated, giving them a more forceful appearance. Lastly, within the "Rain Splash" effect, the gradual increase in splash size over time introduces a realistic touch to the splashing rain. These attributes are complemented by the use of randomness, such as random velocity and size variations, to avoid a repetitive and artificial appearance and create a more natural and dynamic rain storm simulation.
+The rain particle system exhibits a range of attributes carefully chosen and adjusted to craft a realistic and dynamic rain effect to act as an adversary for the player. These customisations include colour over the lifetime of the raindrop to replicate their natural appearance. The "3D Start Size" attribute introduces a variation in raindrop sizes, creating diversity in their descent. Moreover, to exacerbate their intensity, the "Emission" rate is increased, resulting in more particles, evoking a sense of a stronger and more dangerous rain storm. The choice of a "Box" shape for emission provides a flat rain spawn to look more natural. Additionally, the "Velocity over Lifetime" feature enhances the speed of falling raindrops and introduces random direction changes, mirroring the influence of wind. Further, by altering the "Collision" settings, raindrops now make contact with the ground, enabling the creation of child particle effects for a splash effect. The "Sub-emitter" generates these ground impact effects, further enhancing realism. Through adjustments to the "Renderer," the apparent speed of raindrops is accentuated, giving them a more forceful appearance. Lastly, within the "Rain Splash" effect, the gradual increase in splash size over time introduces further realism to the splashing rain. These attributes are complemented by the use of randomness, such as random velocity and size variations, to avoid a repetitive and artificial appearance and create a more natural and dynamic rain storm simulation.
 
 <div align="center">
    <img src="Images/Rain.gif" width="500"> 
@@ -449,6 +449,14 @@ _MainTex: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials
 - Helped with merge conflicts
 
 ### Ben Volovelsky
+- Created bear enemy, include his movement, and way to defeat it.
+- Created deer enemy, include his movement, and way to defeat it, and baby deer which follows it.
+- Created monkey enemy, include his movement, and way to defeat it.
+- Created the map that the hiker navigates with and it's functionallity.
+- Created an Helicopter which the hiker has to get to in order to win.
+- Created change scenes mechanisem.
+- Created meshrender which fixed the whole collision problens.
+- Created an Ocean around the world.
 
 ## References and External Resources
 
