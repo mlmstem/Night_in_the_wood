@@ -83,10 +83,9 @@ public class AnimalBehavior : MonoBehaviour
     private IEnumerator DestroyAfterAnimation()
     {
         // Wait for the death animation to finish.
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
 
         // Disable the animal after the animation is done.
         gameObject.SetActive(false);
-        // Destroy(gameObject);
     }
 }

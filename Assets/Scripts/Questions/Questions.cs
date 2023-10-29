@@ -45,18 +45,22 @@ public class Questions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Panel.activeInHierarchy) {
+        if (Panel.activeInHierarchy)
+        {
             return;
         }
 
-        Image[] questions = {BearQuestion, DeerQuestion, LizardQuestion, MonkeyQuestion, SnakeQuestion, RainQuestion, BerriesQuestion, BearAnswer, DeerAnswer, LizardAnswer, MonkeyAnswer, SnakeAnswer, RainAnswer, BerriesAnswer};
+        Image[] questions = { BearQuestion, DeerQuestion, LizardQuestion, MonkeyQuestion, SnakeQuestion, RainQuestion, BerriesQuestion, BearAnswer, DeerAnswer, LizardAnswer, MonkeyAnswer, SnakeAnswer, RainAnswer, BerriesAnswer };
         DisableQuestions();
 
         int show = ShowQuestion();
-        for (int i = 0; i < 14; i++) {
-            if (i == show) {
+        for (int i = 0; i < 14; i++)
+        {
+            if (i == show)
+            {
                 questions[i].enabled = true;
-                if (i < 7) {
+                if (i < 7)
+                {
                     Panel.SetActive(true);
                     Time.timeScale = 0f;
                     UnlockCursor();
@@ -65,7 +69,8 @@ public class Questions : MonoBehaviour
         }
     }
 
-    void DisableQuestions() {
+    void DisableQuestions()
+    {
         BearQuestion.enabled = false;
         BerriesQuestion.enabled = false;
         RainQuestion.enabled = false;
@@ -82,79 +87,110 @@ public class Questions : MonoBehaviour
         SnakeAnswer.enabled = false;
     }
 
-    int ShowQuestion() {
+    int ShowQuestion()
+    {
         int show = 14;
         float smallestDist = 30;
 
-        if (Vector3.Distance(Bear.transform.position, Player.transform.position) < smallestDist) {
+        if (Vector3.Distance(Bear.transform.position, Player.transform.position) < smallestDist)
+        {
             smallestDist = Vector3.Distance(Bear.transform.position, Player.transform.position);
-            if (shown[0]) {
+            if (shown[0])
+            {
                 show = 7;
-            } else {
+            }
+            else
+            {
                 show = 0;
             }
         }
-        
-        if (Vector3.Distance(Deer.transform.position, Player.transform.position) < smallestDist) {
+
+        if (Vector3.Distance(Deer.transform.position, Player.transform.position) < smallestDist)
+        {
             smallestDist = Vector3.Distance(Deer.transform.position, Player.transform.position);
-            if (shown[1]) {
+            if (shown[1])
+            {
                 show = 8;
-            } else {
+            }
+            else
+            {
                 show = 1;
             }
         }
-        
-        if (Vector3.Distance(Lizard.transform.position, Player.transform.position) < smallestDist) {
+
+        if (Lizard.activeInHierarchy && Vector3.Distance(Lizard.transform.position, Player.transform.position) < smallestDist)
+        {
             smallestDist = Vector3.Distance(Lizard.transform.position, Player.transform.position);
-            if (shown[2]) {
+            if (shown[2])
+            {
                 show = 9;
-            } else {
+            }
+            else
+            {
                 show = 2;
             }
         }
-        
-        if (Vector3.Distance(Monkey.transform.position, Player.transform.position) < smallestDist) {
+
+        if (Vector3.Distance(Monkey.transform.position, Player.transform.position) < smallestDist)
+        {
             smallestDist = Vector3.Distance(Monkey.transform.position, Player.transform.position);
-            if (shown[3]) {
+            if (shown[3])
+            {
                 show = 10;
-            } else {
+            }
+            else
+            {
                 show = 3;
             }
         }
-        
-        if (Vector3.Distance(Snake.transform.position, Player.transform.position) < smallestDist) {
+
+        if (Snake.activeInHierarchy && Vector3.Distance(Snake.transform.position, Player.transform.position) < smallestDist)
+        {
             smallestDist = Vector3.Distance(Snake.transform.position, Player.transform.position);
-            if (shown[4]) {
+            if (shown[4])
+            {
                 show = 11;
-            } else {
+            }
+            else
+            {
                 show = 4;
             }
         }
 
-        if (GameObject.FindWithTag("Rain") != null) {
-            if (shown[5]) {
+        if (GameObject.FindWithTag("Rain") != null)
+        {
+            if (shown[5])
+            {
                 show = 12;
-            } else {
+            }
+            else
+            {
                 show = 5;
             }
         }
-        
-        if (healthManager.health < 30) {
-            if (shown[6]) {
+
+        if (healthManager.health < 30)
+        {
+            if (shown[6])
+            {
                 show = 13;
-            } else {
+            }
+            else
+            {
                 show = 6;
             }
         }
 
-        if (show < 7) {
+        if (show < 7)
+        {
             shown[show] = true;
         }
 
         return show;
     }
 
-    public void Resume() {
+    public void Resume()
+    {
         Panel.SetActive(false);
         Time.timeScale = 1f;
         LockCursor();
