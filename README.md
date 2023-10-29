@@ -35,7 +35,7 @@
         - Find Materials and Craft a Shelter
         - Complete all the questions
 
-By combining the use of questionnaires for quantitative data and cooperative evaluation for more in-depth insights, we can comprehensively assess our game's performance and user satisfaction. Additionally, the specific tasks mentioned above will help gather targeted feedback on essential gameplay elements, ensuring that your game aligns with the intended design and user expectations.
+By combining the use of questionnaires for quantitative data and cooperative evaluation for more in-depth insights, we can comprehensively assess our game's performance and user satisfaction. Additionally, the specific tasks mentioned above will help gather targeted feedback on essential gameplay elements, ensuring that our game aligns with the intended design and user expectations.
 
 ### Participant Recruitment for Evaluation
 
@@ -177,8 +177,8 @@ Our evaluation plan for "Night in the Woods" employed a dual approach, combining
 * Moreover, she found that she could just run away from the animals as there was no incentive to fight them or answer the questions.
 
 **Recommendations**:
-Provide clearer instructions by reducing their length
-Add an incentive to answer the questions
+* Provide clearer instructions by reducing their length
+* Add an incentive to answer the questions
 
 ***Participant 3 (Simon Campbell)***:
 
@@ -213,7 +213,7 @@ Add an incentive to answer the questions
 **Observations**: 
 * Haotian had trouble reading from the text popups while playing the game; the popup text was way too small for him to look at. It was also quite hard for him to play while reading the text
 * Haotian was not aware of the crafting system, and was thinking about going into the covered area to escape the rain
-* He also had problems picking items. During the game he won, he didn't encounter many enemies, this is not great as the game is made to encourage players dealing with the enemies.
+* He also had problems picking up items. During the game he won, he didn't encounter many enemies. This is not great as the game is made to encourage players to deal with the enemies.
 
 **Recommendations**:
 * A sprinting feature should be implemented so that when a player's health is low he can run quicker to pick up items to restore his health.
@@ -282,7 +282,7 @@ Adjusted the rate at which a player's health decreases from 1/sec to 0.6/sec to 
 <br>
 
 **Change How Questions Appear**: <br>
-Revised the appearance of questions so that they pause the game when the player first experiences them, ensuring clarity for players as they will have time to read what is required of them.
+Revised the appearance of questions so that they pause the game when the player first experiences them, ensuring clarity for players as they will have time to read what is required of them. A condensed version of the questions will then be displayed upon subsequent interactions.
 <br>
 <div align="center">
    <img src="Images/questions_og.png" width="500"> 
@@ -485,6 +485,8 @@ Health: https://www.youtube.com/watch?v=0tDPxNB2JNs
 Item Management: https://www.youtube.com/watch?v=DLAIYSMYy2g
 
 Day/Night Cycle: https://www.youtube.com/watch?v=m9hj9PdO328&t=221s
+
+Pause: https://www.youtube.com/watch?v=tfzwyNS1LUY
 
 
 
