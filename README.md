@@ -1,4 +1,4 @@
-![image](https://github.com/COMP30019/project-2-cvts/assets/100817974/aa2c45bd-c2cf-4240-83c9-50583ed4e998)# Project 2 Report
+# Project 2 Report
 
 ## Table of Contents
 
