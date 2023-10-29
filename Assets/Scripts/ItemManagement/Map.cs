@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class Map : MonoBehaviour
 {
-
-
-    //public Transform playerPos;
-    //public Transform offscreenPos;
-    //public float speed;
     public GameObject Canvas;
 
     public GameObject bear;
@@ -33,14 +28,14 @@ public class Map : MonoBehaviour
     }
     void Update()
     {
-       if (Input.GetKeyDown(KeyCode.M))
-       {
+        if (Input.GetKeyDown(KeyCode.M))
+        {
             active = !active;
             logic(active, old);
             old = !old;
         }
-       
-    
+
+
         float distance_bear = Vector3.Distance(bear.transform.position, player.transform.position);
         float distance_monkey = Vector3.Distance(monkey.transform.position, player.transform.position);
         float distance_snake = Vector3.Distance(snake.transform.position, player.transform.position);
@@ -74,5 +69,5 @@ public class Map : MonoBehaviour
             Canvas.SetActive(active);
         }
     }
-    
+
 }

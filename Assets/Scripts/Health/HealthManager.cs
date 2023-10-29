@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 // Modified code from unity tutorial: https://www.youtube.com/watch?v=0tDPxNB2JNs 
-//public AIChase script;
 public class HealthManager : MonoBehaviour
 {
     public AIChase script;
@@ -21,18 +20,18 @@ public class HealthManager : MonoBehaviour
     private float reduceHealthMultiplier = 0.6f;
     private bool isInTriggerZone = false;
 
-     public AudioSource damageSound;
+    public AudioSource damageSound;
 
-    // Update is called once per frame
     void Update()
     {
-        if (Time.timeScale == 0f) {
+        if (Time.timeScale == 0f)
+        {
             return;
         }
 
         if (health <= 0)
         {
-           SceneManager.LoadScene("failscreen");
+            SceneManager.LoadScene("failscreen");
         }
 
         // Bear damage

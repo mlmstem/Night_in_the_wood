@@ -9,7 +9,7 @@ public class SpawnObject : MonoBehaviour
 {
     [SerializeField] GameObject objectToSpawn;
     private float gameLength = 300.0f; // Spawn for length of game
-    private float MinTime = 20.0f;
+    private float MinTime = 25.0f; // Rain can't spawn before 20 sec have elapsed
     private float MaxTime = 300.0f;
     public AudioSource rainsound;
     void Start()
@@ -31,14 +31,10 @@ public class SpawnObject : MonoBehaviour
             if (GameObject.FindWithTag("Rain") == null)
 
             {
-   
-                yield return new WaitForSeconds(Random.Range(MinTime, MaxTime));
-                 
-                // Manual Spawn location
-                // Vector3 spawnPosition = new Vector3(-40, 20, 120);
-                // objectInstance = Instantiate(objectToSpawn, spawnPosition, Quaternion.identity);
 
-                // Spawn rain on top of player - ToDo CHANGE FOR ENEMY SPAWN
+                yield return new WaitForSeconds(Random.Range(MinTime, MaxTime));
+
+                // Spawn rain on top of player
                 objectInstance = Instantiate(objectToSpawn, player.transform.position + new Vector3(0, 18, 0), Quaternion.identity, player.transform);
 
                 rainsound.Play();

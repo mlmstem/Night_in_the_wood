@@ -74,7 +74,6 @@ public class PlayerController : MonoBehaviour
 
         currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMousoeDeltaVelocity, mouseSmoothTime);
 
-        // Reverse the vertical mouse rotation direction
         float mouseYRotation = -currentMouseDelta.y * mouseSensitivity;
         cameraPitch = Mathf.Clamp(cameraPitch + mouseYRotation, -90.0f, 90.0f);
 
@@ -102,7 +101,6 @@ public class PlayerController : MonoBehaviour
         // Jump logic
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
-            // Trigger the "isJumping" animation when the player jumps.
             jumpeffect.Play();
             animator.SetTrigger("isJumping");
 
@@ -118,7 +116,6 @@ public class PlayerController : MonoBehaviour
 
         isGrounded = (flags & CollisionFlags.Below) != 0;
 
-        // Trigger the "isRunning" animation when the player moves forward.
         animator.SetBool("isRunning", isMovingForward);
     }
 }

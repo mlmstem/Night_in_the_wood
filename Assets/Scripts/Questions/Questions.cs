@@ -35,14 +35,12 @@ public class Questions : MonoBehaviour
     private float distance;
     private bool[] shown = new bool[7];
 
-    // Start is called before the first frame update
     void Start()
     {
         DisableQuestions();
         Panel.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Panel.activeInHierarchy)

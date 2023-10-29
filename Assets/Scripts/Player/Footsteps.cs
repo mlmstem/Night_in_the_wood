@@ -6,22 +6,19 @@ public class Footsteps : MonoBehaviour
 
 {
     public AudioSource Footstepsound;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
 
     {
-        if(Input.GetKey(KeyCode.W)||Input.GetKey(KeyCode.S)||Input.GetKey(KeyCode.A)||Input.GetKey(KeyCode.D)){
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        {
             Footstepsound.enabled = true;
 
-        }else{
+        }
+        else
+        {
             Footstepsound.enabled = false;
         }
-        
+
     }
 }

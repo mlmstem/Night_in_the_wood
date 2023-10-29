@@ -1,6 +1,6 @@
 using UnityEngine;
-
 [ExecuteAlways]
+// Modified code from unity tutorial: https://www.youtube.com/watch?v=m9hj9PdO328
 public class LightingManager : MonoBehaviour
 {
     [SerializeField] private Light DirectionalLight;

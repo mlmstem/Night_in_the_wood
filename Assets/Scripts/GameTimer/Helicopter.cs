@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class FallingObject : MonoBehaviour
 {
-    public float fallSpeed = 1.0f; // Adjust the fall speed as needed
-    public float terminalVelocity = 2.0f; // Adjust the terminal velocity if necessary
+    public float fallSpeed = 1.0f;
+    public float terminalVelocity = 2.0f;
     private Vector3 initialPosition;
     public MeshRenderer PLS1;
     public MeshRenderer PLS2;

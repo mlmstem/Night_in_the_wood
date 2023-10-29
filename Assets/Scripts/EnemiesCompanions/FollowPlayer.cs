@@ -20,7 +20,6 @@ public class FollowPlayer : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.LookAt(Player.transform);
@@ -30,13 +29,11 @@ public class FollowPlayer : MonoBehaviour
             if (TargetDistance >= AllowedDistance)
             {
                 FollowSpeed = 0.15f;
-                // animator.SetTrigger("FlyTrigger");
                 transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, FollowSpeed);
             }
             else
             {
                 FollowSpeed = 0;
-                // animator.SetTrigger("StationaryTrigger");
             }
         }
     }

@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Replay : MonoBehaviour
 {
-    // Start is called before the first frame update
     public void onClickReplay()
     {
         Debug.Log("replay");

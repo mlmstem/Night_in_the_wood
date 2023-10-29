@@ -16,18 +16,16 @@ public class Timer : MonoBehaviour
     public GameObject helicopter;
     public GameObject player;
 
-    // Start is called before the first frame update
     void Start()
     {
         isTimerActive = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (isTimerActive)
         {
-            if (timeLeft > 0) //change to 0
+            if (timeLeft > 0)
             {
                 timeLeft -= Time.deltaTime;
                 updateTimeText(timeLeft);

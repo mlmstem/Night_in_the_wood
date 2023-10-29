@@ -84,8 +84,6 @@ public class Lizard_snake_chase : MonoBehaviour
 
     private void ChasePlayer()
     {
-        //Debug.Log("chase");
-        
         isAttacking = false;
         playerpoint = new Vector3(player.position.x, 0, player.position.z);
         animalSound.Play();
@@ -95,11 +93,11 @@ public class Lizard_snake_chase : MonoBehaviour
 
     private void AttackPlayer()
     {
-        if (Time.timeScale == 0f) {
+        if (Time.timeScale == 0f)
+        {
             return;
         }
-        
-        //Debug.Log("attack");
+
         isAttacking = true;
         animalSound.Play();
         //Make sure enemy doesn't move

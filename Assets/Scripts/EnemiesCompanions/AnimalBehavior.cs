@@ -23,7 +23,6 @@ public class AnimalBehavior : MonoBehaviour
 
     private void Update()
     {
-        // Calculate the distance between the player and the animal.
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
         // Check if the player is within attack range 
@@ -45,10 +44,10 @@ public class AnimalBehavior : MonoBehaviour
 
     private void Retreat()
     {
-        // Direction to move away from the player.
+        // Direction to move away from the player
         Vector3 retreatDirection = (transform.position - player.position).normalized;
 
-        // Move the animal backward.
+        // Move the animal backward
         transform.Translate(retreatDirection * Time.deltaTime);
 
         isRetreating = true;
@@ -58,7 +57,7 @@ public class AnimalBehavior : MonoBehaviour
 
     private void ReturnToInitialPosition()
     {
-        // Move the animal back to its initial position.
+        // Move the animal back to its initial position
         transform.position = Vector3.MoveTowards(transform.position, initialPosition, Time.deltaTime);
 
         isRetreating = false;
@@ -67,7 +66,7 @@ public class AnimalBehavior : MonoBehaviour
         animator.SetBool("isRunning", isRetreating);
     }
 
-    // Function to handle stick hits.
+    // Function to handle stick hits
     public void HandleStickHit()
     {
         hitCounter++;
@@ -82,10 +81,10 @@ public class AnimalBehavior : MonoBehaviour
 
     private IEnumerator DestroyAfterAnimation()
     {
-        // Wait for the death animation to finish.
+        // Wait for the death animation to finish
         yield return new WaitForSeconds(1);
 
-        // Disable the animal after the animation is done.
+        // Remove the animal from the game when the animation is done
         gameObject.SetActive(false);
     }
 }

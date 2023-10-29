@@ -4,8 +4,6 @@ using UnityEngine;
 
 // Modified code from unity tutorial: https://www.youtube.com/watch?v=DLAIYSMYy2g
 
-
-
 public class PickupItem : MonoBehaviour
 {
 
