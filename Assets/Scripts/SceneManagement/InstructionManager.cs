@@ -8,14 +8,12 @@ public class InstructionManager : MonoBehaviour
     [SerializeField] GameObject instructions;
 
     // Reference to the background music GameObject
-    public GameObject backgroundMusic;
 
     void Start()
     {
         instructions.SetActive(false);
 
         // Ensure the background music is not destroyed when loading scenes
-        DontDestroyOnLoad(backgroundMusic);
     }
 
     public void Instructions()
@@ -41,7 +39,6 @@ public class InstructionManager : MonoBehaviour
         if (scene.name == "MainScene")
         {
             // If it's the MainScene, destroy the background music
-            Destroy(backgroundMusic);
         }
     }
 }

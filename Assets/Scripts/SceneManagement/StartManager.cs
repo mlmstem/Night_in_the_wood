@@ -10,14 +10,34 @@ public class StartManager : MonoBehaviour
 
     public void restart()
     {
+        // Get the currently active scene
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        // Check if it's the "StartScene"
+        if (currentScene.name == "StartScene")
+        {
+            // Find all GameObjects in the "StartScene"
+            GameObject[] allObjects = FindObjectsOfType<GameObject>();
+
+            // Destroy all objects in the "StartScene" except the background music
+            foreach (var obj in allObjects)
+            {
+                if (obj != backgroundMusic)
+                {
+                    Destroy(obj);
+                }
+            }
+        }
+
         SceneManager.LoadScene("MainScene");
-        Destroy(backgroundMusic);
     }
+
     public void mainMenu()
     {
         SceneManager.LoadScene("Instructions");
         DontDestroyOnLoad(backgroundMusic);
     }
+
     public void quit()
     {
         Application.Quit();
