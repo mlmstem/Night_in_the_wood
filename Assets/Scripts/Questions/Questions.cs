@@ -31,6 +31,8 @@ public class Questions : MonoBehaviour
     [SerializeField] GameObject Panel;
     [SerializeField] GameObject Button;
 
+    [SerializeField] Monkey_chase MonkeyScript;
+
     public HealthManager healthManager;
     private float distance;
     private bool[] shown = new bool[7];
@@ -129,7 +131,7 @@ public class Questions : MonoBehaviour
             }
         }
 
-        if (Vector3.Distance(Monkey.transform.position, Player.transform.position) < smallestDist)
+        if (MonkeyScript.monkey_eats == false && Vector3.Distance(Monkey.transform.position, Player.transform.position) < smallestDist)
         {
             smallestDist = Vector3.Distance(Monkey.transform.position, Player.transform.position);
             if (shown[3])

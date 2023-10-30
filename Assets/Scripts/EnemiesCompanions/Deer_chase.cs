@@ -95,17 +95,20 @@ public class Deer_chase : MonoBehaviour
         isAttacking = false;
         playerpoint = new Vector3(player.position.x, 0, player.position.z);
         agent.SetDestination(playerpoint);
-
+        if (counter % 600 == 0)
+        {
+            deerSound.Play();
+        }
     }
 
     private void AttackPlayer()
     {
-        if (Time.timeScale == 0f) {
+        if (Time.timeScale == 0f)
+        {
             return;
         }
-        
+
         Debug.Log("attack");
-        deerSound.Play();
         isAttacking = true;
         //Make sure enemy doesn't move
         enemypoint = new Vector3(transform.position.x, 0, transform.position.z);
