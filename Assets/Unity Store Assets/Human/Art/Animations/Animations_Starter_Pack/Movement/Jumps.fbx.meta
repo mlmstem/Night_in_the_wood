@@ -153,7 +153,7 @@ ModelImporter:
       name: Jump
       takeName: human_male_jump_all
       internalID: 0
-      firstFrame: 6.1
+      firstFrame: 12
       lastFrame: 29.9
       wrapMode: 0
       orientationOffsetY: 0

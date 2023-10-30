@@ -29,8 +29,6 @@ public class PlayerController : MonoBehaviour
     Vector2 currentMousoeDeltaVelocity = Vector2.zero;
     private Animator animator;
 
-    private Vector3 lastPosition;
-
     private bool isMovingForward = false;
 
     void Start()
@@ -38,7 +36,6 @@ public class PlayerController : MonoBehaviour
         controller = GetComponent<CharacterController>();
         animator = GetComponentInChildren<Animator>();
 
-        lastPosition = transform.position;
     }
 
     void Update()
@@ -52,7 +49,7 @@ public class PlayerController : MonoBehaviour
         UpdateMouseLook();
         UpdateMovement();
 
-        if (transform.position != lastPosition || Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             isMovingForward = true;
 
@@ -62,9 +59,6 @@ public class PlayerController : MonoBehaviour
             isMovingForward = false;
             animator.SetBool("isRunning", isMovingForward);
         }
-
-        lastPosition = transform.position;
-
 
     }
 
