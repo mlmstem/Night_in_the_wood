@@ -26,7 +26,10 @@ public class PickupItem : MonoBehaviour
                 {
                     Debug.Log("itemAdded");
                     // Item can be added to hotbar
-                    pickupSound.Play();
+                    if (pickupSound != null)
+                    {
+                        pickupSound.Play();
+                    }
                     hotbar.isFull[i] = true;
                     Instantiate(itemButton, hotbar.slots[i].transform, false);
                     Destroy(transform.parent.gameObject);
