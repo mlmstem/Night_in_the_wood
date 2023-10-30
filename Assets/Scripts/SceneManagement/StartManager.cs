@@ -6,7 +6,41 @@ using UnityEngine.SceneManagement;
 
 public class StartManager : MonoBehaviour
 {
-    public GameObject backgroundMusic;
+    private bool musicStarted = false;
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        // Check if there's no background music in the scene with DontDestroyOnLoad
+        if (!musicStarted)
+        {
+            GameObject backgroundMusic = GameObject.Find("BackgroundMusic");
+
+            // If no background music is found, create and set it as a DontDestroyOnLoad object
+            if (backgroundMusic == null)
+            {
+                backgroundMusic = new GameObject("BackgroundMusic");
+                DontDestroyOnLoad(backgroundMusic);
+                
+                // Try to get the AudioSource component from the StartScene
+                audioSource = FindObjectOfType<AudioSource>();
+
+                // If an AudioSource is found, configure it and play the music
+                if (audioSource)
+                {
+                    audioSource.gameObject.transform.parent = backgroundMusic.transform;
+                }
+                else
+                {
+                    // If no AudioSource is found, log a message
+                    Debug.LogWarning("No AudioSource found in StartScene.");
+                }
+
+                audioSource.Play();
+                musicStarted = true;
+            }
+        }
+    }
 
     public void restart()
     {
@@ -22,7 +56,7 @@ public class StartManager : MonoBehaviour
             // Destroy all objects in the "StartScene" except the background music
             foreach (var obj in allObjects)
             {
-                if (obj != backgroundMusic)
+                if (obj.name != "BackgroundMusic")
                 {
                     Destroy(obj);
                 }
@@ -35,7 +69,6 @@ public class StartManager : MonoBehaviour
     public void mainMenu()
     {
         SceneManager.LoadScene("Instructions");
-        DontDestroyOnLoad(backgroundMusic);
     }
 
     public void quit()
@@ -43,3 +76,8 @@ public class StartManager : MonoBehaviour
         Application.Quit();
     }
 }
+
+
+
+
+
