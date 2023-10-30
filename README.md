@@ -497,42 +497,37 @@ Pause: https://www.youtube.com/watch?v=tfzwyNS1LUY
 
 ### Sound & Music:
 
-Sound Track Links:
+Bear Roar: https://pixabay.com/sound-effects/growl-and-roar-102417/
 
+Fail Screen: https://pixabay.com/sound-effects/dramatic-scene-separation-melancholy-demo-version-159310/
 
-hurt : https://pixabay.com/sound-effects/ough-47202/
+Player Hurt: https://pixabay.com/sound-effects/ough-47202/
 
-bear roar : https://pixabay.com/sound-effects/growl-and-roar-102417/
+Running: https://pixabay.com/sound-effects/running-1-6846/
 
-fail screen : https://pixabay.com/sound-effects/dramatic-scene-separation-melancholy-demo-version-159310/
+Forest Background: https://www.youtube.com/watch?v=TJfua0e-GYY
 
-running: https://pixabay.com/sound-effects/running-1-6846/
+Attack: https://pixabay.com/sound-effects/whoosh-6316/
 
-forest background: https://www.youtube.com/watch?v=TJfua0e-GYY
+Jump: https://pixabay.com/sound-effects/swing-whoosh-110410/
 
-attack : https://pixabay.com/sound-effects/whoosh-6316/
+Rain: https://pixabay.com/sound-effects/rain-sfx-12819/
 
-jump : https://pixabay.com/sound-effects/swing-whoosh-110410/
+Snake & Lizard: https://pixabay.com/sound-effects/snake-hissing-6092/
 
-rain : https://pixabay.com/sound-effects/rain-sfx-12819/
+Monkey Screaming: https://pixabay.com/sound-effects/screaming-sound-of-a-monkey-154721/
 
-snake & lizard: https://pixabay.com/sound-effects/snake-hissing-6092/
+Deer: https://pixabay.com/sound-effects/sheep-122256/
 
-monkey screaming : https://pixabay.com/sound-effects/screaming-sound-of-a-monkey-154721/
+Win Screen: https://pixabay.com/sound-effects/success-fanfare-trumpets-6185/
 
-deer : https://pixabay.com/sound-effects/sheep-122256/
+Start Scene & Instruction: https://pixabay.com/sound-effects/a-piano-with-a-creepy-atmosphere-for-scary-stories-demo-version-158423/
 
-new snake : https://quicksounds.com/sound/4393/snake-rattling
+Enemy Death: https://pixabay.com/sound-effects/breeze-of-blood-122253/
 
-win screen: https://pixabay.com/sound-effects/success-fanfare-trumpets-6185/
+Health Restore: https://pixabay.com/sound-effects/coin-pickup-98269/
 
-startscene & instruction : https://pixabay.com/sound-effects/a-piano-with-a-creepy-atmosphere-for-scary-stories-demo-version-158423/
-
-Enemy death: https://pixabay.com/sound-effects/breeze-of-blood-122253/
-
-health restore: https://pixabay.com/sound-effects/coin-pickup-98269/
-
-items pickup: https://pixabay.com/sound-effects/health-pickup-6860/
+Items Pickup: https://pixabay.com/sound-effects/health-pickup-6860/
 
 
 
