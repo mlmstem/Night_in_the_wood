@@ -272,44 +272,39 @@ The world will also have two modes of display which are day and night. In daytim
 
 The game's auditory landscape is designed to simulate the immersive experience of hiking in the forest. Therefore the whole game is enveloped in a forest-themed soundtrack. This soundtrack serves as a crucial element in enhancing the authenticity of the player's experience, infusing their gameplay with sounds that resonate with the actual atmosphere of a forest.
 
-
-
 Sound Track Links:
 
+Bear Roar: https://pixabay.com/sound-effects/growl-and-roar-102417/
 
-hurt : https://pixabay.com/sound-effects/ough-47202/
+Fail Screen: https://pixabay.com/sound-effects/dramatic-scene-separation-melancholy-demo-version-159310/
 
-bear roar : https://pixabay.com/sound-effects/growl-and-roar-102417/
+Player Hurt: https://pixabay.com/sound-effects/ough-47202/
 
-fail screen : https://pixabay.com/sound-effects/dramatic-scene-separation-melancholy-demo-version-159310/
+Running: https://pixabay.com/sound-effects/running-1-6846/
 
-running: https://pixabay.com/sound-effects/running-1-6846/
+Forest Background: https://www.youtube.com/watch?v=TJfua0e-GYY
 
-forest background: https://www.youtube.com/watch?v=TJfua0e-GYY
+Attack: https://pixabay.com/sound-effects/whoosh-6316/
 
-attack : https://pixabay.com/sound-effects/whoosh-6316/
+Jump: https://pixabay.com/sound-effects/swing-whoosh-110410/
 
-jump : https://pixabay.com/sound-effects/swing-whoosh-110410/
+Rain: https://pixabay.com/sound-effects/rain-sfx-12819/
 
-rain : https://pixabay.com/sound-effects/rain-sfx-12819/
+Snake & Lizard: https://pixabay.com/sound-effects/snake-hissing-6092/
 
-snake & lizard: https://pixabay.com/sound-effects/snake-hissing-6092/
+Monkey Screaming: https://pixabay.com/sound-effects/screaming-sound-of-a-monkey-154721/
 
-monkey screaming : https://pixabay.com/sound-effects/screaming-sound-of-a-monkey-154721/
+Deer: https://pixabay.com/sound-effects/sheep-122256/
 
-deer : https://pixabay.com/sound-effects/sheep-122256/
+Win Screen: https://pixabay.com/sound-effects/success-fanfare-trumpets-6185/
 
-new snake : https://quicksounds.com/sound/4393/snake-rattling
+Start Scene & Instruction: https://pixabay.com/sound-effects/a-piano-with-a-creepy-atmosphere-for-scary-stories-demo-version-158423/
 
-win screen: https://pixabay.com/sound-effects/success-fanfare-trumpets-6185/
+Enemy Death: https://pixabay.com/sound-effects/breeze-of-blood-122253/
 
-startscene & instruction : https://pixabay.com/sound-effects/a-piano-with-a-creepy-atmosphere-for-scary-stories-demo-version-158423/
+Health Restore: https://pixabay.com/sound-effects/coin-pickup-98269/
 
-Enemy death: https://pixabay.com/sound-effects/breeze-of-blood-122253/
-
-health restore: https://pixabay.com/sound-effects/coin-pickup-98269/
-
-items pickup: https://pixabay.com/sound-effects/health-pickup-6860/
+Items Pickup: https://pixabay.com/sound-effects/health-pickup-6860/
 
 
 
