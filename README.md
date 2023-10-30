@@ -427,6 +427,13 @@ _MainTex: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials
 ## Summary of Contributions
 
 ### Chris Chen
+- Developed the first person player movement and initial camera setup
+- Setup the first person animation for all movements (jump, running, attack)
+- Developed the Attack mechanism and Animal hit collisons
+- Created Animal Snake and developed relevant movement & attack patterns
+- Created Animal Lizard and developed relevant movement & attack patterns
+- Conducted Cooperative Evaluations and Questionnaire
+- Selected and arranged background music for the entire game
 
 ### Quiana Sison
 - Implemented the bird companion functionality including questions and follow script
@@ -487,6 +494,46 @@ Item Management: https://www.youtube.com/watch?v=DLAIYSMYy2g
 Day/Night Cycle: https://www.youtube.com/watch?v=m9hj9PdO328&t=221s
 
 Pause: https://www.youtube.com/watch?v=tfzwyNS1LUY
+
+### Sound & Music:
+
+Sound Track Links:
+
+
+hurt : https://pixabay.com/sound-effects/ough-47202/
+
+bear roar : https://pixabay.com/sound-effects/growl-and-roar-102417/
+
+fail screen : https://pixabay.com/sound-effects/dramatic-scene-separation-melancholy-demo-version-159310/
+
+running: https://pixabay.com/sound-effects/running-1-6846/
+
+forest background: https://www.youtube.com/watch?v=TJfua0e-GYY
+
+attack : https://pixabay.com/sound-effects/whoosh-6316/
+
+jump : https://pixabay.com/sound-effects/swing-whoosh-110410/
+
+rain : https://pixabay.com/sound-effects/rain-sfx-12819/
+
+snake & lizard: https://pixabay.com/sound-effects/snake-hissing-6092/
+
+monkey screaming : https://pixabay.com/sound-effects/screaming-sound-of-a-monkey-154721/
+
+deer : https://pixabay.com/sound-effects/sheep-122256/
+
+new snake : https://quicksounds.com/sound/4393/snake-rattling
+
+win screen: https://pixabay.com/sound-effects/success-fanfare-trumpets-6185/
+
+startscene & instruction : https://pixabay.com/sound-effects/a-piano-with-a-creepy-atmosphere-for-scary-stories-demo-version-158423/
+
+Enemy death: https://pixabay.com/sound-effects/breeze-of-blood-122253/
+
+health restore: https://pixabay.com/sound-effects/coin-pickup-98269/
+
+items pickup: https://pixabay.com/sound-effects/health-pickup-6860/
+
 
 
 
