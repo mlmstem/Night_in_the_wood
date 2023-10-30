@@ -14,7 +14,7 @@ public class GameManagerInsructions : MonoBehaviour
         if (backgroundMusic != null)
         {
             // Ensure the background music is not destroyed when switching scenes
-            DontDestroyOnLoad(backgroundMusic);
+            Destroy(backgroundMusic);
         }
 
         SceneManager.LoadScene("StartScene");
