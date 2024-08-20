@@ -1,472 +1,410 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/CibnTZFQ)
-# Project 2 Report
+## Game Overview
 
-## Table of Contents
+### Core Concept
 
-* [Evaluation Plan](#evaluation-plan)
-* [Evaluation Report](#evaluation-report)
-* [Shaders and Special Effects](#shaders-and-special-effects)
-* [Summary of Contributions](#summary-of-contributions)
-* [References and External Resources](#references-and-external-resources)
+<img align="right" src="https://images.unsplash.com/photo-1512747646639-ed824d861e0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9yZXN0JTIwbmlnaHR8ZW58MHx8MHx8fDA%3D&w=1000&q=80" width="250">
 
+Night in the Woods is a captivating survival and educational experience set in a lush forest environment. The game revolves around a human protagonist who finds themselves stranded in the middle of the night in a dense forest, with the goal of surviving until sunrise when a rescue team is expected to find them. The player, accompanied by a companion, must navigate through various survival challenges posed by the wilderness and learn essential survival techniques and skills to ensure their safety until help arrives. Their role is to make critical decisions to find food, build shelter, start a fire, and protect themselves from animals and weather conditions.
 
-## Evaluation Plan
+<sup><sub> Image from https://images.unsplash.com/photo-1512747646639-ed824d861e0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9yZXN0JTIwbmlnaHR8ZW58MHx8MHx8fDA%3D&w=1000&q=80 </sub></sup>
 
-### Evaluation Techniques
+### Genre
 
-**1. Questionnaire:**
-   - *Why:* A questionnaire is great for gathering quantitative data quickly and efficiently.
-   - *Benefits:*
-     - Provides a structured way to collect user feedback.
-     - Direct feedback can be obtained on various game features.
-     - User satisfaction and preferences can be measured.
-   - *Tasks:* Participants will be asked to fill out a questionnaire that assesses their overall experience, satisfaction, and specific feedback on game features.
-     - Questionnaire Link: https://docs.google.com/forms/u/1/d/e/1FAIpQLSe3Yxy0fIxNo-uLitACOqKc1xJjpAFPvUdw9duivfnhWJoQYg/viewform?usp=sharing&fbclid=IwAR0-Jp6ly-RJMXUgxh3wchYhzGywGuVIJf07WxwDISIcQa30kMEKQowUnxA
+The game fits into the survival, adventure and education genres. Players are challenged to survive in a natural environment while at the same time learning practical skills and techniques that are essential for wilderness survival. These genres emphasise the immersive experience of navigating a challenging wilderness setting and the educational value of acquiring knowledge that can be applied in real-world situations. Similar games in this category are Rust or Minecraft. Rust is a multiplayer survival game that involves challenging gameplay, open-world environment, and emphasis on player interaction and competition. In Minecraft survival mode, the player must gather resources, craft tools, build structures, and fend off threats.
 
-**2. Cooperative Evaluation:**
-   - *Why:* Cooperative evaluation provides a less intrusive way to observe and interact with users while they engage with the game.
-   - *Benefits:*
-     - The evaluator can watch how participants play the game and see if they are using it in the intended way.
-     - Enables the evaluator to provide immediate solutions to identified problems.
-   - *Tasks:* In this evaluation technique, users will be encouraged to perform tasks such as crafting, eating, and attacking within the game, while the evaluator observes and records their actions and interactions.
-     - Read the instructions and start the game
-     - Survive the full 5 minutes
-        - Defeat the bear, snake, lizard, deer and mokey
-        - Find and choose between berries
-        - Find Materials and Craft a Shelter
-        - Complete all the questions
+<div align="center" width="600">
+  <img src="https://cdn.akamai.steamstatic.com/steam/apps/252490/ss_e825b087b95e51c3534383cfd75ad6e8038147c3.1920x1080.jpg?t=1678981332" width="250">
+  <img src="https://staticg.sportskeeda.com/editor/2022/11/6ca1e-16678042889550-1920.jpg" width="250">
 
-By combining the use of questionnaires for quantitative data and cooperative evaluation for more in-depth insights, we can comprehensively assess our game's performance and user satisfaction. Additionally, the specific tasks mentioned above will help gather targeted feedback on essential gameplay elements, ensuring that our game aligns with the intended design and user expectations.
-
-### Participant Recruitment for Evaluation
-
-For our evaluation, we will employ the following participant recruitment strategy:
-
-- **Personal Network**: We will start by engaging with individuals we know personally to build trust.
-
-- **Diverse Audience**: Our game caters to a diverse audience, and we aim to include individuals from various backgrounds, age groups, and interests.
-
-- **Qualifying Criteria**: Participants must meet one or more of the following criteria:
-
-   - **Interest in Survival and Adventure**: Those who enjoy survival or adventurous games.
-
-   - **Desire to Enhance Survival Skills**: Individuals looking to improve their survival skills.
-
-   - **Appreciation for Nature/Wilderness**: Participants who appreciate nature and wilderness themes.
-
-   - **Enthusiasm for Learning through Play**: Those who enjoy learning new skills through gaming.
-
-- **Diverse Sampling**: We aim to ensure a balanced representation of participants meeting these criteria for a comprehensive evaluation.
-
-### Data Collection
-
-**1. Questionnaire:**
-   - *Data Collected:* Quantitative data.
-   - *Collection Method:* Data will be collected electronically through Google Forms.
-   - *Tools Used:* Google Forms will serve as the primary tool for gathering structured feedback in the form of rating scores for specific game features.
-   - *Description:* The questionnaire will allow you to quantitatively assess user satisfaction and preferences by using rating scales for various game features. Participants will provide numerical ratings based on their experiences.
-
-**2. Cooperative Evaluation:**
-   - *Data Collected:* Qualitative data.
-   - *Collection Method:* Multiple techniques will be employed to collect qualitative data during cooperative evaluation.
-   - *Tools Used:*
-     - **Notes:** Observers will take detailed notes during the evaluation process to capture important observations and user interactions.
-     - **Video and Audio Recordings:** Users' gameplay sessions will be recorded, creating a multimedia record of the evaluation.
-   - *Description:* Cooperative evaluation will involve the collection of rich qualitative data through various means:
-     - **Notes:** Observers will document player habits, body language, facial expressions, and any issues encountered during the evaluation.
-     - **Video and Audio Recordings:** These recordings will serve as a supplementary resource, providing visual and auditory context. They can be analysed to clarify or elaborate on notes, ensuring a comprehensive understanding of user experiences.
-
-### Data analysis
-
-**1. Questionnaire Data Analysis:**
-   - *Metrics:*
-     - **Average Scores:** We will calculate the average scores assigned to various game features to assess overall player enjoyment and satisfaction quantitatively.
-     - **Frequencies:** We'll delve into the frequencies of specific responses to uncover trends and recurring patterns in player feedback.
-   - *Description:* The questionnaire data will provide valuable insights into player satisfaction. Calculating average scores will enable us to gauge the overall level of enjoyment that players experienced. Moreover, analysing frequencies will help us identify common themes and specific player comments within open-ended responses, offering deeper qualitative insights into player preferences and concerns.
-
-**2. Evaluation Data Analysis:**
-   - *Metrics:*
-     - **Frequency of Player Deaths:** We will measure the frequency and location of player deaths throughout the game to assess gameplay performance.
-     - **Task Completion Time**: Measure the time taken to complete each task.
-     - **Number of Attempts**: Count the number of attempts made for each task.
-     - **Time to Find Materials/Item**: Measure the time taken to find materials for crafting of items for consumption.
-   - *Description:* During the evaluation phase, our focus will be on quantitative metrics related to gameplay. Specifically, we will scrutinise the frequency of player deaths, as this metric can unveil potential challenges or spikes in difficulty at specific points in the game. Identifying these patterns will be crucial for pinpointing areas that may require adjustments to create a more balanced and enjoyable gaming experience.
-
-### Timeline
-
-**Conduct Evaluations (Week Following 8 October):** 
-During this phase, we will actively engage with our selected participants. We will conduct both questionnaires and cooperative evaluations to gather real-time feedback on the game's performance and user experience.
-
-**Analyse Changes (3 Days Following Evaluation Week):** 
-Immediately after the evaluation week, we will dedicate three days to analyse the collected data. We will meticulously review questionnaire responses, cooperative evaluation notes, and any video/audio recordings. This comprehensive analysis will form the basis for our decision-making process.
-
-**Make Changes (Following Analysis Phase):** 
-Following the analysis phase, we will enter a period dedicated to implementing changes in the game. These adjustments will be based on the insights gained from the evaluation and analysis phases. Our goal is to address player concerns, enhance gameplay, and align the game more closely with our intended design.
-
-### Responsibilities
-Task Responsibilities and Ensuring Equal Contributions
-
-To effectively manage responsibilities within our team and ensure equal contributions, we have established clear task assignments for each team member.
-
-**Responsibilities:**
-
-**Each Group Member Will Conduct 3 Evaluations:**
-- **Member 1:**
-   - 2 x Questionnaire
-   - 1 x Cooperative Evaluation
-- **Member 2:**
-   - 2 x Questionnaire
-   - 1 x Cooperative Evaluation
-- **Member 3:**
-   - 1 x Questionnaire
-   - 2 x Cooperative Evaluation
-- **Member 4:**
-   - 1 x Questionnaire
-   - 2 x Cooperative Evaluation
-
-**Total:**
-- 6 x Questionnaire
-- 6 x Cooperative Evaluation
-
-**Data Summarisation and Analysis:**
-- The member who conducted each evaluation will be responsible for summarising the results.
-- Once the individual summaries are complete, we will come together as a group to analyse the data collectively.
-- Our analysis will focus on noting common themes, trends, and patterns across the evaluations.
-
-**Addressing Major Issues or Changes:**
-- After the analysis phase, we will identify the most prevalent and major issues or areas for improvement in our game.
-- To ensure equal participation in addressing these issues, tasks related to making changes and improvements will be divided evenly among team members.
-
-## Evaluation Report
-
-### Introduction
-
-This evaluation report examines the game "Night in the Woods" using a mix of quantitative and qualitative methods. For this analysis we engaged a demographic of participants who exhibited a moderately high interest in adventure and the wilderness, a strong desire to enhance their survival skills, and an enthusiasm for learning through play. These responses reflect a group with a solid aptitude toward nature and survival-related themes, indicating a well-aligned demographic for the evaluation.
-
-Our approach involved data collection techniques, such as questionnaires for quantitative data and cooperative evaluations for qualitative insights. These techniques aim to provide a comprehensive assessment of the game's strengths and weaknesses as well as help to provide valuable feedback.
-
-Moreover, with a thorough analysis process of the data collected, through means such as Google Forms and audio recordings, we found specific insights into user satisfaction and gameplay performance to give us a basis on which to improve the game. Results were then presented in a way which explained key issues with the game prior to the evaluation and the changes made to then fix those issues and heighten the overall gameplay experience.
-
-### Methodology
-
-Our evaluation plan for "Night in the Woods" employed a dual approach, combining quantitative and qualitative techniques to assess the game's performance and user satisfaction. Refer to the prior [Evaluation Plan](#evaluation-plan) for details on how the report was conducted.
-
-### Results
-
-#### Cooperative Evaluation Results
-
-***Participant 1 (Lucas Clarke)***:
-
-**Alignment with Demographic**:
-* Lucas exhibited a strong desire to enhance survival skills and an appreciation for nature.
-
-**Observations**:
-* Lucas faced challenges with understanding the game's mechanics, including picking up items and managing health, particularly that he was too busy collecting food so that his health didn’t fully deteriorate
-* He suggested improvements in instructions, the visibility of questions, and reducing the difficulty.
-
-**Recommendations**:
-* Improve item interaction, make instructions clearer, and shift the focus away from collecting berries
-
-***Participant 2 (Caitlyn Sison)***:
-
-**Alignment with Demographic**:
-* Caitlyn had a moderate interest in survival and adventure themes.
-
-**Observations**:
-* Caitlyn struggled with health management and did not prioritise answering questions as they appeared. She also mentioned that they were too long to read
-* She found the blue shades of berries confusing as the colours were too similar.
-* Moreover, she found that she could just run away from the animals as there was no incentive to fight them or answer the questions.
-
-**Recommendations**:
-* Provide clearer instructions by reducing their length
-* Add an incentive to answer the questions
-
-***Participant 3 (Simon Campbell)***:
-
-**Alignment with Demographic**:
-* Simon had a strong appreciation for nature and wilderness but was not too keen on enhancing his survival skills or even had much of an interest in survival
-
-**Observations**:
-* Simon felt immersed in the game but had issues with picking up items and managing the controls, claiming that it was not easy for novices to pick up.
-* He suggested more explicit instructions and feedback mechanisms.
-
-**Recommendations**:
-* Improve item interaction, provide clearer instructions, and offer feedback on player actions.
-
-***Participant 4 (Cassandra Baala)***:
-
-**Alignment with Demographic**:
-* Cassandra showed an interest in enhancing survival skills and moderate enthusiasm for learning through play.
-
-**Observations**:
-* Cassandra faced challenges with understanding game mechanics, particularly related to item interaction and health management as with many other participants.
-* She commented on the text size being too small in the instructions and pop-up questions
-* Further, she found many areas in which she wasn't able to manoeuvre her character through
-
-**Recommendations**:
-* The game should enlarge and clarify the instructions, improve item interaction, and improve player collision 
-
-***Participant 5 (Haotian Zhuang)***:
-
-**Alignment with Demographic**: 
-* Haotian is an experienced survival game fan player with a competent level of skill.
-
-**Observations**: 
-* Haotian had trouble reading from the text popups while playing the game; the popup text was way too small for him to look at. It was also quite hard for him to play while reading the text
-* Haotian was not aware of the crafting system, and was thinking about going into the covered area to escape the rain
-* He also had problems picking up items. During the game he won, he didn't encounter many enemies. This is not great as the game is made to encourage players to deal with the enemies.
-
-**Recommendations**:
-* A sprinting feature should be implemented so that when a player's health is low he can run quicker to pick up items to restore his health.
-* Popup text should be clearer and easier to read.
-* Plants are too big in comparison to the size of the player
-
-***General Observations and Recommendations***:
-
-Participants identified common issues with the game, including item interaction, the clarity of instructions, health management, and game difficulty.
-Recommendations include enhancing item interaction, making instructions clearer, balancing health management, and addressing challenges in player progression.
-Suggestions were made to improve the visibility of questions, differentiate berries, and offer feedback on player actions.
-
-
-#### Questionnaire Results
-
-<div align="center">
-   <img src="Images/intructions_chart.png" width="500"> 
+  <sup><sub> Left image from https://cdn.akamai.steamstatic.com/steam/apps/252490/ss_e825b087b95e51c3534383cfd75ad6e8038147c3.1920x1080.jpg?t=1678981332 & Right image from https://staticg.sportskeeda.com/editor/2022/11/6ca1e-16678042889550-1920.jpg </sub></sup>
 </div>
-<br>
-The majority of participants, specifically 83%, agreed that the “controls are intuitive”; however, it is worth noting that one participant encountered confusion regarding interactions due to unclear instructions, particularly related to jumping and item collection, where it was erroneously believed that every interaction was managed by pressing the 'E' key. They pointed out that this was due to unclear wording on the instructions
-<br>
-<br>
+
+### Target Audience
+
+<img align="right" src="https://wildernessawareness.org/wp-content/uploads/2022/10/WSB1-1024x576.jpg" width="250">
+
+The target audience of the game involves those drawn to the survival, adventure and educational aspects of the game. These could be outdoor enthusiasts wanting to enhance their knowledge of survival skills, those who enjoy learning new skills through playing games or even educational institutions wanting to provide an engaging way to teach essential outdoor knowledge. These could also be people who have an appreciation for nature and the wilderness or those who enjoy adventurous games and narratives.
+
+<sup><sub> Image from https://wildernessawareness.org/wp-content/uploads/2022/10/WSB1-1024x576.jpg </sub></sup>
+
+### Unique Selling Points
+
+The game uniquely combines survival mechanics with educational elements, teaching players real-world survival skills in an engaging and interactive manner. The game involves gamified learning, incorporating survival skills seamlessly into gameplay. The game also offer a unique way of delivering information through an animal companion. The incorporation of random external events ensures that each playthrough is distinct, creating a sense of unpredictability and replayability. 
+
 <div align="center">
-   <img src="Images/health_chart.png" width="500"> 
+  <img src="https://www.outdoorlife.com/uploads/2020/05/26/K43VZSE6FRFA7H7PG356R5CAVI.JPG?auto=webp" height="150">
+  <img src="https://h9t4t3i4.stackpathcdn.com/sites/default/files/inline-images/Camo-tarp-shelter_1.jpg" height="150">
+
+  <sup><sub> Left image from https://www.outdoorlife.com/uploads/2020/05/26/K43VZSE6FRFA7H7PG356R5CAVI.JPG?auto=webp & Right image from https://h9t4t3i4.stackpathcdn.com/sites/default/files/inline-images/Camo-tarp-shelter_1.jpg </sub></sup>
 </div>
-<br>
-Each participant of the questionnaire, as well as those involved in the cooperative evaluation, expressed a unanimous concern that the health bar “just went down really quickly”. This rendered the game overly challenging and diminishing its overall enjoyability. This placed excessive focus on finding berries for health replenishment, as opposed to promoting exploration, which was cited as a significant issue.
-Furthermore, an overwhelming majority of players, 75% of participants, found the random events, such as rain, and animal encounters to be highly challenging. Additionally, 25% expressed neutrality towards this aspect. Valuable feedback highlighted concerns, including the significant damage inflicted by animals, with suggesting to “reduce the attack of animals”, the absence of clear indicators when being attacked, and the distraction caused by attempting to read the pop-up questions during these events as they “didn't really have time to read the questions because they were too long“ .
-<br>
-<br>
-<div align="center">
-   <img src="Images/updates_chart.png" width="500"> 
+
+# Story & Narrative
+## Story
+An adventurous man embarked on a solo hike through South America's Amazon jungle. After days of exploring, his phone stopped working, leaving him stranded and lost in the wilderness. Tasked with surviving the night, he must await rescue until he is noticed missing and a specialised team mobilises to secure his safety.
+
+## Characters:
+
+<sup><sub> Bird image from https://assetstore.unity.com/packages/3d/characters/animals/quirky-series-free-animals-pack-178235, Human image from https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/free-low-poly-human-rpg-character-219979 & Bear image from https://assetstore.unity.com/packages/3d/characters/animals/free-stylized-bear-rpg-forest-animal-228910 </sub></sup>
+
+<div align="right">
+  <img align="right"  src="https://github.com/COMP30019/project-1-cvts/assets/102479263/d096bc75-1dd1-4217-a3b7-a4c262247200" width="100">
+  <img align="right"  src="https://github.com/COMP30019/project-1-cvts/assets/102479263/00ae0984-21ad-4ae6-b7ec-a519921e16c9" width="100" height="100">   
 </div>
-<br>
-The player feedback regarding updates from the rescue team was also notably positive, with an overwhelming majority expressing appreciation with only one participant disagreeing. This was due to a preference for a timer to precisely gauge the remaining time, as opposed to the minute-by-minute updates provided.
-<br>
-<br>
+
+### Main Protagonist 
+* Human: Hiker
+               
+### Animal companion
+* Small sparrow who follows the hiker protagonist
+
+### Enemies
+
+<img align="right" src="https://github.com/COMP30019/project-1-cvts/assets/102479263/66bbd145-fe55-4110-88aa-7ee247df9765" width="300" > 
+
+* Bear
+* Snake
+* Monkey
+* Wolf
+* Lizard
+* Wasp
+
+### Character background
+A traveller who is extensively exploring South America but with no previous experience in wilderness survival. Struggling with his lack of survival knowledge, he is confronted with the harsh reality of being lost.
+
+The hiker's motivation is to ensure survival by learning how to independently manage life in the woods. He forms a friendship with a little bird, while all other characters (animals) in the game serve as enemies trying to protect their home. The character's goals involve utilising natural resources to remain alive until someone realises they're lost and send help. They must conquer nature's challenges, including finding food, making fire and seeking shelter from both the elements and animal adversaries.
+
+### Character personality
+
+Eager for adventures and a genuine love for learning, he thrives on new experiences; however, despite his enthusiasm, his lack of survival experience makes his task difficult but prompts a journey of growth and adaptation.
+
 <div align="center">
-   <img src="Images/companion_chart.png" width="500"> 
-   <img src="Images/gamelearn_chart.png" width="500"> 
+  <img src="https://github.com/COMP30019/project-1-cvts/assets/102479263/97f71a7d-597f-4515-b341-95a954a7066a" width="300"> 
+
+  <sup><sub> Image from https://assetstore.unity.com/packages/3d/environments/landscapes/free-low-poly-nature-forest-205742 </sub></sup>
 </div>
-<br>
-The graph on the left reveals that the companion questions yielded mixed results among participants. This variability can be attributed to challenges regarding information overload and the time required to read the questions. These issues were noted to cause distractions while participants were engaged in combat with the animals.
-<br>
-<br>
-However, the graph on the right demonstrates that participants expressed interest in the concept of companion questions. With the suggested changes, as recommended by participants in both the questionnaire and cooperative evaluations, there is potential for enhancing the learning and gaming experience. This suggests a move away from players feeling indifferent towards this aspect of the game.
-<br>
-<br>
-<div align="center">
-   <img src="Images/overall_chart.png" width="500"> 
-</div>
-<br>
-The overall gameplay experience was predominantly positive, albeit somewhat hindered by a few minor issues. These issues included challenging encounters, rapid health depletion, and an overload of information resulting from the companion questions.
 
-The results align with those from the Cooperative Evaluations, reinforcing the identified issues. Importantly, no participant rated the experience below a 6, indicating a baseline level of satisfactio and an overall favourable perception of the game, with the most common score being 8 out of 10.
+### Setting
 
-### Recommendations and Action Plan
-#### Addressing Major Issues or Changes Based on Cooperative Evaluation and Questionnaire Findings
+The forest is full with trees, bushes, rivers, caves and a diverse array of animals. As the game progresses, the player receives updates on the rescue team's progress, offering updated on whether they've become aware of the player's absence, their understanding of the location, and their presence within the jungle.
 
-**Make Health Reduce Slower**: <br>
-Adjusted the rate at which a player's health decreases from 1/sec to 0.6/sec to provide a more manageable gameplay experience and allow the player to explore more and pick up berries less.
-<br>
-<div align="center">
-   <img src="Images/health_oldnew.gif" width="500"> 
-</div>
-<br>
+## Gameplay & Mechanics
 
-**Change How Questions Appear**: <br>
-Revised the appearance of questions so that they pause the game when the player first experiences them, ensuring clarity for players as they will have time to read what is required of them. A condensed version of the questions will then be displayed upon subsequent interactions.
-<br>
-<div align="center">
-   <img src="Images/questions_og.png" width="500"> 
-   <img src="Images/questions_new.png" width="450"> 
-</div>
-<br>
+### Player Perspective
+  
+<img align="right" src="https://a.silvergames.com/screenshots/forest-survival-simulator/the-forest.jpg" alt="Forest Image" width="300">
 
-**Make Instructions Clearer**: <br>
-Enhanced the clarity of instructions, detailing each individual action so players were not confused about the game mechanics
-<br>
-<div align="center">
-   <img src="Images/instructions_og.png" width="450"> 
-   <img src="Images/Instructions_use.png" width="450"> 
-</div>
-<br>
+In our game, players experience the environment from a first-person perspective. The camera remains fixed most of the time, providing a sense of immersion.
 
-**Make It Easier to Pick Up Items**: <br>
-Improved item interaction by enlarging the trigger area for picking up items.
-<br>
-<div align="center">
-   <img src="Images/trigger_og.png" width="250"> 
-   <img src="Images/trigger_new.png" width="250">
-</div>
-<br>
+Importantly, the player's character is not directly visible on the screen, except through animations. For example, when performing actions like building a fire, the camera may briefly shift to a third-person perspective, giving the player a broader view.
 
-**Made Berries More Distinct**: <br>
-Differentiated between nightshade berries and blueberries to help players easily identify them by making nightshade berries significantly darker.
-<br>
-<div align="center">
-   <img src="Images/berries_old.png" width="450"> 
-   <img src="Images/berries_new.png" width="450">
-</div>
-<br>
-
-**Reduced Attack Damage from Animals**: <br>
-Adjusted the damage dealt by animals to make the game more balanced and fair.
-
-**Removed Collision from Shrubbery**: <br>
-Removed collision issues with shrubbery to enhance player navigation.
-<br>
-<div align="center">
-   <img src="Images/collide_og.gif" width="450"> 
-   <img src="Images/collide_new.gif" width="450">
-</div>
-<br>
-
-**Clarified Health Loss Explanation**: <br>
-Provided a clear note in game lore to explain the reasons behind health loss, ensuring players understand why they’re losing health
-<br>
-<br>
-**Make It More Clear that Shelter Is Required for Rain (Before It Occurs)**: <br>
-Enhanced the game's communication regarding the need to craft shelter before rain occurs, ensuring players are prepared.
-<br>
-<div align="center">
-   <img src="Images/lore.png" width="450"> 
-</div>
-<br>
-
-**Sound/Audio Cues**: 
-Implemented audio cues and feedback mechanisms to help players identify and respond to in-game events more effectively, such as attacks from animals. While this was already planned, it was not in the build that the participants played.
-
-### Discussion
-
-In retrospect, there were several aspects of the evaluation process that could have been improved. Timing and coordinating tasks were often challenging, especially when multiple tasks needed to be completed simultaneously. This could potentially lead to some evaluation bias, as the participants' experiences may have been influenced by the timing of specific tasks. For instance, when fighting the snake, participants encountered the lizard and thus knew how to defend against it before being asked to complete the lizard task.
-
-Moreover, the fact that the evaluation was not entirely anonymous may have affected the participants' responses as they may have held back some feedback to maintain relationships with the evaluator. In the future, ensuring complete anonymity in the evaluation process may result in more unbiased responses. 
-
-Another area of improvement could have been the preparation of the game build. A more refined and tested version of the game would have provided a more accurate representation of the player experience, and the feedback received would have been more actionable for an end game project. Furthermore, sound and audio cues were crucial in guiding players' actions and decisions in the game. In hindsight, starting work on sound earlier in the development process could have resolved many issues and enhanced the overall gameplay experience.
-
-A further issue during the evaluations was the assistance provided to participants with questions they found challenging. While this was done with the intention of saving time, it could have influenced the participants' experiences and subsequent feedback. In future evaluations, ideally evaluators would avoid offering assistance and let participants navigate tasks independently.
-
-In the interest of achieving a more balanced evaluation process, incremental testing on a smaller scale throughout the game's development could have mitigated the need for significant changes towards the end of the process. Early and ongoing testing would have identified issues as they arose, resulting in a more polished final product.
-
-### Conclusion
-
-The evaluation of "Night in the Woods" provided valuable insights into the game's strengths and areas for improvement. Participants' feedback and observations provided key insights into significant issues, including item interaction, instruction clarity, health management, and game difficulty. These insights were translated into recommendations, along with corresponding action items, to enhance the overall gameplay experience.
-
-The comprehensive assessment, combining quantitative data from questionnaires and qualitative feedback from cooperative evaluations, has guided informed decisions to improve the game. Changes have been made to address major issues, such as adjusting health loss rates, improving item interaction, clarifying mechanics, and providing clearer instructions.
-
-Looking forward, the game will continue to be evaluated at different stages to ensure changes are made gradually creating an incremental process that ensures “Night in the Woods" offers a more enjoyable and engaging experience to players who share an enthusiasm for adventure, survival, and learning through play. The feedback received during this evaluation has played a crucial role in shaping the game's future, and the ongoing efforts are focused on creating a more captivating and immersive gameplay/learning experience.
+<sup><sub> image from https://a.silvergames.com/screenshots/forest-survival-simulator/the-forest.jpg </sub></sup>
 
 
-## Shaders and Special Effects
+### Controls: Item Collection / Build / Attack / Defence 
 
-### Rain Particle System
-The rain particle system exhibits a range of attributes carefully chosen and adjusted to craft a realistic and dynamic rain effect to act as an adversary for the player. These customisations include colour over the lifetime of the raindrop to replicate their natural appearance. The "3D Start Size" attribute introduces a variation in raindrop sizes, creating diversity in their descent. Moreover, to exacerbate their intensity, the "Emission" rate is increased, resulting in more particles, evoking a sense of a stronger and more dangerous rain storm. The choice of a "Box" shape for emission provides a flat rain spawn to look more natural. Additionally, the "Velocity over Lifetime" feature enhances the speed of falling raindrops and introduces random direction changes, mirroring the influence of wind. Further, by altering the "Collision" settings, raindrops now make contact with the ground, enabling the creation of child particle effects for a splash effect. The "Sub-emitter" generates these ground impact effects, further enhancing realism. Through adjustments to the "Renderer," the apparent speed of raindrops is accentuated, giving them a more forceful appearance. Lastly, within the "Rain Splash" effect, the gradual increase in splash size over time introduces further realism to the splashing rain. These attributes are complemented by the use of randomness, such as random velocity and size variations, to avoid a repetitive and artificial appearance and create a more natural and dynamic rain storm simulation.
+We've designed the controls to be intuitive, utilising standards across most games. Standard movement is achieved using the WASD keys, while interaction with objects is done with the 'E' key. The inventory and survival skills menu can be accessed via the 'I' key. Additionally, players can call for help from their companion using the 'H' key, sprint using 'Shift,' crouch with 'Ctrl,' and jump with the 'Spacebar.' These controls provide players with a comprehensive way to navigate and engage with the game's world.
 
-<div align="center">
-   <img src="Images/Rain.gif" width="500"> 
-   <img src="Images/Splash.gif" width="500"> 
-</div>
-<br>
+<table align="center">
+   <tr>
+      <th>Action</th>
+      <th>Key(s)</th>
+      <th rowspan="8">
+        <img src="Images/apple-wireless-keyboard (2).jpg" width="300" alt="Keyboard Image"/>
+      </th>
+   </tr>
+   <tr>
+      <td>Movement</td>
+      <td>WASD</td>
+   </tr>
+   <tr>
+      <td>Crouch</td>
+      <td>CTRL</td>
+   </tr>
+   <tr>
+      <td>Run</td>
+      <td>SHIFT</td>
+   </tr>
+   <tr>
+      <td>Jump</td>
+      <td>SPACE</td>
+   </tr>
+   <tr>
+      <td>Interact/Use</td>
+      <td>E</td>
+   </tr>
+   <tr>
+      <td>Help</td>
+      <td>H</td>
+   </tr>
+   <tr>
+      <td>Inventory</td>
+      <td>I</td>
+   </tr>
+</table>
 
-<i> Links:</i>
 
-https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Prefabs/Rain.prefab
+### Progression
 
+The game's progression is a balance between survival and learning with constant updates from the rescue team allowing the player to track their progress. Players must not only survive the night but also aim to improve their survival skills and knowledge. Central to this is the health bar, which players must continuously monitor as it diminishes over time due to environmental factors, injuries, enemies, and other challenges; however, players can regenerate it with consumables, such as food. This adds an element of resource management to the game, which becomes increasingly challenging due to external events and animal attacks, ramping up the pressure on the player.
 
+<div align="center" >
+  <img src="https://i.pinimg.com/originals/5d/5a/1a/5d5a1aab51b2b5985d0b578b83e53e1f.png" width="200">
 
-### Berry Item Shader
-
-The ItemPulsateShader serves to emphasise the pickup items within 'Night in the Woods', helping players to more easily identify them and make it clear they are beneficial to the player. This shader's properties, including the texture, pulse amount, and pulse speed, are integral to the rendering process and provide the ability to customize the effect. In Unity's rendering pipeline, shaders are a key component in determining how objects are displayed on the screen. This shader is designed to work with opaque objects, like the berries, and is assigned a Level of Detail (LOD) value of 200 to specify its rendering priority.
-
-Moreover, the shader defines two key parameters: _PulseAmount and _PulseSpeed, which control the range and speed of the pulsation effect. These parameters are set as Range properties, allowing designers to customise them within specified limits. In this instance, _PulseAmount is set to 0.2 and _PulseSpeed to 3.5 as it provides a more natural feel and isn't overly obnoxious.  
-
-The vertex and fragment shaders are associated with the main texture, _MainTex (fc_lit.mat). The _TimeOffset variable is introduced in the vertex shader to control the phase of the pulsation effect over time. In the vertex shader, the pulsation effect is created by altering the y-coordinates of vertices based on a sine wave which is dependant on the _PulseSpeed and _PulseAmount. Furthermore, each item's y-position is adjusted to prevent it from clipping through the ground and provide a hovering effect.
-
-In the fragment shader, the shader modifies the item's colour over a 2-second period by calculating the current time (_Time.y) and using smoothstep to create a smooth transition between the original colour and the new colour. This creates a pulsating colour effect which is synchronised with the vertex movement. This aims to make the berry items look shiny and desirable to the player.
-
-In practice, the shader was applied to a premade asset's material which parametrises the shader. The _PulseAmount and _PulseSpeed properties were adjusted through the range sliders to fine-tune the appearance of the pulsation effect in real-time. This enabled dynamic and engaging visual effects within the game.
-
-<div align="center">
-   <img src="Images/Item.gif" width="500" > 
+  <sup><sub> image from https://i.pinimg.com/originals/5d/5a/1a/5d5a1aab51b2b5985d0b578b83e53e1f.png </sub></sup>
 </div>
 
 
-<i> Links: </i>
+### Score/Educational Questions
 
-ItemPulseShader: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials/Shaders/ItemPulsateShader.shader
-
-_MainTex: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Unity%20Store%20Assets/Fruit%20Blocks/materials/fc_lit.mat
-
-### Water Shader
-This shader is designed for rendering water in the game, more specifically the two lakes on the map. It simulates the appearance of subtle waves and water ripples as well as a water-like reflective texture to add realism while keeping the animated feel of the game. The shader is applied to a flat plane representing a body of water. It relies on material properties such as colour, texture, smoothness and metallic values to control its appearance. There are also custom properties that modify the amplitude of the water plane (noise scale, plane amplitude, speed) and the shape of the wave (wind direction, wave amplitude, period, phase shift). These properties are set with a range that can be customised within Unity to easily edit the look and harshness of the wave. The shader also employs shader mapping with two textures, _MainTex for colour and _NoiseTex for noise which are utilised in the vertex and pixel shader logic. 
-
-The vertex shader transforms the shape of the wave using the predefined custom properties. The amplitude of the plane is firstly adjusted. Here, _NoiseTex which is sampled based on UV coordinates is used to introduce a noise effect. Then, the shape of the wave is adjusted based on the sine wave equation, <i>wave amplitude * sin(period + phase shift)</i>. The continuous vertical motion of the plane and dynamic wave shape combined create a more realistic water composition. The pixel shader sets the colour, metallic and smoothness properties. It also includes a normal map to simulate finer details using _MainTex. The vertex shader modifies the amplitude and shape of the plane dynamically while the pixel shader contributes to the water-like material.
-
+Furthermore, the game will periodically present players with survival-related questions. These questions range from identifying edible plants to making decisions about creating shelter and treating injuries. Correct answers provide 'knowledge' points that players can redeem for advantages in the game, such as healing boosts. 
 <div align="center">
-   <img src="Images/Water.gif" width="500" > 
+  <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/kingdom-hearts-3/8/83/Kh3_mini_game_08.jpg" width="350">
+  <img src="Images/question.png" width="250">
+
+  <sup><sub> Left image from https://oyster.ignimgs.com/mediawiki/apis.ign.com/kingdom-hearts-3/8/83/Kh3_mini_game_08.jpg </sub></sup>
 </div>
 
 
-<i>Links:</i>
+### Challenges
 
-Water Shader: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials/Shaders/Water%20Shader/WaterShader.shader 
+The game also encourages progression through constant random challenges. Animal attacks can harm the player's health, forcing them to use their skills to defend themselves or find ways to avoid these encounters. Moreover, random external events, like sudden weather changes, add unpredictability to the gameplay. The constantly diminishing health also adds further urgency, creating tension and a sense of accomplishment when the player survives the night.
+<div align="center">
+  <img src="https://i.ytimg.com/vi/3uLjSx6kvCs/maxresdefault.jpg" width="300" margin-right="50rem">
+  <img src="Images/Rain_Event.png" width="250">
+  <img src="https://i.ytimg.com/vi/QSYkwdlDN8s/maxresdefault.jpg" width="300">
+  
+  <sup><sub> Left image from https://i.ytimg.com/vi/3uLjSx6kvCs/maxresdefault.jpg & Right image from https://i.ytimg.com/vi/QSYkwdlDN8s/maxresdefault.jpg </sub></sup>
+</div>
 
-_NoiseTex: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials/Shaders/Water%20Shader/noiseTexture.png
 
-_MainTex: https://github.com/COMP30019/project-2-cvts/blob/main/Assets/Materials/Shaders/Water%20Shader/Water_002_NORM.jpg
+### Gameplay Mechanics
+
+The core gameplay mechanics encompass resource management, crafting, exploration, survival skills, combat, and an educational aspect. These mechanics are interconnected where, for example, resource gathering leads to crafting, survival skills improve overall capabilities, and combat and shelter-building contribute to defence and protection. 
+<div align="center">
+  <img src="https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/01/best-crafting-games-minecraft.jpg" width="300">
+  <img src="https://techraptor.net/sites/default/files/styles/image_header/public/2023-02/Sons%20of%20the%20Forest%20Building%20Guide.jpg?itok=zYplOx_1" width="300">
+  
+  <sup><sub> Left image from https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/01/best-crafting-games-minecraft.jpg & Right image from https://techraptor.net/sites/default/files/styles/image_header/public/2023-02/Sons%20of%20the%20Forest%20Building%20Guide.jpg?itok=zYplOx_1 </sub></sup>
+</div>
+
+However, The "time survival" mechanic serves as the overarching framework. Players must make efficient decisions against the clock, prioritising tasks to balance survival, learning, and exploration. This time pressure adds challenge and satisfaction, making surviving the full five minutes a significant achievement.
+<div align="center">
+  <img src="Images/Rescue_Timer.png" width="250">
+</div>
+
+## Levels & World Design
+
+### Game world
+
+<div align="center">
+  <img src= "https://images.immediate.co.uk/production/volatile/sites/3/2021/07/campfire-minecraft-3c7ecb1.png" width="300">
+  
+  <sup><sub> Image from https://images.immediate.co.uk/production/volatile/sites/3/2021/07/campfire-minecraft-3c7ecb1.png </sub></sup>
+</div>
+
+The virtual world system in the game primarily comprises three key categories: items, structures, and enemies. Items denote entities that can be carried within the character's inventory. Conversely, structures encompass various features within the game world, each serving distinct functions, and are created with items. For example, players have the capacity to craft a campfire by using items such as 'sticks' and 'rocks'. These structures are then placed at fixed locations for the player's use.
+
+On the other hand, enemies are entities equipped with a health bar and attack damage, capable of engaging the player, each with their own distinctive movement pattern. Varied enemies have distinct speeds and occupy specific positions on the screen. For instance, wasps serve as aerial adversaries, thus maintaining higher positions, requiring the player to move downward to evade them.
+
+The presentation of the game consist of four parts:
+* The character’s body from a first person perspective
+* The inventory hot bar at the bottom of the screen
+* The pop up window of the companion Q&A Section and rescue team updates 
+* The health indicator at the top of the screen 
+
+The environment, as previously mentioned, is a low-poly cartoon forest, that is further detailed in the Arts section. 
+
+<div align = "center">
+  <img align="center" src = "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/697fb82c-bb1d-4eaa-ba42-804ef4ae7954.webp" width="300">
+  <img align="center" src = "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/1c5f382a-6229-4a06-b456-2919718074c9.webp" width="300">
+
+  <sup><sub> Images from https://assetstore.unity.com/packages/3d/environments/low-poly-woods-lifestyle-65306 </sub></sup>
+</div>
+
+### Objects
+
+The crafting system follows the general rule of the forest in nature, such as creating campfires and shelter from items like wood and rocks. Most of the objects are used in ways to facilitate player’s survival, such as food and a simple crafting system. Letting the player utilise the objects correctly is also a critical part of the game which educates players on their knowledge of survival practices in the wilderness. The objects can also be used to create weapons to have a tougher attack damage against the enemies. Common weapons in the game include sharpened sticks and rocks.
+
+Furthermore, there are also objects that can be used as consumable to help the player replenish health. While food is the main consumable there are also other natural healing items that can be used such medicinal plants (i.e. aloe vera) or tree sap.
+
+<div align = "center">
+  <img align="center" src = "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/836bd1c4-57d2-4c58-bd31-0e2208eaddad.webp" width="300">
+
+  <sup><sub> Image from https://assetstore.unity.com/packages/3d/props/food/fruit-blocks-128327 </sub></sup>
+</div>
+
+### Physics
+
+The fundamental physics are integrated into the game, resulting in the player losing health due to actions such as jumping or being attacked.
+
+The character's vertical movement adheres to a standard physics principle: when the player jumps, they ascend a particular height. Upon descending, falling damage is computed using a physics formula, where if the player falls beyond a certain threshold, an additional amount of damage is done for each set length.
+
+Moreover, animals possess distinctive attack patterns and speeds, with their attributes crafted based on both general knowledge and the inherent traits of each creature. Attacks also benefit from one-way collisions in which the player will only take damage if directly hit by an animal and not if they are the one initiating the attack.
+
+## Arts & Audio
+
+### Art Style
+
+<div align = "center">
+  <img src = "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/e9969d00-8fa2-4b8d-8aef-42a6364d49bf.webp" width="300">
+  <img src = "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/0dec0709-5249-4432-90c5-878fecfab6f0.webp" width = "300">
+  
+  <sup><sub> Images from https://assetstore.unity.com/packages/3d/environments/landscapes/free-low-poly-nature-forest-205742 </sub></sup>
+</div>
+
+We've opted for a low-poly art style to foster a visually accessible environment that prioritizes gameplay clarity and ease of recognition, allowing players to focus on crucial survival mechanics. By embracing a stylised approach, we aim to create an approachable atmosphere that enhances engagement and encourages players to explore and learn in a more relatable and memorable manner.
+        
+Furthermore, the object icons are made using a simplified design of basic colours such as white and dark. This design is set to not distract the player from the main survival gameplay. The cartoonish style is also made to appeal to younger audiences.
+
+The world will also have two modes of display which are day and night. In daytime the screen display is brighter and during night the screen is displayed in a more darker and gloomy vibe. The different timespan of a day gives the player a better experience of their progressions in their survival process.
+
+<div align = "center">
+  <img src = "https://i.cbc.ca/1.4295794.1505770043!/fileImage/httpImage/image.jpg_gen/derivatives/4x3_1180/the-long-dark-stone-s-throw.jpg" width="300">
+  <img src = "https://i.cbc.ca/1.4295792.1505770015!/fileImage/httpImage/image.jpg_gen/derivatives/original_1180/the-long-dark-bear.jpg" width = "300">
+  
+  <sup><sub> Left image from https://i.cbc.ca/1.4295794.1505770043!/fileImage/httpImage/image.jpg_gen/derivatives/4x3_1180/the-long-dark-stone-s-throw.jpg & Right image from https://i.cbc.ca/1.4295792.1505770015!/fileImage/httpImage/image.jpg_gen/derivatives/original_1180/the-long-dark-bear.jpg </sub></sup>
+</div>
+
+### Sound and Music
+
+The game's auditory landscape is designed to simulate the immersive experience of hiking in the forest. Therefore the whole game is enveloped in a forest-themed soundtrack. This soundtrack serves as a crucial element in enhancing the authenticity of the player's experience, infusing their gameplay with sounds that resonate with the actual atmosphere of a forest.
+
+Sound Track Links: 
+* https://pixabay.com/music/ambient-relax-in-the-forest-background-music-for-video-9145/
+
+The complementing sound effects include special sound for task completion and eerie music when danger is approaching.
+
+Sound Effect Links:
+* https://pixabay.com/sound-effects/success-fanfare-trumpets-6185/
+* https://pixabay.com/sound-effects/wolf-howling-140235/
+
+The event completion soundtrack gives the player the excitement of correctly completing a task, immersing them in the task and the game's context.
+
+Further, the eerie music not only carries a haunting ambiance to heighten excitement, but also alerts players that an enemy is approaching.
+
+### Assets
+
+The assets of the game includes the environmental and operable elements such as: 
+
+Trees, rocks, grass, bushes, (all) animals, water (lake/river), day/night sky, (all) items, rain/snow, clouds, the companion and human protagonist. This also includes any 2d sprites used for item icons in the inventory hotbar and UI.
+
+<div align = "center">
+  <img src = "https://assetstorev1-prd-cdn.unity3d.com/key-image/04fb0ee1-1819-47a5-be7a-844a1d3bd2d1.webp" width="300">
+  <img src = "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/a2a6d85e-8780-4c11-88e7-14e982cc1455.webp" width = "350">
+  
+  <sup><sub> Left image from https://assetstore.unity.com/packages/3d/characters/animals/quirky-series-free-animals-pack-178235 & Right image from https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/free-low-poly-human-rpg-character-219979 </sub></sup>
+</div>
+
+## User Interface (UI)
+
+The aesthetic design of the game is similar to Rust or Minecraft with a minimal UI and natural, earthy colour palette that will let the player be immersed the forest setting and seamlessly blend with the overall visual style of the game. The UI elements will feel non-intrusive, environmental and atmospheric. The home screen of the game will be simple and blend with the aesthetics of the actual game with minimalistic buttons and wilderness background.
+
+The control screen will have a similar basic UI. The health bar is positioned at the top of the screen displaying the current health status of the player, possibly displayed with increments. The score will be displayed on the top left of the screen in a simple font. Inventory will be displayed at the bottom of the screen to represent the acquired resources of the player. Update screens will also be integrated seamlessly into the game with large text.
+
+<div align="center">
+  <img src="Images/Home_Screen.png" width="300">
+  <img src="Images/Control_Screen.png" width="300">
+  <img src="Images/Decision_Screen.png" width="300">
+  <img src="Images/Update_Screen.png" width="300">
+  <img src="Images/UI.png" width="300">
+  <img src="Images/UI_Two_Berry.png" width="300">
+</div>
+
+## Technology & Tools
+
+### VS Code (Version: 1.81) 
+
+<img align="right" src="https://miro.medium.com/v2/resize:fit:480/1*MGcLJS1ZvMFcBA94PXn16Q.png" width="200">
+
+**Justification:** 
+* Provides a powerful IDE for coding C# scripts in Unity
+* Versatile option with excellent code editing capabilities.
+
+### Adobe Photoshop  (Version: 23.5.5) 
+
+<img align="right" src="https://www.connectingup.org/sites/default/files/styles/st_product_single_450x280/public/Photoshop_CC_icon.png?itok=0cdGiGqG" width="100">
+
+**Justification:**
+* Industry-standard image editing tool that's great for creating and optimising textures, UI elements, and other visual assets.
+
+### Audacity (Version: 3.3.3) 
+
+<img align="right" src="https://cdn-blog.adafruit.com/uploads/2021/05/audacity_logo_signika_512_transparent.png" width="200">
+
+**Justification:**
+* Free, open-source audio editing software
+* Suitable for editing and optimising in-game sound effects, voiceovers, and background music.
+
+### Blender (Version: 3.6.2 LTS) 
+
+<img align="right" src="https://img.favpng.com/2/10/1/blender-3d-computer-graphics-logo-filehippo-3d-modeling-png-favpng-hmf559fyeG7pQB5S8eydg5AeA.jpg" width="100">
+
+**Justification:**
+* Open-source 3D modelling and animation software
+* Good for creating and modifying 3D assets, characters, and environmental elements.
 
 
-## Summary of Contributions
+## Team Communication, Timelines and Task Assignment
 
-### Chris Chen
-- Developed the first person player movement and initial camera setup
-- Setup the first person animation for all movements (jump, running, attack)
-- Developed the Attack mechanism and Animal hit collisons
-- Created Animal Snake and developed relevant movement & attack patterns
-- Created Animal Lizard and developed relevant movement & attack patterns
-- Conducted Cooperative Evaluations and Questionnaire
-- Selected and arranged background music for the entire game
+### Communication
+For team communication, we'll be using Facebook Messenger. It's a great way to ensure collaboration, especially outside of our weekly meetings which we schedule for Mondays right after class, giving us a chance to start the week with a clear plan. We've also kept Thursdays open for additional meetings if we feel they're necessary to touch base.
 
-### Quiana Sison
-- Implemented the bird companion functionality including questions and follow script
-- Designed and implemented the User Interface of scenes
-- Planned and created the Gameplay Video
-- Created the Evaluation Questionnaire
-- Conducted Cooperative Evaluations and Questionnaire
-- Created the Water Shader
-- Implemented Pause functionality
+### Task Assignment
+  
+To manage our tasks and timelines, we've opted to use Trello. We find it effective for assigning tasks and keeping track of our project's progress. We're following a basic agile methodology with Trello, which means we'll be doing sprint planning to organise our work into manageable chunks so that it is fair for each group member. While we won't be focusing on retrospectives, Trello's setup allows us to stay focused on coordinating our workload efficiently. We will also make sure we consider each group member's additional work load from other subjects when assigning tasks to ensure they are not being overloaded with work.
 
-### Stefan Temelkovski
-- Created Inventory/Hotbar System + Item Pick Up
-- Created Health system
-- Created Rain Particle System
-- Created Item Pulse Shader
-- Added Day/Night Cycle
-- Resolved bugs from evaluations and throughout project
-- Wrote Evaluation Plan
-- Wrote Evaluation Report
-- Organised team meetings
+<div align="center">
+  <img src="https://messengernews.fb.com/wp-content/uploads/2021/09/Group-Typing-Indicator-iOS-1.png" width="250">
+  <img src="https://images.ctfassets.net/rz1oowkt5gyp/1cu7oWtxIeVq0CWLAZOcke/5cb5af00f3aa1a8f35f412c48e09f2d9/ch2_01.png" width="400">
 
-### Ben Volovelsky
-- Created bear enemy, include his movement, and way to defeat it.
-- Created deer enemy, include his movement, and way to defeat it, and baby deer which follows it.
-- Created monkey enemy, include his movement, and way to defeat it.
-- Created the map that the hiker navigates with and it's functionallity.
-- Created an Helicopter which the hiker has to get to in order to win.
-- Created change scenes mechanisem.
-- Created meshrender which fixed the whole collision problens.
-- Created an ocean around the world.
+  <sup><sub> Left image from https://messengernews.fb.com/wp-content/uploads/2021/09/Group-Typing-Indicator-iOS-1.png & Right image from https://images.ctfassets.net/rz1oowkt5gyp/1cu7oWtxIeVq0CWLAZOcke/5cb5af00f3aa1a8f35f412c48e09f2d9/ch2_01.png </sub></sup>
+</div>
 
-## References and External Resources
+### Prospective Timeline:
+
+<div align="center">
+
+|    **GDD Completion (27/08)**    | **Unity Prototype (3/09)** | **Sprint One (17/09)** | **Sprint Two (01/10)** | **Sprint Three (15/10)** | **Final Deadline (30/10)** |
+|-------|-------|-------|-------|-------|-------|
+| Complete all GDD sections | Create UI & Start Screen | Finalise all enemies and animations | Create crafting system | Add sound effects | Testing |
+|       | Create animal companion with questions | Add random weather events | Implement point system | Implement extra animations: e.g. third person view | Bug/Defect fixes |
+|       | Create enemy and animations |       |       |       | Final quality check |
+|       | Develop player controller |       |       |       |       |
+
+</div>
+
+ 
+  
+
+
+
+
+# Possible Challenges
+### Challenge #1
+**Project scope may be too large**
+
+*Solution: We’ll build the game in a way that will allow us to drop features that we don’t have time to invest in. For example, for the enemies we will start with a few and only add more if time will allow us*
+
+### Challenge #2
+**Maintaining focus on the educational aspect as well as survival.**
+
+*Solution: We’ll always keep in mind that one of our main goals is to make it an educational game and we’ll always look at ways to input the educational aspect into the game.*
+
+### Challenge #3 
+**Time management - 3 of the 4 students take IT Project this semester.**
+
+*Solution: We will create an effective plan of time so there are clear goals to meet with enough time to each goal. That way each student will have enough time to manage their time correctly and finish with their assignments.*
+
+### Challenge #4
+**No experience with Unity so doing simple tasks may take longer**
+
+*Solution: All of the group members will attend tutorials and pay attention in class to learn key skills to help develop the game.*
+
+### Challenge #5
+**Creating animations or models if there is no available online asset** 
+
+*Solution: Changing the enemies according to available assets or engaging in easy to learn tutorials.*
+
 
 ### Unity Assets
 Player: https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/free-low-poly-human-rpg-character-219979
